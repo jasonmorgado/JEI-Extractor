@@ -35,8 +35,9 @@ public class JEIPlugin implements IModPlugin {
                 .map(IRecipeCategory::getRecipeType)
                 .collect(Collectors.toList());
 
-        Path output = Paths.get("recipe_types.txt");
+        Path output = Paths.get("../out/recipe_types.txt");
         try {
+            Files.createDirectories(output.getParent());
             Files.writeString(output, recipeTypes.stream()
                     .map(RecipeType::toString)
                     .collect(Collectors.joining("\n")));
