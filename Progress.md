@@ -8,6 +8,10 @@ It also provides `createRecipeLookup(recipe_type)` which returns a `IRecipeLooku
 
 Unfortunately there are multiple recipe types, and many mods add their own types. These types have their own classes, and store data a little differently.
 
+I've found that I can inspect the properties of each of these with the IntelliJ debugger:
+![IntelliJ Debugger displaying a shaped crafting recipe](debugger_shaped_recipe.png)
+
+
 Each object has many properties. So far I've tried using Java [reflection](https://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful) to inspect the properties of the class, and each property of those classes. However, it seems many of these objects are deeply, deeply nested with unusable data, causing a stack overflow when iterating over them. 
 
 This will require manually parsing certain objects. such as the `Ingredient`. 
