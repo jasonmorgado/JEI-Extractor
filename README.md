@@ -9,6 +9,8 @@ I wonder if I could theoretically display the same data outside of the game.
 
 This project will attempt to build a POC for this, or otherwise research the problem.
 
+This repo contains a Minecraft mod to extract recipe information from Just Enough Items (JEI) and produce JSON files.
+
 
 ### Design
 
