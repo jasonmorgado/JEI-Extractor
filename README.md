@@ -1,2 +1,54 @@
 # JEI-Extractor
  
+## Overview
+
+In modded Minecraft, it can be fun to look through all the different recipes available in a modpack and plan things out.
+Because each modpack tends to modify recipes, static wikis aren't practical for them, making recipe viewing mods like JEI necessary.
+
+I wonder if I could theoretically display the same data outside of the game.
+
+This project will attempt to build a POC for this, or otherwise research the problem.
+
+
+### Design
+
+Currently the main workflow should look like:
+- JEI currently maintains a list of all recipes in the game (included modded recipe types)
+- An extraction mod (this repo) runs in-game. Extracting data from the JEI recipe manager into some collection of JSON files.
+- Some separate frontend app consumes the JSON files, and displays them.
+
+### Progress
+
+See [Progress.md](Progress.md) for my research notes so far.
+
+
+
+## Installation
+
+Make sure Java 17.x.x is installed
+```bash
+java -version
+// needs 17.x.x
+sudo apt update
+sudo apt install openjdk-17-jdk
+```
+
+Then add it to ENV vars
+
+```bash
+nano ~/.bashrc
+```
+
+add at the bottom:
+```
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+```
+
+Then run `./gradlew runClient`
+
+Or even `./gradlew clean runClient --refresh-dependencies` to install dependencies and boot.
+
+Debugging should be done in IntelliJ, I couldn't get VSCode to work.
+
+I yearn for something to just open the world on boot when I hit start.
