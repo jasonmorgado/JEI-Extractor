@@ -16,6 +16,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.ShapedRecipe;
+import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.slf4j.Logger;
 
@@ -64,9 +65,24 @@ public class JEIPlugin implements IModPlugin {
             LOGGER.info("JEI Recipe Types written to {}", typesFile.toAbsolutePath());
 
             // Write per-type recipe files
+            Map<String, Map<String, Object>> onePerType = new LinkedHashMap<>();
             for (RecipeType<?> type : recipeTypes) {
-                writeRecipesForType(recipeManager, outDir, type);
+                // Collect first recipe of each type
+                var recipeLookup = recipeManager.createRecipeLookup(type);
+                var firstRecipe = recipeLookup.get().findFirst();
+                if (firstRecipe.isPresent()) {
+                    Map<String, Object> recipeMap = objectToMap(firstRecipe.get());
+                    onePerType.put(type.getUid().toString(), recipeMap);
+                }
+
+                 writeRecipesForType(recipeManager, outDir, type);
             }
+
+            // Write one_per_type.json
+            Path onePerTypeFile = outDir.resolve("one_per_type.json");
+            String onePerTypeContent = GSON.toJson(onePerType);
+            Files.writeString(onePerTypeFile, onePerTypeContent);
+            LOGGER.info("Wrote one recipe per type to {}", onePerTypeFile.getFileName());
 
             // Write ingredients file
             writeIngredientsFile(outDir);
@@ -88,7 +104,7 @@ public class JEIPlugin implements IModPlugin {
 
             List<Map<String, Object>> recipes = recipeManager.createRecipeLookup(type)
                     .get()
-                    .map(this::recipeToMap)
+                    .map(this::objectToMap)
                     .collect(Collectors.toList());
 
             String content = GSON.toJson(recipes);
@@ -102,22 +118,44 @@ public class JEIPlugin implements IModPlugin {
     /**
      * Converts a Recipe object to a map of simple key-value pairs.
      */
-    private Map<String, Object> recipeToMap(Object recipe) {
-        String recipeType = recipe.getClass().getSimpleName();
+    private Map<String, Object> objectToMap(Object obj) {
+        String objType = obj.getClass().getSimpleName();
 
-        if (recipeType.equals("ShapedRecipe")) {
-            return shapedRecipeToMap((ShapedRecipe) recipe);
+        if (obj instanceof ItemStack) {
+            return itemStackToMap((ItemStack) obj);
+        }
+
+        if (obj instanceof ShapedRecipe) {
+            return shapedRecipeToMap((ShapedRecipe) obj);
         }
 
         Map<String, Object> map = new HashMap<>();
-        map.put("_type", recipeType);
+        map.put("_type", objType);
 
         try {
-            java.lang.reflect.Field[] fields = recipe.getClass().getDeclaredFields();
+            java.lang.reflect.Field[] fields = getAllFields(obj.getClass());
             for (java.lang.reflect.Field field : fields) {
+                // Hackily scrape properties of the object
                 field.setAccessible(true);
-                Object value = field.get(recipe);
-                map.put(field.getName(), String.valueOf(value));
+                Object value = field.get(obj);
+                String fieldName = field.getName();
+
+                // Depending on the type, we may want to handle differently
+                if (value == null){
+                    map.put(fieldName, null);
+                } else if (value instanceof List<?> list) {
+                    List<Map<String, Object>> items = new ArrayList<>();
+                    for (Object item : list) {
+                        items.add(objectToMap(item));
+                    }
+                    map.put(field.getName(), items);
+                } else if (value instanceof ItemStack) {
+                    map.put(fieldName, itemStackToMap((ItemStack) value));
+                } else if (value instanceof Ingredient) {
+                    map.put(fieldName, ingredientToMap((Ingredient) value));
+                } else {
+                    map.put(fieldName, String.valueOf(value));
+                }
             }
         } catch (Exception e) {
             map.put("_error", e.getMessage());
@@ -149,6 +187,7 @@ public class JEIPlugin implements IModPlugin {
             // Given the Ingredient Object, has Values like tags determining what could be used
             // Also has itemStacks determining individual options
             System.out.println(ingredient.toString());
+
             // Values / Tags
             // Throws an error about JeiIngredient
             // JsonElement ingredientJson = ingredient.toJson();
@@ -168,6 +207,37 @@ public class JEIPlugin implements IModPlugin {
         }
         map.put("ingredients", ingredientIds);
 
+        return map;
+    }
+
+    private Map<String, Object> itemStackToMap(ItemStack itemStack) {
+        // ItemStack requires special scraping, since it has other ItemStacks as properties of itself
+        // Infinite Recursion :(
+        Map<String, Object> map = new HashMap<>();
+        map.put("_type", "ItemStack");
+        map.put("count", itemStack.getCount());
+        map.put("item", itemStack.getItem().toString());
+        map.put("tag", itemStack.getTag() != null ? parseJsonOrString(itemStack.getTag().toString()) : null);
+        map.put("capNBT", parseJsonOrString(itemStack.serializeNBT().toString()));
+        return map;
+    }
+
+    private Object parseJsonOrString(String value) {
+        try {
+            return GSON.fromJson(value, Object.class);
+        } catch (Exception e) {
+            return value;
+        }
+    }
+
+    private Map<String, Object> ingredientToMap(Ingredient ingredient) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("_type", "Ingredient");
+        List<String> items = new ArrayList<>();
+        for (ItemStack itemStack : ingredient.getItems()) {
+            items.add(itemStack.getItem().toString());
+        }
+        map.put("items", items);
         return map;
     }
 
@@ -202,6 +272,16 @@ public class JEIPlugin implements IModPlugin {
         String content = GSON.toJson(ingredientsMap);
         Files.writeString(file, content);
         LOGGER.info("Wrote {} ingredients to {}", ingredientsMap.size(), file.getFileName());
+    }
+
+    private java.lang.reflect.Field[] getAllFields(Class<?> clazz) {
+        List<java.lang.reflect.Field> fields = new ArrayList<>();
+        Class<?> currentClass = clazz;
+        while (currentClass != null && currentClass != Object.class) {
+            fields.addAll(Arrays.asList(currentClass.getDeclaredFields()));
+            currentClass = currentClass.getSuperclass();
+        }
+        return fields.toArray(new java.lang.reflect.Field[0]);
     }
 
 }
