@@ -12,13 +12,10 @@ I've found that I can inspect the properties of each of these with the IntelliJ 
 ![IntelliJ Debugger displaying a shaped crafting recipe](debugger_shaped_recipe.png)
 
 
-Each object has many properties. So far I've tried using Java [reflection](https://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful) to inspect the properties of the class, and each property of those classes. However, it seems many of these objects are deeply, deeply nested with unusable data, causing a stack overflow when iterating over them. 
+Each object has many properties. So far I've tried using Java [reflection](https://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful) to inspect the properties of the class, and each property of those classes. However, it seems many of these objects are deeply, deeply nested with unusable data, causing a stack overflow when iterating over them. Particularly the `Ingredient` class.
 
-This will require manually parsing certain objects. such as the `Ingredient`. 
 
-An additional reason for this, Java doesn't support just fetching arbitrary properties of classes. I gotta go through getter methods that may not be obviously named.
-
-For example, what I've found in the ShapedRecipe class to contain:
+For example, I've found the ShapedRecipe class to contain the following useful information:
 
 ShapedRecipe
 - width - `int`
@@ -89,41 +86,149 @@ In ingredients.json there's an entry that looks like this:
 
 This indicates the recipe for the piston in JEI may iterate over this list when displaying the ingredients. This shows the user you can use any type of wood here.
 
-So far I've needed a specific function to handle ingesting ShapedRecipes like this. Using reflection has mixed results so far.
+So far I've needed a specific function to handle ingesting ShapedRecipes like this. 
 
-With anvil:
-```json
- {
-    "outputs": "[1 wooden_sword]",
-    "rightInputs": "[1 wooden_sword]",
-    "_type": "AnvilRecipe",
-    "leftInputs": "[1 wooden_sword]"
-},
-```
-Seems to pull fine. However, with blasting:
+## Generic Recipe Scraping
 
-```json
-{
-    "_type": "BlastingRecipe"
-},
-``` 
+I've recently developed a function to take a Recipe object, of arbitrary type, and scrape the properties off the instance. This involves listing the properties of the class using `getDeclaredFields()`. I also had to iterate over the parent classes to get ALL the fields available to the recipe being inspected.
 
-Imagine a list of 20 of those. Not helpful.
+For example, the `BlastingRecipe` class doesn't have any data exposed by `getDeclaredFields`, because its parent class `AbstractCookingRecipe` has all the information. This is because cooking things in a Minecraft Furnace is similar to the Blast Furnace or Smoker.
 
-Interestingly, brewing.json has items like this:
-```json
-{
-    "potionInputs": "[1 potion]",
-    "potionOutput": "1 potion",
-    "hashCode": "-1243623584",
-    "_type": "JeiBrewingRecipe",
-    "ingredients": "[1 magma_cream]",
-    "brewingRecipeUtil": "mezz.jei.common.plugins.vanilla.brewing.BrewingRecipeUtil@400c0d26"
-},
-```
+This provides me with a relatively verbose, but very usable JSON output from any arbitrary Recipe. As long as I can properly handle the output elsewhere.
+
+Interestingly I also get NBT data from these items, allowing me to get information on potions
+
+## NBT Data
 
 Potions are particularly interesting to process, as they all use the same item, with different metadata attached to them, differentiating potions.
 
 Since Minecraft 1.13, this is stored in [NBT Data](https://minecraft.wiki/w/NBT_format). In Minecraft 1.12 and earlier it was some other format. I'm currently testing on 1.19.2. I believe it also handles enchantments, and other data.
 
 Minecraft provides `PotionUtils` to help parse them, I might have to dig into this later.
+
+With my general-purpose scraper, I've been able to capture NBT-Data off of the ItemStack. It's a long JSON though. The following JSON describes combining a potion of fire resistance with redstone dust to increase its duration:
+```json
+{
+  "potionInputs": [
+    {
+      "item": "potion",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:potion",
+        "tag": {
+          "Potion": "minecraft:fire_resistance"
+        }
+      },
+      "_type": "ItemStack",
+      "count": 1,
+      "tag": {
+        "Potion": "minecraft:fire_resistance"
+      }
+    }
+  ],
+  "potionOutput": {
+    "item": "potion",
+    "capNBT": {
+      "Count": "1b",
+      "id": "minecraft:potion",
+      "tag": {
+        "Potion": "minecraft:long_fire_resistance"
+      }
+    },
+    "_type": "ItemStack",
+    "count": 1,
+    "tag": {
+      "Potion": "minecraft:long_fire_resistance"
+    }
+  },
+  "hashCode": "-796919496",
+  "_type": "JeiBrewingRecipe",
+  "ingredients": [
+    {
+      "item": "redstone",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:redstone"
+      },
+      "_type": "ItemStack",
+      "count": 1
+    }
+  ],
+  "brewingRecipeUtil": "mezz.jei.common.plugins.vanilla.brewing.BrewingRecipeUtil@b7461ac"
+},
+```
+
+Interestingly, some numbers in NBT are followed by a character indicating type. The "1b" indicates a count of 1 as we might expect.
+
+Looking at crafting.json, I see my custom formatted shaped crafting is combined with scraped shapeless crafting. Unfortunately it doesn't work quite as well:
+```json
+{
+  "result": {
+    "item": "mushroom_stew",
+    "capNBT": {
+      "Count": "1b",
+      "id": "minecraft:mushroom_stew"
+    },
+    "_type": "ItemStack",
+    "count": 1
+  },
+  "_type": "ShapelessRecipe",
+  "ingredients": [
+    {
+      "INVALIDATION_COUNTER": "1",
+      "values": "[Lnet.minecraft.world.item.crafting.Ingredient$Value;@358ebd61",
+      "isVanilla": "true",
+      "_type": "Ingredient",
+      "invalidationCounter": "0",
+      "itemStacks": "[Lnet.minecraft.world.item.ItemStack;@75e355e",
+      "EMPTY": {
+        "_type": "Ingredient",
+        "items": []
+      }
+    },
+    {
+      "INVALIDATION_COUNTER": "1",
+      "values": "[Lnet.minecraft.world.item.crafting.Ingredient$Value;@485e0996",
+      "isVanilla": "true",
+      "_type": "Ingredient",
+      "invalidationCounter": "0",
+      "itemStacks": "[Lnet.minecraft.world.item.ItemStack;@4db203fb",
+      "EMPTY": {
+        "_type": "Ingredient",
+        "items": []
+      }
+    },
+    {
+      "INVALIDATION_COUNTER": "1",
+      "values": "[Lnet.minecraft.world.item.crafting.Ingredient$Value;@d97ca99",
+      "isVanilla": "true",
+      "_type": "Ingredient",
+      "invalidationCounter": "0",
+      "itemStacks": "[Lnet.minecraft.world.item.ItemStack;@7b95eab0",
+      "EMPTY": {
+        "_type": "Ingredient",
+        "items": []
+      }
+    }
+  ],
+  "isSimple": "true",
+  "id": "minecraft:mushroom_stew",
+  "group": ""
+},
+```
+
+## Drawing the UI
+
+Looks like IRecipeCategory has information on how the crafting UI is put together.
+
+IRecipeCategory
+- Has method `getBackground()` which returns an `IDrawable` background. Something something rendering?
+- `getIcon()` returns an icon for the category. Used in tabs.
+-  
+
+IDrawable
+- JEI-Specific drawing class
+
+Loading images from JEI may require rendering the IDrawable, redirecting the output to an off-screen framebuffer, and read the pixels into an image file. 
+
+Similarly to how some mods scrape block renders from the game for wikis.
