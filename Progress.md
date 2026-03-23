@@ -96,6 +96,66 @@ For example, the `BlastingRecipe` class doesn't have any data exposed by `getDec
 
 This provides me with a relatively verbose, but very usable JSON output from any arbitrary Recipe. As long as I can properly handle the output elsewhere.
 
+Looking at crafting.json, I see my custom formatted shaped crafting is combined with scraped shapeless crafting. Unfortunately it doesn't work quite as well:
+```json
+{
+  "result": {
+    "item": "mushroom_stew",
+    "capNBT": {
+      "Count": "1b",
+      "id": "minecraft:mushroom_stew"
+    },
+    "_type": "ItemStack",
+    "count": 1
+  },
+  "_type": "ShapelessRecipe",
+  "ingredients": [
+    {
+      "INVALIDATION_COUNTER": "1",
+      "values": "[Lnet.minecraft.world.item.crafting.Ingredient$Value;@358ebd61",
+      "isVanilla": "true",
+      "_type": "Ingredient",
+      "invalidationCounter": "0",
+      "itemStacks": "[Lnet.minecraft.world.item.ItemStack;@75e355e",
+      "EMPTY": {
+        "_type": "Ingredient",
+        "items": []
+      }
+    },
+    {
+      "INVALIDATION_COUNTER": "1",
+      "values": "[Lnet.minecraft.world.item.crafting.Ingredient$Value;@485e0996",
+      "isVanilla": "true",
+      "_type": "Ingredient",
+      "invalidationCounter": "0",
+      "itemStacks": "[Lnet.minecraft.world.item.ItemStack;@4db203fb",
+      "EMPTY": {
+        "_type": "Ingredient",
+        "items": []
+      }
+    },
+    {
+      "INVALIDATION_COUNTER": "1",
+      "values": "[Lnet.minecraft.world.item.crafting.Ingredient$Value;@d97ca99",
+      "isVanilla": "true",
+      "_type": "Ingredient",
+      "invalidationCounter": "0",
+      "itemStacks": "[Lnet.minecraft.world.item.ItemStack;@7b95eab0",
+      "EMPTY": {
+        "_type": "Ingredient",
+        "items": []
+      }
+    }
+  ],
+  "isSimple": "true",
+  "id": "minecraft:mushroom_stew",
+  "group": ""
+},
+```
+
+That's the next thing that needs fixing.
+
+
 Interestingly I also get NBT data from these items, allowing me to get information on potions
 
 ## NBT Data
@@ -160,62 +220,6 @@ With my general-purpose scraper, I've been able to capture NBT-Data off of the I
 
 Interestingly, some numbers in NBT are followed by a character indicating type. The "1b" indicates a count of 1 as we might expect.
 
-Looking at crafting.json, I see my custom formatted shaped crafting is combined with scraped shapeless crafting. Unfortunately it doesn't work quite as well:
-```json
-{
-  "result": {
-    "item": "mushroom_stew",
-    "capNBT": {
-      "Count": "1b",
-      "id": "minecraft:mushroom_stew"
-    },
-    "_type": "ItemStack",
-    "count": 1
-  },
-  "_type": "ShapelessRecipe",
-  "ingredients": [
-    {
-      "INVALIDATION_COUNTER": "1",
-      "values": "[Lnet.minecraft.world.item.crafting.Ingredient$Value;@358ebd61",
-      "isVanilla": "true",
-      "_type": "Ingredient",
-      "invalidationCounter": "0",
-      "itemStacks": "[Lnet.minecraft.world.item.ItemStack;@75e355e",
-      "EMPTY": {
-        "_type": "Ingredient",
-        "items": []
-      }
-    },
-    {
-      "INVALIDATION_COUNTER": "1",
-      "values": "[Lnet.minecraft.world.item.crafting.Ingredient$Value;@485e0996",
-      "isVanilla": "true",
-      "_type": "Ingredient",
-      "invalidationCounter": "0",
-      "itemStacks": "[Lnet.minecraft.world.item.ItemStack;@4db203fb",
-      "EMPTY": {
-        "_type": "Ingredient",
-        "items": []
-      }
-    },
-    {
-      "INVALIDATION_COUNTER": "1",
-      "values": "[Lnet.minecraft.world.item.crafting.Ingredient$Value;@d97ca99",
-      "isVanilla": "true",
-      "_type": "Ingredient",
-      "invalidationCounter": "0",
-      "itemStacks": "[Lnet.minecraft.world.item.ItemStack;@7b95eab0",
-      "EMPTY": {
-        "_type": "Ingredient",
-        "items": []
-      }
-    }
-  ],
-  "isSimple": "true",
-  "id": "minecraft:mushroom_stew",
-  "group": ""
-},
-```
 
 ## Drawing the UI
 
@@ -232,3 +236,5 @@ IDrawable
 Loading images from JEI may require rendering the IDrawable, redirecting the output to an off-screen framebuffer, and read the pixels into an image file. 
 
 Similarly to how some mods scrape block renders from the game for wikis.
+
+Extracting this information is likely extremely complicated, it should wait until I have a POC demonstrating this pipeline actually works.
