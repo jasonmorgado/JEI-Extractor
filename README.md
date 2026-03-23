@@ -19,11 +19,11 @@ Currently the main workflow should look like:
 - An extraction mod (this repo) runs in-game. Extracting data from the JEI recipe manager into some collection of JSON files.
 - Some separate frontend app consumes the JSON files, and displays them.
 
-### Progress
+### Research
 
-See [Progress.md](Progress.md) for my research notes so far.
+See [Research.md](Research.md) for my research notes so far.
 
-
+And [TODO.md](TODO.md) for things I plan to do.
 
 ## Installation
 
