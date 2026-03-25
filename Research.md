@@ -238,3 +238,96 @@ Loading images from JEI may require rendering the IDrawable, redirecting the out
 Similarly to how some mods scrape block renders from the game for wikis.
 
 Extracting this information is likely extremely complicated, it should wait until I have a POC demonstrating this pipeline actually works.
+
+
+---
+
+March 24th
+
+I've been digging further into how the internal manager stores the recipes.
+It has the following structure:
+- recipeManager (RecipeManager)
+  - internal (RecipeManagerInternal)
+    - recipeTypeDataMap (RecipeTypeDataMap)
+      - uidMap Map(ResourceLocation -> RecipeTypeData)
+        - ResourceLocation "minecraft:crafting"
+        - RecipeTypeData
+          - recipeCategory
+          - recipeCategoryCatalysts ?
+          - recipes `List<Recipe>`
+    - recipeCategoryComparator - ?
+    - recipeMaps (RecipeIngredientRole -> RecipeMap)
+      - RecipeIngredientRole (One of "INPUT", "OUTPUT", "CATALYST", "RENDER_ONLY")
+      - RecipeMap
+        - recipeTable (RecipeIngredientTable) (RecipeType -> uid -> List<Recipe>)
+          - map (RecipeType -> IngredientToRecipesMap)
+            - RecipeType
+              - uid "minecraft:fuel"
+              - recipeClass - java class for type
+            - IngredientToRecipesMap
+              - uidToRecipes
+                - uid key "minecraft:yellow_wool"
+                - value - `List<Recipe>`
+        - ingredientUidToCategoryMap (SetMultiMap) (uid -> RecipeType)
+          - map uid -> RecipeType
+        - categoryCatalystUidToRecipeCategoryMap - ?
+        - recipeTypeComparator - ?
+        - registeredIngredients
+          - orderedTypes
+            - empty list of VanillaTypes
+            - empty list of ForgeTypes
+          - typeToInfo
+            - Types -> IngredientInfo
+              - IngredientInfo
+                - ???
+          - classToType
+        - role (RecipeIngredientRole) - "INPUT"
+  
+Roles define what they map
+- INPUT is input -> recipes,
+- OUTPUT is output -> recipes
+- CATALYST appears to map crafting blocks to their RecipeTypes. 
+  - For example, minecraft:furnace -> FuelingRecipe and SmeltingRecipe
+- RENDER_ONLY doesn't appear to have anything, but I suspect it's used to render blocks / entities for recipes that you can't click to get the recipe? None exist in vanilla.
+
+Interesting that I could get item -> recipe mappings from here, but I still need to generically get something usable from the recipes.
+
+I've also found out that RecipeCategory uses a setRecipe function with a RecipeLayoutBuilder to define which inputs go in what locations on the UI.
+With builder.add_slot(Role, x, y).
+
+And all the RecipeCategories have a common behavior for when the recipe is drawn on the UI. 
+They have a setRecipe method that takes a builder, recipe, and focuses.
+For example: https://github.com/Creators-of-Create/Create/blob/0a17a7243c3e5e6e3ceb34450d9c6df240af1b83/src/main/java/com/simibubi/create/compat/jei/category/DeployingCategory.java#L31
+
+They call builder.addSlot with the ingredient Role (input/output), and the x, y coordinates where they get drawn on the UI.
+
+If I made a custom builder class that recorded the inputs for addSlot() for each recipe, 
+I could figure out which ingredients are inputs/outputs for any arbitrary recipe, 
+and where to draw them on the UI.
+
+After that, we just lack the background which is stored in the IRecipeCategory, 
+but we may be able to extract those as well.
+
+Hard to plan things out without this builder, but first thing would be to extract each recipe with every input/output. 
+Then on the frontend display the inputs/outputs plain-text.
+We'd want to assemble a multimap of the recipes with input -> recipe and output -> recipe mappings. 
+Recipes themselves point towards inputs/outputs so we have input <-> recipe <-> output.
+
+That'll be work.
+
+Then we'll want to look into extracting icons and extracting UI backgrounds.
+
+Icons first so we can upgrade it to be just:
+Input Icons -> (Catalyst Options) -> Output Icons
+And just list em out.
+
+Animated UI backgrounds could be a pain in the ass. GIFs may also be heavier in storage and network traffic. 
+Mod wikis tend to use compressed webp files to avoid large file size / load times.
+
+A locally hosted frontend might be fine with animated textures.
+
+Then I can look into rendering it on the frontend.
+
+For future reference 
+https://github.com/mezz/JustEnoughItems
+https://github.com/Creators-of-Create/Create/tree/mc1.21.1/dev

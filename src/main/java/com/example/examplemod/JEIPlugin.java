@@ -47,7 +47,11 @@ public class JEIPlugin implements IModPlugin {
     public void onRuntimeAvailable(IJeiRuntime jeiRuntime) {
         // Runs when the world is loaded and JEI's recipe manager is available
         IRecipeManager recipeManager = jeiRuntime.getRecipeManager();
-        
+
+        List<IRecipeCategory<?>> categories = recipeManager.createRecipeCategoryLookup()
+                .get()
+                .toList();
+
         Collection<RecipeType<?>> recipeTypes = recipeManager.createRecipeCategoryLookup()
                 .get()
                 .map(IRecipeCategory::getRecipeType)
