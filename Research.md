@@ -331,3 +331,62 @@ Then I can look into rendering it on the frontend.
 For future reference 
 https://github.com/mezz/JustEnoughItems
 https://github.com/Creators-of-Create/Create/tree/mc1.21.1/dev
+
+
+---
+
+## Slot Extractor
+Jesus I should organize these research notes into separate files or something.
+
+I've started building out my classes for extracting slots from setRecipe.
+
+I've created CapturingLayoutBuilder which replaces the builder class of the correct category, 
+and CapturedSlot which is used in place of regular slots. 
+The CapturedSlot is needed since they call slot.addIngredients() on it to attach the actual ingredients.
+
+$0.54 of carefully calculated Claude Code edits later, and we have an output JSON that looks like this:
+
+(Most inputs omitted bc it's a long JSON)
+```json
+{
+  "minecraft:piston": [
+    {
+      "role": "OUTPUT",
+      "x": 95,
+      "y": 19,
+      "items": [
+        "1 piston"
+      ],
+      "fluids": []
+    },
+    {
+      "role": "INPUT",
+      "x": 1,
+      "y": 1,
+      "items": [
+        "1 oak_planks",
+        "1 spruce_planks",
+        "1 birch_planks",
+        "1 jungle_planks",
+        "1 acacia_planks",
+        "1 dark_oak_planks",
+        "1 crimson_planks",
+        "1 warped_planks",
+        "1 mangrove_planks"
+      ],
+      "fluids": []
+    }
+  ]
+}
+```
+
+The key here is the recipe.id, which happens to be the output item in this case. 
+I find that a bit odd, but I'll have to find edge cases for it.
+
+We have inputs and outputs with ItemStack info like a stack of the items.
+I may want to add my generic parser to it, so we can extract more information out of it.
+
+There is a LOT of duplication in this JSON output, as there are only 9 input slots and one output slot in the crafting grid.
+But we redefine the x,y pairs for each recipe.
+
+I'll want to have a map of some sort defining unique slot locations and swap em out. Same with the items list.
