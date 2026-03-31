@@ -390,3 +390,151 @@ There is a LOT of duplication in this JSON output, as there are only 9 input slo
 But we redefine the x,y pairs for each recipe.
 
 I'll want to have a map of some sort defining unique slot locations and swap em out. Same with the items list.
+
+I'll need to define the full JSON schema for the extracted data, for each use-case.
+
+Use case 1:
+- Display a list of all the items in the game.
+- When clicking on one of these items, we get recipes which output X item
+- When right clicking on an item, we get recipes which input X item
+- recipe display will merely be text list of inputs, outputs, and crafting type.
+
+It occurs to me that JEI separates recipes by recipe type. By design, the internal manager uses a 
+RecipeType -> ItemUID -> Recipe for each of INPUT/OUTPUT, allowing them to fetch a list of recipes per type instead of all at once.
+
+We'll want to assemble a similar map in the frontend, but most notably we'll want to keep the recipes of different categories in separate files.
+This will allow us to lazily fetch the recipes for each type as they are selected in the UI.
+
+First we'll need a list of items for the right hand panel. Starting with a simple text list.
+```json
+[
+  {
+    "id": "minecraft:stone",
+    "name": "Stone",
+    "mod": "Minecraft"
+  },
+  {
+    "id": "Botania:tinyPotato",
+    "name": "Tiny Potato",
+    "mod": "Botania"
+  }
+]
+```
+
+We can then reference items by their index on this list. For example item 0 would be Stone, and 1 would be Tiny Potato.
+Forgetting icons etc for now. We can generate a list of items by name, which on hover display the id and mod.
+
+Then we have a JSON file for each crafting recipe, containing information on input and output items for each recipe.
+This will require we key the recipe by some ID, so we can fetch them later.
+```json
+// crafting.json
+{
+  "minecraft:piston": { // Recipe for a Piston
+    "inputs": [
+      {
+        "item": 3, // Charcoal
+        "count": 1
+      }.
+      {
+        "item": 4, // Stick 
+        "count": 1
+      }
+    ],
+    "outputs": [
+      {
+        "item": 5, // Torch
+        "count": 4
+      }
+    ] 
+  }
+}
+```
+
+We'll probably need to include NBT data somehow. Future-me problem.
+
+Finally, we will need an index, so we can search a certain item for recipes it's an input or output in.
+If we follow what we've learned from JEI, this might look something like:
+A set of maps per "Role" (Input, Output) but in the same file.
+- Item list acts as an item_idx -> Item map. index preferred for space-efficiency, but I can use item_id for readability. Referring to itemId:
+- A map of itemId -> Role -> recipeTypes. Lets you get the categories you'd need to fetch.
+- A map of recipeType -> itemId -> Role -> Recipe_id list.
+- RecipeType -> Recipe_id -> Recipe. Individual recipe files.
+
+So that's:
+- item_list.json
+- item_id_to_recipe_types.json
+- item_to_recipe_id.json
+- individual recipe files such as crafting.json
+
+I'll use itemIds for the examples, since they're more readable.
+
+```json
+//item_list.json
+// As item id -> Item 
+{
+  "minecraft:stone": {
+  "id": "minecraft:stone",
+  "name": "Stone",
+  "mod": "Minecraft"
+}
+// As list of items
+[
+  { // index 0
+    "minecraft:stone": {
+      "id": "minecraft:stone",
+      "name": "Stone",
+      "mod": "Minecraft"
+    }
+]
+
+// item_to_recipe_types.json
+// item_id -> RecipeType by input/output
+{
+  "minecraft:charcoal":{
+    "inputs": ["minecraft:crafting", "minecraft:fuel"],
+    "outputs": ["minecraft:furnace"]
+  }
+}
+
+// recipe_type_to_item_to_recipe_id.json
+
+// RecipeType -> item_id/index -> Recipe id
+{
+  "minecraft:crafting": {
+    "minecraft:charcoal": {
+      "INPUT": ["minecraft:torch_recipe"]] // The actual ID is minecraft:piston but that's confusing...
+      // Omit output when not here?
+    }
+  },
+  "minecraft:furnace": {
+    "minecraft:charcoal": {
+      "OUTPUT": ["minecraft:charcoal_recipe"] // Cook logs -> charcoal
+    }
+  }
+}
+
+// RecipeType -> Recipe ID -> Recipe
+// minecraft_crafting.json
+{
+  "minecraft:torch_recipe": { // Recipe for a Torch
+    "inputs": [
+      {
+        "item": 3, // Charcoal
+        "count": 1
+      }.
+      {
+        "item": 4, // Stick 
+        "count": 1
+      }
+    ],
+    "outputs": [
+      {
+        "item": 5, // Torch
+        "count": 4
+      }
+    ]
+  }
+}
+```
+
+
