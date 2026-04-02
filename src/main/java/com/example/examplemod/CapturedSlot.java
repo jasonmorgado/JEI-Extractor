@@ -15,12 +15,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.fluids.FluidStack;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -154,10 +149,11 @@ public class CapturedSlot implements IRecipeSlotBuilder {
     public int getY() { return y; }
 
     public Map<String, Object> toMap() {
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new LinkedHashMap<>();
         map.put("role", role.toString());
         map.put("x", x);
         map.put("y", y);
+        // Should this use the special ItemStack extractor from RecipeScraper?
         map.put("items", items.stream().map(ItemStack::toString).collect(Collectors.toList()));
         map.put("fluids", fluids.stream().map(FluidStack::toString).collect(Collectors.toList()));
         return map;

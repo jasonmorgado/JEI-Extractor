@@ -469,28 +469,20 @@ So that's:
 I'll use itemIds for the examples, since they're more readable.
 
 ```json
-//item_list.json
-// As item id -> Item 
-{
-  "minecraft:stone": {
-  "id": "minecraft:stone",
-  "name": "Stone",
-  "mod": "Minecraft"
-}
+// items.json
 // As list of items
 [
   { // index 0
-    "minecraft:stone": {
-      "id": "minecraft:stone",
-      "name": "Stone",
-      "mod": "Minecraft"
-    }
+    "id": "minecraft:charcoal", // Could use id instead, for slower but readable lookup
+    "name": "Charcoal",
+    "mod": "Minecraft"
+  }
 ]
 
 // item_to_recipe_types.json
 // item_id -> RecipeType by input/output
 {
-  "minecraft:charcoal":{
+  "minecraft:charcoal": {
     "inputs": ["minecraft:crafting", "minecraft:fuel"],
     "outputs": ["minecraft:furnace"]
   }
@@ -499,19 +491,7 @@ I'll use itemIds for the examples, since they're more readable.
 // recipe_type_to_item_to_recipe_id.json
 
 // RecipeType -> item_id/index -> Recipe id
-{
-  "minecraft:crafting": {
-    "minecraft:charcoal": {
-      "INPUT": ["minecraft:torch_recipe"]] // The actual ID is minecraft:piston but that's confusing...
-      // Omit output when not here?
-    }
-  },
-  "minecraft:furnace": {
-    "minecraft:charcoal": {
-      "OUTPUT": ["minecraft:charcoal_recipe"] // Cook logs -> charcoal
-    }
-  }
-}
+.
 
 // RecipeType -> Recipe ID -> Recipe
 // minecraft_crafting.json
@@ -538,3 +518,48 @@ I'll use itemIds for the examples, since they're more readable.
 ```
 
 
+---
+
+Sheesh, I built a scraper for the internal manager, but it was pretty spaghetti and didn't work.
+I'm not sure if it's even necessary at this point, since we already grab recipes. 
+We just need slots with the recipes to tell what's input and output.
+
+I need to map this out on paper first.
+
+- I moved index extracts to out/index/
+  - recipe_maps.json
+  - recipe_structure.json
+  - recipe_type_to_item_to_recipe_id.json
+  - item_to_recipe_types.json
+  - recipes.json - List of all recipe IDs
+- Moved individual recipe files to recipe_types, rewrote the code that generates it. Haven't tested it.
+- ingredients.json - Contains an ingredient map of my design, might not be used. A useful helper for compressing the JSON.
+- recipe_slots.json - A list of Slots for all recipes of all types into one JSON
+- one_per_type.json - One Recipe extracted from each RecipeType
+
+I'll need to confirm the Recipes themselves are extracted correctly into their files.
+We can keep verbose extractions like I've been doing, but I'll need to convert them into the desired format.
+
+I might not need to parse the internal RecipeManager index if I can already iterate over all Recipes and get their slots.
+
+I'll certainly need to confirm if the recipe IDs are correctly coming through, 
+I see a lot of "unknown" values in recipes.json.
+
+If I can manage an itemlist like we currently have, and a proper recipe JSONs for each type, we should be good to go.
+I should be able to derive indexes from the recipe list if it has input/output slot data.
+Which it certainly needs if it'll eventually be displayed.
+
+I'll also need to make sure I document everything properly and work at a sustainable pace.
+I've been excited to make progress on the project, but working on it on weekdays does more harm than good.
+
+I should've learned that from my work on the Godot PR a few years back...
+
+Plan going forward:
+- Confirm all files are being generated at all
+- Fix existing Recipe -> JSON code
+  - Debug to find anything not handled (with toString) and either remove them or properly recursively handle them.
+- Add slots to Recipe outputs
+  - Note any redundancies with existing content
+- Convert verbose recipe JSON into desired format
+- ---
+- Attempt to display something on a frontend with the JSON
