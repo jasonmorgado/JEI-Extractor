@@ -155,7 +155,7 @@ public class RecipeScraper {
      * @param itemStack
      * @return
      */
-    private Map<String, Object> itemStackToMap(ItemStack itemStack) {
+    public Map<String, Object> itemStackToMap(ItemStack itemStack) {
         // ItemStack requires special scraping, since it has other ItemStacks as properties of itself
         // Infinite Recursion :(
         Map<String, Object> map = new HashMap<>();
@@ -190,7 +190,6 @@ public class RecipeScraper {
         var items = new ArrayList<>();
         for (ItemStack itemStack : ingredient.getItems()) {
             items.add(itemStackToMap(itemStack));
-            //items.add(itemStack.getItem().toString());
         }
         map.put("items", items);
 

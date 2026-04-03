@@ -153,8 +153,9 @@ public class CapturedSlot implements IRecipeSlotBuilder {
         map.put("role", role.toString());
         map.put("x", x);
         map.put("y", y);
-        // Should this use the special ItemStack extractor from RecipeScraper?
-        map.put("items", items.stream().map(ItemStack::toString).collect(Collectors.toList()));
+
+        RecipeScraper scraper = new RecipeScraper();
+        map.put("items", items.stream().map(scraper::itemStackToMap).collect(Collectors.toList()));
         map.put("fluids", fluids.stream().map(FluidStack::toString).collect(Collectors.toList()));
         return map;
     }
