@@ -2,6 +2,7 @@ package com.example.examplemod;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -9,6 +10,7 @@ import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.ShapedRecipe;
 
 import java.util.*;
+import java.util.Optional;
 
 /**
  * This class is designed to scrape Recipe objects and their properties into JSON
@@ -26,10 +28,13 @@ public class RecipeScraper {
             // Avoid infinite recursion
             return itemStackToMap((ItemStack) obj);
         }
-
-        if (obj instanceof ShapedRecipe) {
-            return shapedRecipeToMap((ShapedRecipe) obj);
+        if (obj instanceof Ingredient) {
+            return ingredientToMap((Ingredient) obj);
         }
+
+//        if (obj instanceof ShapedRecipe) {
+//            return shapedRecipeToMap((ShapedRecipe) obj);
+//        }
 
         Map<String, Object> map = new HashMap<>();
         map.put("_type", objType);
@@ -65,6 +70,31 @@ public class RecipeScraper {
         }
 
         return map;
+    }
+
+    /**
+     * Converts a recipe to a map with slots extracted from the recipe category.
+     * Combines the recipe data from objectToMap with slot positions from SlotExtractor.
+     *
+     * @param recipe The recipe object
+     * @param category The recipe category (used for slot extraction)
+     * @return Map containing recipe data with slots
+     */
+    public Map<String, Object> recipeToMap(Object recipe, IRecipeCategory category) {
+        Map<String, Object> recipeMap = objectToMap(recipe);
+
+        SlotExtractor slotExtractor = new SlotExtractor();
+        Optional<List<CapturedSlot>> slots = slotExtractor.captureSlotsFromRecipe(category, recipe);
+
+        if (slots.isPresent()) {
+            List<Map<String, Object>> slotMaps = new ArrayList<>();
+            for (CapturedSlot slot : slots.get()) {
+                slotMaps.add(slot.toMap());
+            }
+            recipeMap.put("slots", slotMaps);
+        }
+
+        return recipeMap;
     }
 
     /**
@@ -159,7 +189,8 @@ public class RecipeScraper {
         // getItems is allowed, so use it to grab the items
         var items = new ArrayList<>();
         for (ItemStack itemStack : ingredient.getItems()) {
-            items.add(itemStack.getItem().toString());
+            items.add(itemStackToMap(itemStack));
+            //items.add(itemStack.getItem().toString());
         }
         map.put("items", items);
 

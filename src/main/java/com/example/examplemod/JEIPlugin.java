@@ -25,6 +25,7 @@ import java.nio.file.Paths;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+
 @JeiPlugin
 public class JEIPlugin implements IModPlugin {
 
@@ -97,7 +98,13 @@ public class JEIPlugin implements IModPlugin {
     private Map<String, Map<String, Object>> buildOnePerTypeMap(IRecipeManager recipeManager, Collection<RecipeType<?>> recipeTypes) {
         RecipeScraper scraper = new RecipeScraper();
         Map<String, Map<String, Object>> onePerType = new LinkedHashMap<>();
-        for (RecipeType<?> type : recipeTypes) {
+
+        List<IRecipeCategory<?>> categories = recipeManager.createRecipeCategoryLookup()
+                .get()
+                .toList();
+
+        for (IRecipeCategory<?> category : categories) {
+            RecipeType<?> type = category.getRecipeType();
             IRecipeLookup<?> recipeLookup = recipeManager.createRecipeLookup(type);
             Optional<?> firstRecipe = recipeLookup.get().findFirst();
             if (firstRecipe.isEmpty()) {
@@ -105,7 +112,7 @@ public class JEIPlugin implements IModPlugin {
             }
             // Note: child Recipes cannot be cast to Recipe
             var recipe = firstRecipe.get();
-            Map<String, Object> recipeMap = scraper.objectToMap(recipe);
+            Map<String, Object> recipeMap = scraper.recipeToMap(recipe, category);
             onePerType.put(type.getUid().toString(), recipeMap);
         }
         return onePerType;
@@ -138,14 +145,14 @@ public class JEIPlugin implements IModPlugin {
         Path recipeTypesDir = outDir.resolve("recipe_types");
         Files.createDirectories(recipeTypesDir);
 
-        Collection<RecipeType<?>> recipeTypes = recipeManager.createRecipeCategoryLookup()
+        List<IRecipeCategory<?>> categories = recipeManager.createRecipeCategoryLookup()
                 .get()
-                .map(IRecipeCategory::getRecipeType)
-                .collect(Collectors.toList());
+                .toList();
 
         RecipeScraper scraper = new RecipeScraper();
 
-        for (RecipeType<?> type : recipeTypes) {
+        for (IRecipeCategory<?> category : categories) {
+            RecipeType<?> type = category.getRecipeType();
             String typeId = type.getUid().toString();
             typeId = typeId.replace(":", "_");
             IRecipeLookup<?> recipeLookup = recipeManager.createRecipeLookup(type);
@@ -153,7 +160,7 @@ public class JEIPlugin implements IModPlugin {
             // For Recipe in Recipes for this RecipeType, extract Recipe JSON
             List<Map<String, Object>> recipeJsonList = new ArrayList<>();
             for (var recipe : recipeLookup.get().toList()) {
-                Map<String, Object> recipeJson = scraper.objectToMap(recipe);
+                Map<String, Object> recipeJson = scraper.recipeToMap(recipe, category);
                 recipeJsonList.add(recipeJson);
             }
 

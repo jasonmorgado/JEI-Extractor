@@ -106,7 +106,7 @@ public class SlotExtractor {
      * @return Optional containing the list of captured slots, or empty if capture failed
      */
     @SuppressWarnings("unchecked")
-    private Optional<List<CapturedSlot>> captureSlotsFromRecipe(IRecipeCategory<?> category, Object recipe) {
+    public Optional<List<CapturedSlot>> captureSlotsFromRecipe(IRecipeCategory<?> category, Object recipe) {
         CapturingLayoutBuilder layoutBuilder = new CapturingLayoutBuilder();
         try {
             ((IRecipeCategory<Object>) category).setRecipe(layoutBuilder, recipe, null);
