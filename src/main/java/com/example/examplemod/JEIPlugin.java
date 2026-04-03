@@ -44,11 +44,17 @@ public class JEIPlugin implements IModPlugin {
         try {
             Files.createDirectories(outDir);
             var extractor = new IndexExtractor();
-            extractor.writeItemsFile(jeiRuntime, outDir);
-            extractor.writeIndexToFiles(jeiRuntime, outDir);
-            writeRecipeSlotsFile(recipeManager, outDir);
-            writeRecipeTypesFiles(recipeManager, outDir);
+            extractor.writeItemsFile(jeiRuntime, outDir); // items.json, works
+            // extractor.writeIndexToFiles(jeiRuntime, outDir); // index/ files, broken
+
+//            var slotExtractor = new SlotExtractor();
+//            slotExtractor.writeRecipeSlotsFile(recipeManager, outDir); // recipe_slots.json, working
+
+            // Writing recipes to out/recipe_types/
+            // Need to switch Crafting to verbose. Fix problems.
             writeOnePerTypeFile(recipeManager, outDir);
+            writeRecipeTypesFiles(recipeManager, outDir);
+
 
             Collection<RecipeType<?>> recipeTypes = recipeManager.createRecipeCategoryLookup()
                     .get()
@@ -141,6 +147,7 @@ public class JEIPlugin implements IModPlugin {
 
         for (RecipeType<?> type : recipeTypes) {
             String typeId = type.getUid().toString();
+            typeId = typeId.replace(":", "_");
             IRecipeLookup<?> recipeLookup = recipeManager.createRecipeLookup(type);
 
             // For Recipe in Recipes for this RecipeType, extract Recipe JSON
@@ -150,14 +157,15 @@ public class JEIPlugin implements IModPlugin {
                 recipeJsonList.add(recipeJson);
             }
 
-            if (recipes.isEmpty()) {
+            if (recipeJsonList.isEmpty()) {
                 continue;
             }
 
+            // Write List to out/recipe_types/type_id.json
             Path typeFile = recipeTypesDir.resolve(typeId + ".json");
-            String content = GSON.toJson(recipes);
+            String content = GSON.toJson(recipeJsonList);
             Files.writeString(typeFile, content);
-            LOGGER.info("Wrote {} recipes to {}", recipes.size(), typeFile.getFileName());
+            LOGGER.info("Wrote {} recipes to {}", recipeJsonList.size(), typeFile.getFileName());
         }
     }
 
