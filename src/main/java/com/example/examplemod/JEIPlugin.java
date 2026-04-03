@@ -97,7 +97,8 @@ public class JEIPlugin implements IModPlugin {
             if (firstRecipe.isEmpty()) {
                 continue;
             }
-            Recipe<?> recipe = (Recipe<?>) firstRecipe.get();
+            // Note: child Recipes cannot be cast to Recipe
+            var recipe = firstRecipe.get();
             Map<String, Object> recipeMap = scraper.objectToMap(recipe);
             onePerType.put(type.getUid().toString(), recipeMap);
         }
@@ -142,9 +143,12 @@ public class JEIPlugin implements IModPlugin {
             String typeId = type.getUid().toString();
             IRecipeLookup<?> recipeLookup = recipeManager.createRecipeLookup(type);
 
-            List<Map<String, Object>> recipes = recipeLookup.get()
-                    .map(scraper::objectToMap)
-                    .collect(Collectors.toList());
+            // For Recipe in Recipes for this RecipeType, extract Recipe JSON
+            List<Map<String, Object>> recipeJsonList = new ArrayList<>();
+            for (var recipe : recipeLookup.get().toList()) {
+                Map<String, Object> recipeJson = scraper.objectToMap(recipe);
+                recipeJsonList.add(recipeJson);
+            }
 
             if (recipes.isEmpty()) {
                 continue;

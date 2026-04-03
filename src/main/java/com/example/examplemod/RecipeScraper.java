@@ -157,7 +157,7 @@ public class RecipeScraper {
         map.put("_type", "Ingredient");
 
         // getItems is allowed, so use it to grab the items
-        List<String> items = new ArrayList<>();
+        var items = new ArrayList<>();
         for (ItemStack itemStack : ingredient.getItems()) {
             items.add(itemStack.getItem().toString());
         }

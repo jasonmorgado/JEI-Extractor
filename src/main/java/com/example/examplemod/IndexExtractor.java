@@ -152,7 +152,7 @@ public class IndexExtractor {
         Map<RecipeIngredientRole, RecipeMap> recipeMaps = (Map<RecipeIngredientRole, RecipeMap>) recipeStructure.get("recipeMaps");
 
         // Build recipeMaps as JSON structure
-        Map<String, Map<String, Map<String, Map<String, List<String>>>>> recipeMapsJson = buildRecipeMapsJson(recipeMaps, recipeScraper);
+        var recipeMapsJson = buildRecipeMapsJson(recipeMaps, recipeScraper);
 
         // Iterate over INPUT and OUTPUT role
         for (RecipeIngredientRole role : recipeMaps.keySet()) {
@@ -229,9 +229,9 @@ public class IndexExtractor {
     }
 
     @SuppressWarnings("unchecked")
-    private Map<String, Map<String, Map<String, Map<String, List<String>>>>> buildRecipeMapsJson(
+    private Map<?,?> buildRecipeMapsJson(
             Map<RecipeIngredientRole, RecipeMap> recipeMaps, RecipeScraper recipeScraper) {
-        Map<String, Map<String, Map<String, Map<String, List<String>>>>> recipeMapsJson = new LinkedHashMap<>();
+        var recipeMapsJson = new LinkedHashMap<>();
 
         // Iterate over INPUT and OUTPUT role
         for (RecipeIngredientRole role : recipeMaps.keySet()) {
@@ -250,7 +250,7 @@ public class IndexExtractor {
                     Map<RecipeType<?>, IngredientToRecipesMap<?>> ingredientTableMap =
                             (Map<RecipeType<?>, IngredientToRecipesMap<?>>) mapField.get(recipeTable);
 
-                    Map<String, Map<String, List<String>>> mapInside = new LinkedHashMap<>();
+                    var mapInside = new LinkedHashMap<>();
 
                     // Iterate over RecipeType -> IngredientToRecipesMap entries
                     for (Map.Entry<RecipeType<?>, IngredientToRecipesMap<?>> entry : ingredientTableMap.entrySet()) {
@@ -262,9 +262,9 @@ public class IndexExtractor {
                         // Get uidToRecipes from IngredientToRecipesMap
                         Field uidToRecipesField = ingredientToRecipesMap.getClass().getDeclaredField("uidToRecipes");
                         uidToRecipesField.setAccessible(true);
-                        Map<String, List<?>> uidToRecipes = (Map<String, List<?>>) uidToRecipesField.get(ingredientToRecipesMap);
+                        var uidToRecipes = (Map<String, List<?>>) uidToRecipesField.get(ingredientToRecipesMap);
 
-                        Map<String, List<String>> uidToRecipeIds = new LinkedHashMap<>();
+                        var uidToRecipeIds = new LinkedHashMap<>();
 
                         // Iterate over item UID -> recipes entries
                         for (Map.Entry<String, List<?>> uidEntry : uidToRecipes.entrySet()) {
@@ -280,15 +280,15 @@ public class IndexExtractor {
                             uidToRecipeIds.put(ingredientUid, recipeIdList);
                         }
 
-                        Map<String, Map<String, List<String>>> uidToRecipesWrapper = new LinkedHashMap<>();
+                        var uidToRecipesWrapper = new LinkedHashMap<>();
                         uidToRecipesWrapper.put("uidToRecipes", uidToRecipeIds);
                         mapInside.put(recipeTypeId, uidToRecipesWrapper);
                     }
 
-                    Map<String, Map<String, Map<String, List<String>>>> recipeTableMap = new LinkedHashMap<>();
+                    var recipeTableMap = new LinkedHashMap<>();
                     recipeTableMap.put("map", mapInside);
 
-                    Map<String, Map<String, Map<String, List<String>>>> roleMap = new LinkedHashMap<>();
+                    var roleMap = new LinkedHashMap<>();
                     roleMap.put("recipeTable", recipeTableMap);
 
                     recipeMapsJson.put(role.name(), roleMap);
