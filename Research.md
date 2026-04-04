@@ -491,7 +491,21 @@ I'll use itemIds for the examples, since they're more readable.
 // recipe_type_to_item_to_recipe_id.json
 
 // RecipeType -> item_id/index -> Recipe id
-.
+{
+  "minecraft:crafting": { // RecipeType
+    "minecraft:charcoal": { // Item ID
+      "INPUT": [ // Role
+        "minecraft:torch_recipe" // Recipe ID
+      ] // The actual ID can sometimes be the item's uid, confusing.
+      // Don't add a Role if empty.
+    }
+  },
+  "minecraft:furnace": {
+    "minecraft:charcoal": {
+      "OUTPUT": ["minecraft:charcoal_recipe"] // Cook logs -> charcoal
+    }
+  }
+}
 
 // RecipeType -> Recipe ID -> Recipe
 // minecraft_crafting.json
@@ -563,3 +577,55 @@ Plan going forward:
 - Convert verbose recipe JSON into desired format
 - ---
 - Attempt to display something on a frontend with the JSON
+
+---
+
+Files are flowing, Recipe correctly handled, Slots added.
+Redundant info is all over, not handling that yet. Let's start with Indexes.
+I'll probably have a class that just takes all the verbose recipe files and generates the final files.
+
+```json
+// Input Recipes File of name {crafting_type}.json
+[
+  {
+    "slots": [
+      "role": "INPUT", // Or OUTPUT
+      "x": 1,
+      "y": 1,
+      "items": [
+        {
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:blue_bed" // uid is in capNBT for some reason
+          },
+        }]
+    ],
+    "id": "crafting_table" // May not exist, for example, Anvil. TODO research
+    // May need to default to {crafting_type}_{index} as a placeholder.
+  }
+]
+
+// Output item_to_recipe_types.json
+{
+  "minecraft:blue_bed": {
+    "INPUT": ["minecraft:fuel"],
+    "OUTPUT": ["minecraft:crafting"] // Take {crafting_type}.json, convert _ back to :, and stick in here. 
+    // Based on Slots role. If item is "INPUT" in a recipe, that type goes in "inputs"
+  }
+}
+
+// Output to recipe_type_to_item_to_recipe_id.json
+{
+  "minecraft:blue_bed"{
+  
+}
+}
+```
+
+I've decided to rename these to
+recipe_type_index.json and recipe_index.json. One yields RecipeTypes, one yields Recipes. 
+
+recipe_type_to_item_to_recipe_id.json is just too verbose.
+
+I've created IndexBuilder which takes my verbose recipe JSON and builds the index files. 
+Reuses the CapturedSlot to do some handling.

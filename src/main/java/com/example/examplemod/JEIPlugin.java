@@ -56,6 +56,11 @@ public class JEIPlugin implements IModPlugin {
             writeOnePerTypeFile(recipeManager, outDir);
             writeRecipeTypesFiles(recipeManager, outDir);
 
+            // Build indexes from recipe types
+            Path recipeTypesDir = outDir.resolve("recipe_types");
+            Path indexDir = outDir.resolve("index");
+            var indexBuilder = new IndexBuilder();
+            indexBuilder.buildIndexes(recipeTypesDir, indexDir);
 
             Collection<RecipeType<?>> recipeTypes = recipeManager.createRecipeCategoryLookup()
                     .get()
