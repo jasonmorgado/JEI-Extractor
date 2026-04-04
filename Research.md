@@ -629,3 +629,36 @@ recipe_type_to_item_to_recipe_id.json is just too verbose.
 
 I've created IndexBuilder which takes my verbose recipe JSON and builds the index files. 
 Reuses the CapturedSlot to do some handling.
+
+Here's how that ended up:
+```json
+//recipe_type_index.json
+{
+  "minecraft:charcoal": { // item ID
+    "INPUT": [ // Role
+      "minecraft:crafting", // RecipeType
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:furnace"
+    ]
+  }
+}
+
+//recipe_index.json
+{
+  "minecraft:furnace":{ // RecipeType
+      "minecraft:charcoal": { // ItemID
+        "OUTPUT": [3] // Index in minecraft_furnace.json
+      }
+  }
+}
+
+```
+
+Ended up using indexes for the recipes since they don't all have unique IDs associated with them.
+I find the mixture of INPUT/OUTPUT inside these index files kind of annoying to look at, 
+but that's how JEI does it so I'll try not to overthink it.
+
+Next I can try taking the verbose Recipe files, and the index files, and sticking them in a frontend.
+I'll want to take my time with putting it together, don't want slop.
