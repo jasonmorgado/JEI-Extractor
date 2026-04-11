@@ -118,7 +118,7 @@ repositories {
     // Put repositories for dependencies here
     maven { url "https://maven.blamejared.com" } // JEI
     maven { url "https://maven.createmod.net" }  // Create
-    maven { url "https://cursemaven.com" }       // fallback (optional)
+    maven { url "https://cursemaven.com" }       // CurseForge
 }
 
 dependencies {
@@ -132,6 +132,10 @@ dependencies {
     // Add JEI
     implementation fg.deobf("mezz.jei:jei-1.19.2-forge:11.4.0.286")
     runtimeOnly fg.deobf("mezz.jei:jei-1.19.2-forge:11.4.0.286")
+
+    // IconExporter
+    implementation fg.deobf("curse.maven:iconexporter-327048:7210729")
+    implementation fg.deobf("curse.maven:cyclops-core-232758:7637988")
     
     // Create
     // implementation fg.deobf("com.simibubi.create:create-1.19.2:0.5.1.i")
