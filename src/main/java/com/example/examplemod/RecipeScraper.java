@@ -3,12 +3,15 @@ package com.example.examplemod;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import mezz.jei.api.recipe.category.IRecipeCategory;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.ShapedRecipe;
 
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
 import java.util.*;
 import java.util.Optional;
 
@@ -19,6 +22,7 @@ import java.util.Optional;
 public class RecipeScraper {
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
+    private static final Gson GSON_COMPACT = new Gson();
 
     public Map<String, Object> objectToMap(Object obj) {
         String objType = obj.getClass().getSimpleName();
@@ -164,9 +168,33 @@ public class RecipeScraper {
         map.put("count", itemStack.getCount());
         map.put("item", itemStack.getItem().toString());
 
+
         // NBT is typically fetched as a Tag, but we extract the whole thing to take a look
-        map.put("tag", itemStack.getTag() != null ? parseJsonOrString(itemStack.getTag().toString()) : null);
-        map.put("capNBT", parseJsonOrString(itemStack.serializeNBT().toString()));
+        CompoundTag rawTag = itemStack.getTag();
+        Object tag = rawTag != null ? parseJsonOrString(rawTag.toString()) : null;
+        map.put("tag", tag);
+        Object capNBT = parseJsonOrString(itemStack.serializeNBT().toString());
+        map.put("capNBT", capNBT);
+        if (capNBT instanceof Map) {
+            Object idObj = ((Map<String, Object>) capNBT).get("id");
+            if (idObj != null) {
+                String resourceLocation = idObj.toString();
+                String normalizedResourceLocation = resourceLocation.replace(":", "__");
+                String uid = normalizedResourceLocation;
+                if (rawTag != null) {
+                    try {
+                        String tagHash = hashNBT(rawTag);
+                        uid = normalizedResourceLocation + "__" + tagHash;
+                    } catch (Exception e) {
+                        System.out.println("Failed to hash NBT tag: " + e.getMessage());
+                    }
+                }
+                map.put("resourceLocation", resourceLocation);
+                map.put("uid", uid);
+            }
+        } else {
+            System.out.println("capNBT is not a Map, got: " + (capNBT != null ? capNBT.getClass().getSimpleName() : "null"));
+        }
 
         // Durability is computed as damage and maxDamage
         map.put("damage", itemStack.getDamageValue());
@@ -248,6 +276,20 @@ public class RecipeScraper {
         } catch (Exception e) {
             return "unknown";
         }
+    }
+
+    public static String hashNBT(CompoundTag tag) throws Exception {
+        String snbt = tag.toString(); // e.g. {Potion:"minecraft:strength"}
+
+        MessageDigest md = MessageDigest.getInstance("MD5");
+        byte[] hash = md.digest(snbt.getBytes(StandardCharsets.UTF_8));
+
+        // Convert to hex string
+        StringBuilder sb = new StringBuilder();
+        for (byte b : hash) {
+            sb.append(String.format("%02x", b));
+        }
+        return sb.toString();
     }
 
     private final Map<String, List<String>> ingredientsMap = new HashMap<>();

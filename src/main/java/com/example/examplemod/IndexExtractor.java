@@ -16,6 +16,7 @@ import mezz.jei.api.recipe.IRecipeManager;
 import mezz.jei.common.recipes.collect.IngredientToRecipesMap;
 import mezz.jei.common.recipes.collect.RecipeIngredientTable;
 import mezz.jei.common.recipes.collect.RecipeMap;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -62,29 +63,29 @@ public class IndexExtractor {
         IIngredientManager ingredientManager = jeiRuntime.getIngredientManager();
         Collection<ItemStack> items = ingredientManager.getAllIngredients(VanillaTypes.ITEM_STACK);
 
-        List<Map<String, String>> itemsList = new ArrayList<>();
+        List<Map<String, Object>> itemsList = new ArrayList<>();
+        RecipeScraper recipeScraper = new RecipeScraper();
+
         // Ingredient Type could be ITEM_STACK, FLUID_STACK. Mekanism adds more like GasStack, InfusionStack
         for (ItemStack itemStack : items){
-            // ID
+            // Get full itemStack data using RecipeScraper
+            Map<String, Object> itemStackData = recipeScraper.itemStackToMap(itemStack);
+
+            // Get mod info
             ResourceLocation id = ForgeRegistries.ITEMS.getKey(itemStack.getItem());
-            String idString = id.toString();
-
-            // Name
-            Component name = itemStack.getHoverName();
-            String displayName = name.getString();
-
-            // Mod
             String modId = id.getNamespace();
             ModContainer mod = ModList.get().getModContainerById(modId).orElse(null);
-
             String modName = (mod != null)
                     ? mod.getModInfo().getDisplayName()
                     : modId;
 
-            Map<String, String> itemMap = new LinkedHashMap<>();
-            itemMap.put("id", idString);
-            itemMap.put("name", displayName);
+            // Build result map with only desired fields
+            Map<String, Object> itemMap = new LinkedHashMap<>();
+            itemMap.put("resourceLocation", itemStackData.get("resourceLocation"));
+            itemMap.put("uid", itemStackData.get("uid"));
+            itemMap.put("name", itemStackData.get("name"));
             itemMap.put("mod", modName);
+            itemMap.put("tags", itemStackData.get("tag"));
             itemsList.add(itemMap);
         }
 
