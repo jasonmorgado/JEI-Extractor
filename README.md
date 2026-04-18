@@ -2,14 +2,11 @@
  
 ## Overview
 
-In modded Minecraft, it can be fun to look through all the different recipes available in a modpack and plan things out.
-Because each modpack tends to modify recipes, static wikis aren't practical for them, making recipe viewing mods like JEI necessary.
+In modded Minecraft, each modpack customizes recipes differently, making static wikis impractical. It would be handy to have a way to explore these recipes outside the game. Like JEI for web.
 
-I wonder if I could theoretically display the same data outside of the game.
+This project extracts recipe data from JEI via a Minecraft mod (this repo) which gets used by a frontend ([other repo](https://github.com/jasonmorgado/JEI-Web-Viewer)) to display them in a similar fashion to JEI.
 
-This project is an attempt at 
-This repo contains a Minecraft mod to extract recipe information from Just Enough Items (JEI) and produce JSON files.
-
+The frontend gets deployed to [GitHub Pages](https://jasonmorgado.github.io/JEI-Web-Viewer/).
 
 ### Design
 
