@@ -7,8 +7,7 @@ Because each modpack tends to modify recipes, static wikis aren't practical for 
 
 I wonder if I could theoretically display the same data outside of the game.
 
-This project will attempt to build a POC for this, or otherwise research the problem.
-
+This project is an attempt at 
 This repo contains a Minecraft mod to extract recipe information from Just Enough Items (JEI) and produce JSON files.
 
 
@@ -19,11 +18,10 @@ Currently the main workflow should look like:
 - An extraction mod (this repo) runs in-game. Extracting data from the JEI recipe manager into some collection of JSON files.
 - Some separate frontend app consumes the JSON files, and displays them.
 
-### Research
+### Docs
 
-See [Research.md](Research.md) for my research notes so far.
-
-And [TODO.md](TODO.md) for things I plan to do.
+- [recipe_scraping.md](docs/recipe_scraping.md) how I scrape information from JEI.
+- [exported_files.md](docs/exported_files.md) what files are output by the extractor.
 
 ## Installation
 
