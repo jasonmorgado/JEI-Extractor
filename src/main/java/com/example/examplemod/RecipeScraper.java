@@ -4,11 +4,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
-import net.minecraft.world.item.crafting.ShapedRecipe;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -35,10 +33,6 @@ public class RecipeScraper {
         if (obj instanceof Ingredient) {
             return ingredientToMap((Ingredient) obj);
         }
-
-//        if (obj instanceof ShapedRecipe) {
-//            return shapedRecipeToMap((ShapedRecipe) obj);
-//        }
 
         Map<String, Object> map = new HashMap<>();
         map.put("_type", objType);
@@ -99,58 +93,6 @@ public class RecipeScraper {
         }
 
         return recipeMap;
-    }
-
-    /**
-     * Given a ShapedRecipe, extract into a Map
-     * We should replace this with the generic extractor at some point
-     * @param recipe The ShapedRecipe
-     * @return
-     */
-    private Map<String, Object> shapedRecipeToMap(ShapedRecipe recipe) {
-        Map<String, Object> map = new HashMap<>();
-
-        // id is ResourceLocation with namespace, path properties like minecraft:piston
-        map.put("id", recipe.getId().toString());
-
-        // Standard properties
-        map.put("width", recipe.getWidth());
-        map.put("height", recipe.getHeight());
-        map.put("group", recipe.getGroup());
-        map.put("_type", "ShapedRecipe");
-
-        map.put(
-        "result_count",
-            recipe.getResultItem().getCount()
-        );
-
-        // Add recipe ingredients
-        List<String> ingredientIds = new ArrayList<>();
-        for (Ingredient ingredient : recipe.getIngredients()) {
-            // Given the Ingredient Object, has Values like tags determining what could be used
-            // Also has itemStacks determining individual options
-            System.out.println(ingredient.toString());
-
-            // Values / Tags
-            // Throws an error about JeiIngredient
-            // JsonElement ingredientJson = ingredient.toJson();
-            // map.put("ingredientJson", ingredientJson);
-
-            // System.out.println(ingredientJson);
-
-            // ItemStack individual Options
-            List<String> itemNames = new ArrayList<>();
-            for (ItemStack itemStack : ingredient.getItems()) {
-                Item item = itemStack.getItem();
-                itemNames.add(item.toString());
-            }
-            // Get or create ingredient ID for this set of items
-            String ingredientId = getOrCreateIngredientId(itemNames);
-            ingredientIds.add(ingredientId);
-        }
-        map.put("ingredients", ingredientIds);
-
-        return map;
     }
 
     /**
