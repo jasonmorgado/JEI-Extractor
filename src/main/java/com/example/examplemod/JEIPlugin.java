@@ -106,17 +106,20 @@ public class JEIPlugin implements IModPlugin {
 
         List<IRecipeCategory<?>> categories = recipeManager.createRecipeCategoryLookup()
                 .get()
+                .sorted(Comparator.comparing(c -> c.getRecipeType().getUid().toString()))
                 .toList();
 
         for (IRecipeCategory<?> category : categories) {
             RecipeType<?> type = category.getRecipeType();
             IRecipeLookup<?> recipeLookup = recipeManager.createRecipeLookup(type);
-            Optional<?> firstRecipe = recipeLookup.get().findFirst();
-            if (firstRecipe.isEmpty()) {
+            List<?> sortedRecipes = recipeLookup.get()
+                    .sorted(Comparator.comparing(r -> scraper.getRecipeId(r)))
+                    .toList();
+            if (sortedRecipes.isEmpty()) {
                 continue;
             }
             // Note: child Recipes cannot be cast to Recipe
-            var recipe = firstRecipe.get();
+            var recipe = sortedRecipes.get(0);
             Map<String, Object> recipeMap = scraper.recipeToMap(recipe, category);
             onePerType.put(type.getUid().toString(), recipeMap);
         }
@@ -152,6 +155,7 @@ public class JEIPlugin implements IModPlugin {
 
         List<IRecipeCategory<?>> categories = recipeManager.createRecipeCategoryLookup()
                 .get()
+                .sorted(Comparator.comparing(c -> c.getRecipeType().getUid().toString()))
                 .toList();
 
         RecipeScraper scraper = new RecipeScraper();
@@ -164,7 +168,10 @@ public class JEIPlugin implements IModPlugin {
 
             // For Recipe in Recipes for this RecipeType, extract Recipe JSON
             List<Map<String, Object>> recipeJsonList = new ArrayList<>();
-            for (var recipe : recipeLookup.get().toList()) {
+            List<?> sortedRecipes = recipeLookup.get()
+                    .sorted(Comparator.comparing(r -> scraper.getRecipeId(r)))
+                    .toList();
+            for (var recipe : sortedRecipes) {
                 Map<String, Object> recipeJson = scraper.recipeToMap(recipe, category);
                 recipeJsonList.add(recipeJson);
             }

@@ -81,6 +81,10 @@ public class RecipeScraper {
     public Map<String, Object> recipeToMap(Object recipe, IRecipeCategory category) {
         Map<String, Object> recipeMap = objectToMap(recipe);
 
+        // Add recipe ID for deterministic sorting and traceability
+        String recipeId = getRecipeId(recipe);
+        recipeMap.put("id", recipeId);
+
         SlotExtractor slotExtractor = new SlotExtractor();
         Optional<List<CapturedSlot>> slots = slotExtractor.captureSlotsFromRecipe(category, recipe);
 
@@ -207,16 +211,46 @@ public class RecipeScraper {
         return fields.toArray(new java.lang.reflect.Field[0]);
     }
 
+    /**
+     * Returns an identifier for a recipe object.
+     * Returns the Minecraft registry ID if possible (e.g. "minecraft:oak_planks").
+     * Falls back to a content-hash of the JSON.
+     *
+     * @param recipe The recipe object (may or may not implement {@link Recipe})
+     * @return A deterministic string ID for the recipe
+     */
     public String getRecipeId(Object recipe) {
         if (recipe instanceof Recipe) {
             return ((Recipe<?>) recipe).getId().toString();
         }
+        Map<String, Object> recipeMap = objectToMap(recipe);
+        Object id = recipeMap.get("id");
+        if (id != null) {
+            return id.toString();
+        }
+        return hashFromJsonMap(recipeMap);
+    }
+
+    /**
+     * Computes an MD5 hash from the JSON of a map.
+     * Good for sorting without a good field to sort on.
+     *
+     * @param map The map to hash
+     * @return A string of the form "hash_<32 hex chars>"
+     */
+    private static String hashFromJsonMap(Map<String, Object> map) {
         try {
-            Map<String, Object> recipeMap = objectToMap(recipe);
-            Object id = recipeMap.get("id");
-            return id != null ? id.toString() : "unknown";
-        } catch (Exception e) {
-            return "unknown";
+            String canonicalJson = GSON_COMPACT.toJson(map);
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            byte[] hash = md.digest(canonicalJson.getBytes(StandardCharsets.UTF_8));
+            StringBuilder sb = new StringBuilder("hash_");
+            for (byte b : hash) {
+                sb.append(String.format("%02x", b));
+            }
+            return sb.toString();
+        } catch (java.security.NoSuchAlgorithmException e) {
+            // Avoids a warning on the MessageDigest.getInstance
+            throw new RuntimeException(e);
         }
     }
 
