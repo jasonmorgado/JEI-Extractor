@@ -34,7 +34,7 @@ public class RecipeScraper {
             return ingredientToMap((Ingredient) obj);
         }
 
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new LinkedHashMap<>();
         map.put("_type", objType);
 
         try {
@@ -104,7 +104,7 @@ public class RecipeScraper {
     public Map<String, Object> itemStackToMap(ItemStack itemStack) {
         // ItemStack requires special scraping, since it has other ItemStacks as properties of itself
         // Infinite Recursion :(
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new LinkedHashMap<>();
         map.put("_type", "ItemStack");
         map.put("name", itemStack.getHoverName().getString());
         map.put("count", itemStack.getCount());
@@ -153,7 +153,7 @@ public class RecipeScraper {
     }
 
     private Map<String, Object> ingredientToMap(Ingredient ingredient) {
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new LinkedHashMap<>();
         map.put("_type", "Ingredient");
 
         // getItems is allowed, so use it to grab the items
