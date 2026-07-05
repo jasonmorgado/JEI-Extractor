@@ -89,6 +89,9 @@ public class IndexExtractor {
             itemsList.add(itemMap);
         }
 
+        // Sort by UID to guarantee deterministic order
+        itemsList.sort(Comparator.comparing(m -> (String) m.get("uid")));
+
         Path itemsFile = outDir.resolve(ITEMS_FILE);
         String content = GSON.toJson(itemsList);
         Files.writeString(itemsFile, content);
