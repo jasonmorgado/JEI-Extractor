@@ -1,0 +1,2970 @@
+[
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:coal_from_blasting_coal_ore",
+    "group": "coal",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Coal Ore",
+          "count": 1,
+          "item": "coal_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:coal_ore"
+          },
+          "resourceLocation": "minecraft:coal_ore",
+          "uid": "minecraft__coal_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Coal",
+      "count": 1,
+      "item": "coal",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:coal"
+      },
+      "resourceLocation": "minecraft:coal",
+      "uid": "minecraft__coal",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.1",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Coal Ore",
+            "count": 1,
+            "item": "coal_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:coal_ore"
+            },
+            "resourceLocation": "minecraft:coal_ore",
+            "uid": "minecraft__coal_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Coal",
+            "count": 1,
+            "item": "coal",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:coal"
+            },
+            "resourceLocation": "minecraft:coal",
+            "uid": "minecraft__coal",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:coal_from_blasting_deepslate_coal_ore",
+    "group": "coal",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Deepslate Coal Ore",
+          "count": 1,
+          "item": "deepslate_coal_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:deepslate_coal_ore"
+          },
+          "resourceLocation": "minecraft:deepslate_coal_ore",
+          "uid": "minecraft__deepslate_coal_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Coal",
+      "count": 1,
+      "item": "coal",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:coal"
+      },
+      "resourceLocation": "minecraft:coal",
+      "uid": "minecraft__coal",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.1",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Deepslate Coal Ore",
+            "count": 1,
+            "item": "deepslate_coal_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:deepslate_coal_ore"
+            },
+            "resourceLocation": "minecraft:deepslate_coal_ore",
+            "uid": "minecraft__deepslate_coal_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Coal",
+            "count": 1,
+            "item": "coal",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:coal"
+            },
+            "resourceLocation": "minecraft:coal",
+            "uid": "minecraft__coal",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:copper_ingot_from_blasting_copper_ore",
+    "group": "copper_ingot",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Copper Ore",
+          "count": 1,
+          "item": "copper_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:copper_ore"
+          },
+          "resourceLocation": "minecraft:copper_ore",
+          "uid": "minecraft__copper_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Copper Ingot",
+      "count": 1,
+      "item": "copper_ingot",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:copper_ingot"
+      },
+      "resourceLocation": "minecraft:copper_ingot",
+      "uid": "minecraft__copper_ingot",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.7",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Copper Ore",
+            "count": 1,
+            "item": "copper_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:copper_ore"
+            },
+            "resourceLocation": "minecraft:copper_ore",
+            "uid": "minecraft__copper_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Copper Ingot",
+            "count": 1,
+            "item": "copper_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:copper_ingot"
+            },
+            "resourceLocation": "minecraft:copper_ingot",
+            "uid": "minecraft__copper_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:copper_ingot_from_blasting_deepslate_copper_ore",
+    "group": "copper_ingot",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Deepslate Copper Ore",
+          "count": 1,
+          "item": "deepslate_copper_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:deepslate_copper_ore"
+          },
+          "resourceLocation": "minecraft:deepslate_copper_ore",
+          "uid": "minecraft__deepslate_copper_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Copper Ingot",
+      "count": 1,
+      "item": "copper_ingot",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:copper_ingot"
+      },
+      "resourceLocation": "minecraft:copper_ingot",
+      "uid": "minecraft__copper_ingot",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.7",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Deepslate Copper Ore",
+            "count": 1,
+            "item": "deepslate_copper_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:deepslate_copper_ore"
+            },
+            "resourceLocation": "minecraft:deepslate_copper_ore",
+            "uid": "minecraft__deepslate_copper_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Copper Ingot",
+            "count": 1,
+            "item": "copper_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:copper_ingot"
+            },
+            "resourceLocation": "minecraft:copper_ingot",
+            "uid": "minecraft__copper_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:copper_ingot_from_blasting_raw_copper",
+    "group": "copper_ingot",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Raw Copper",
+          "count": 1,
+          "item": "raw_copper",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:raw_copper"
+          },
+          "resourceLocation": "minecraft:raw_copper",
+          "uid": "minecraft__raw_copper",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Copper Ingot",
+      "count": 1,
+      "item": "copper_ingot",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:copper_ingot"
+      },
+      "resourceLocation": "minecraft:copper_ingot",
+      "uid": "minecraft__copper_ingot",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.7",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Raw Copper",
+            "count": 1,
+            "item": "raw_copper",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:raw_copper"
+            },
+            "resourceLocation": "minecraft:raw_copper",
+            "uid": "minecraft__raw_copper",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Copper Ingot",
+            "count": 1,
+            "item": "copper_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:copper_ingot"
+            },
+            "resourceLocation": "minecraft:copper_ingot",
+            "uid": "minecraft__copper_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:diamond_from_blasting_deepslate_diamond_ore",
+    "group": "diamond",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Deepslate Diamond Ore",
+          "count": 1,
+          "item": "deepslate_diamond_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:deepslate_diamond_ore"
+          },
+          "resourceLocation": "minecraft:deepslate_diamond_ore",
+          "uid": "minecraft__deepslate_diamond_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Diamond",
+      "count": 1,
+      "item": "diamond",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:diamond"
+      },
+      "resourceLocation": "minecraft:diamond",
+      "uid": "minecraft__diamond",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "1.0",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Deepslate Diamond Ore",
+            "count": 1,
+            "item": "deepslate_diamond_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:deepslate_diamond_ore"
+            },
+            "resourceLocation": "minecraft:deepslate_diamond_ore",
+            "uid": "minecraft__deepslate_diamond_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond",
+            "count": 1,
+            "item": "diamond",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond"
+            },
+            "resourceLocation": "minecraft:diamond",
+            "uid": "minecraft__diamond",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:diamond_from_blasting_diamond_ore",
+    "group": "diamond",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Ore",
+          "count": 1,
+          "item": "diamond_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_ore"
+          },
+          "resourceLocation": "minecraft:diamond_ore",
+          "uid": "minecraft__diamond_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Diamond",
+      "count": 1,
+      "item": "diamond",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:diamond"
+      },
+      "resourceLocation": "minecraft:diamond",
+      "uid": "minecraft__diamond",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "1.0",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Ore",
+            "count": 1,
+            "item": "diamond_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_ore"
+            },
+            "resourceLocation": "minecraft:diamond_ore",
+            "uid": "minecraft__diamond_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond",
+            "count": 1,
+            "item": "diamond",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond"
+            },
+            "resourceLocation": "minecraft:diamond",
+            "uid": "minecraft__diamond",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:emerald_from_blasting_deepslate_emerald_ore",
+    "group": "emerald",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Deepslate Emerald Ore",
+          "count": 1,
+          "item": "deepslate_emerald_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:deepslate_emerald_ore"
+          },
+          "resourceLocation": "minecraft:deepslate_emerald_ore",
+          "uid": "minecraft__deepslate_emerald_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Emerald",
+      "count": 1,
+      "item": "emerald",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:emerald"
+      },
+      "resourceLocation": "minecraft:emerald",
+      "uid": "minecraft__emerald",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "1.0",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Deepslate Emerald Ore",
+            "count": 1,
+            "item": "deepslate_emerald_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:deepslate_emerald_ore"
+            },
+            "resourceLocation": "minecraft:deepslate_emerald_ore",
+            "uid": "minecraft__deepslate_emerald_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Emerald",
+            "count": 1,
+            "item": "emerald",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:emerald"
+            },
+            "resourceLocation": "minecraft:emerald",
+            "uid": "minecraft__emerald",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:emerald_from_blasting_emerald_ore",
+    "group": "emerald",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Emerald Ore",
+          "count": 1,
+          "item": "emerald_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:emerald_ore"
+          },
+          "resourceLocation": "minecraft:emerald_ore",
+          "uid": "minecraft__emerald_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Emerald",
+      "count": 1,
+      "item": "emerald",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:emerald"
+      },
+      "resourceLocation": "minecraft:emerald",
+      "uid": "minecraft__emerald",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "1.0",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Emerald Ore",
+            "count": 1,
+            "item": "emerald_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:emerald_ore"
+            },
+            "resourceLocation": "minecraft:emerald_ore",
+            "uid": "minecraft__emerald_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Emerald",
+            "count": 1,
+            "item": "emerald",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:emerald"
+            },
+            "resourceLocation": "minecraft:emerald",
+            "uid": "minecraft__emerald",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:gold_ingot_from_blasting_deepslate_gold_ore",
+    "group": "gold_ingot",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Deepslate Gold Ore",
+          "count": 1,
+          "item": "deepslate_gold_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:deepslate_gold_ore"
+          },
+          "resourceLocation": "minecraft:deepslate_gold_ore",
+          "uid": "minecraft__deepslate_gold_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Gold Ingot",
+      "count": 1,
+      "item": "gold_ingot",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:gold_ingot"
+      },
+      "resourceLocation": "minecraft:gold_ingot",
+      "uid": "minecraft__gold_ingot",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "1.0",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Deepslate Gold Ore",
+            "count": 1,
+            "item": "deepslate_gold_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:deepslate_gold_ore"
+            },
+            "resourceLocation": "minecraft:deepslate_gold_ore",
+            "uid": "minecraft__deepslate_gold_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Gold Ingot",
+            "count": 1,
+            "item": "gold_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:gold_ingot"
+            },
+            "resourceLocation": "minecraft:gold_ingot",
+            "uid": "minecraft__gold_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:gold_ingot_from_blasting_gold_ore",
+    "group": "gold_ingot",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Gold Ore",
+          "count": 1,
+          "item": "gold_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:gold_ore"
+          },
+          "resourceLocation": "minecraft:gold_ore",
+          "uid": "minecraft__gold_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Gold Ingot",
+      "count": 1,
+      "item": "gold_ingot",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:gold_ingot"
+      },
+      "resourceLocation": "minecraft:gold_ingot",
+      "uid": "minecraft__gold_ingot",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "1.0",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Gold Ore",
+            "count": 1,
+            "item": "gold_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:gold_ore"
+            },
+            "resourceLocation": "minecraft:gold_ore",
+            "uid": "minecraft__gold_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Gold Ingot",
+            "count": 1,
+            "item": "gold_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:gold_ingot"
+            },
+            "resourceLocation": "minecraft:gold_ingot",
+            "uid": "minecraft__gold_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:gold_ingot_from_blasting_nether_gold_ore",
+    "group": "gold_ingot",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Nether Gold Ore",
+          "count": 1,
+          "item": "nether_gold_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:nether_gold_ore"
+          },
+          "resourceLocation": "minecraft:nether_gold_ore",
+          "uid": "minecraft__nether_gold_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Gold Ingot",
+      "count": 1,
+      "item": "gold_ingot",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:gold_ingot"
+      },
+      "resourceLocation": "minecraft:gold_ingot",
+      "uid": "minecraft__gold_ingot",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "1.0",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Nether Gold Ore",
+            "count": 1,
+            "item": "nether_gold_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:nether_gold_ore"
+            },
+            "resourceLocation": "minecraft:nether_gold_ore",
+            "uid": "minecraft__nether_gold_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Gold Ingot",
+            "count": 1,
+            "item": "gold_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:gold_ingot"
+            },
+            "resourceLocation": "minecraft:gold_ingot",
+            "uid": "minecraft__gold_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:gold_ingot_from_blasting_raw_gold",
+    "group": "gold_ingot",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Raw Gold",
+          "count": 1,
+          "item": "raw_gold",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:raw_gold"
+          },
+          "resourceLocation": "minecraft:raw_gold",
+          "uid": "minecraft__raw_gold",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Gold Ingot",
+      "count": 1,
+      "item": "gold_ingot",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:gold_ingot"
+      },
+      "resourceLocation": "minecraft:gold_ingot",
+      "uid": "minecraft__gold_ingot",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "1.0",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Raw Gold",
+            "count": 1,
+            "item": "raw_gold",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:raw_gold"
+            },
+            "resourceLocation": "minecraft:raw_gold",
+            "uid": "minecraft__raw_gold",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Gold Ingot",
+            "count": 1,
+            "item": "gold_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:gold_ingot"
+            },
+            "resourceLocation": "minecraft:gold_ingot",
+            "uid": "minecraft__gold_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:gold_nugget_from_blasting",
+    "group": "",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Golden Pickaxe",
+          "count": 1,
+          "item": "golden_pickaxe",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_pickaxe",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_pickaxe",
+          "uid": "minecraft__golden_pickaxe__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 32
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Shovel",
+          "count": 1,
+          "item": "golden_shovel",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_shovel",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_shovel",
+          "uid": "minecraft__golden_shovel__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 32
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Axe",
+          "count": 1,
+          "item": "golden_axe",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_axe",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_axe",
+          "uid": "minecraft__golden_axe__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 32
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Hoe",
+          "count": 1,
+          "item": "golden_hoe",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_hoe",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_hoe",
+          "uid": "minecraft__golden_hoe__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 32
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Sword",
+          "count": 1,
+          "item": "golden_sword",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_sword",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_sword",
+          "uid": "minecraft__golden_sword__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 32
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Helmet",
+          "count": 1,
+          "item": "golden_helmet",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_helmet",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_helmet",
+          "uid": "minecraft__golden_helmet__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 77
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Chestplate",
+          "count": 1,
+          "item": "golden_chestplate",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_chestplate",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_chestplate",
+          "uid": "minecraft__golden_chestplate__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 112
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Leggings",
+          "count": 1,
+          "item": "golden_leggings",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_leggings",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_leggings",
+          "uid": "minecraft__golden_leggings__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 105
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Boots",
+          "count": 1,
+          "item": "golden_boots",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_boots",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_boots",
+          "uid": "minecraft__golden_boots__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 91
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Horse Armor",
+          "count": 1,
+          "item": "golden_horse_armor",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_horse_armor"
+          },
+          "resourceLocation": "minecraft:golden_horse_armor",
+          "uid": "minecraft__golden_horse_armor",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Gold Nugget",
+      "count": 1,
+      "item": "gold_nugget",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:gold_nugget"
+      },
+      "resourceLocation": "minecraft:gold_nugget",
+      "uid": "minecraft__gold_nugget",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.1",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Golden Pickaxe",
+            "count": 1,
+            "item": "golden_pickaxe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_pickaxe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_pickaxe",
+            "uid": "minecraft__golden_pickaxe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 32
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Shovel",
+            "count": 1,
+            "item": "golden_shovel",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_shovel",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_shovel",
+            "uid": "minecraft__golden_shovel__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 32
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Axe",
+            "count": 1,
+            "item": "golden_axe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_axe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_axe",
+            "uid": "minecraft__golden_axe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 32
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Hoe",
+            "count": 1,
+            "item": "golden_hoe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_hoe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_hoe",
+            "uid": "minecraft__golden_hoe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 32
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Sword",
+            "count": 1,
+            "item": "golden_sword",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_sword",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_sword",
+            "uid": "minecraft__golden_sword__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 32
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Helmet",
+            "count": 1,
+            "item": "golden_helmet",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_helmet",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_helmet",
+            "uid": "minecraft__golden_helmet__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 77
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Chestplate",
+            "count": 1,
+            "item": "golden_chestplate",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_chestplate",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_chestplate",
+            "uid": "minecraft__golden_chestplate__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 112
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Leggings",
+            "count": 1,
+            "item": "golden_leggings",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_leggings",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_leggings",
+            "uid": "minecraft__golden_leggings__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 105
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Boots",
+            "count": 1,
+            "item": "golden_boots",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_boots",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_boots",
+            "uid": "minecraft__golden_boots__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 91
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Horse Armor",
+            "count": 1,
+            "item": "golden_horse_armor",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_horse_armor"
+            },
+            "resourceLocation": "minecraft:golden_horse_armor",
+            "uid": "minecraft__golden_horse_armor",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Gold Nugget",
+            "count": 1,
+            "item": "gold_nugget",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:gold_nugget"
+            },
+            "resourceLocation": "minecraft:gold_nugget",
+            "uid": "minecraft__gold_nugget",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:iron_ingot_from_blasting_deepslate_iron_ore",
+    "group": "iron_ingot",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Deepslate Iron Ore",
+          "count": 1,
+          "item": "deepslate_iron_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:deepslate_iron_ore"
+          },
+          "resourceLocation": "minecraft:deepslate_iron_ore",
+          "uid": "minecraft__deepslate_iron_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Iron Ingot",
+      "count": 1,
+      "item": "iron_ingot",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:iron_ingot"
+      },
+      "resourceLocation": "minecraft:iron_ingot",
+      "uid": "minecraft__iron_ingot",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.7",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Deepslate Iron Ore",
+            "count": 1,
+            "item": "deepslate_iron_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:deepslate_iron_ore"
+            },
+            "resourceLocation": "minecraft:deepslate_iron_ore",
+            "uid": "minecraft__deepslate_iron_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Iron Ingot",
+            "count": 1,
+            "item": "iron_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_ingot"
+            },
+            "resourceLocation": "minecraft:iron_ingot",
+            "uid": "minecraft__iron_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:iron_ingot_from_blasting_iron_ore",
+    "group": "iron_ingot",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Iron Ore",
+          "count": 1,
+          "item": "iron_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_ore"
+          },
+          "resourceLocation": "minecraft:iron_ore",
+          "uid": "minecraft__iron_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Iron Ingot",
+      "count": 1,
+      "item": "iron_ingot",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:iron_ingot"
+      },
+      "resourceLocation": "minecraft:iron_ingot",
+      "uid": "minecraft__iron_ingot",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.7",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Iron Ore",
+            "count": 1,
+            "item": "iron_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_ore"
+            },
+            "resourceLocation": "minecraft:iron_ore",
+            "uid": "minecraft__iron_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Iron Ingot",
+            "count": 1,
+            "item": "iron_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_ingot"
+            },
+            "resourceLocation": "minecraft:iron_ingot",
+            "uid": "minecraft__iron_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:iron_ingot_from_blasting_raw_iron",
+    "group": "iron_ingot",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Raw Iron",
+          "count": 1,
+          "item": "raw_iron",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:raw_iron"
+          },
+          "resourceLocation": "minecraft:raw_iron",
+          "uid": "minecraft__raw_iron",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Iron Ingot",
+      "count": 1,
+      "item": "iron_ingot",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:iron_ingot"
+      },
+      "resourceLocation": "minecraft:iron_ingot",
+      "uid": "minecraft__iron_ingot",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.7",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Raw Iron",
+            "count": 1,
+            "item": "raw_iron",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:raw_iron"
+            },
+            "resourceLocation": "minecraft:raw_iron",
+            "uid": "minecraft__raw_iron",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Iron Ingot",
+            "count": 1,
+            "item": "iron_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_ingot"
+            },
+            "resourceLocation": "minecraft:iron_ingot",
+            "uid": "minecraft__iron_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:iron_nugget_from_blasting",
+    "group": "",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Iron Pickaxe",
+          "count": 1,
+          "item": "iron_pickaxe",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_pickaxe",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_pickaxe",
+          "uid": "minecraft__iron_pickaxe__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 250
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Shovel",
+          "count": 1,
+          "item": "iron_shovel",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_shovel",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_shovel",
+          "uid": "minecraft__iron_shovel__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 250
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Axe",
+          "count": 1,
+          "item": "iron_axe",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_axe",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_axe",
+          "uid": "minecraft__iron_axe__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 250
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Hoe",
+          "count": 1,
+          "item": "iron_hoe",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_hoe",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_hoe",
+          "uid": "minecraft__iron_hoe__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 250
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Sword",
+          "count": 1,
+          "item": "iron_sword",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_sword",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_sword",
+          "uid": "minecraft__iron_sword__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 250
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Helmet",
+          "count": 1,
+          "item": "iron_helmet",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_helmet",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_helmet",
+          "uid": "minecraft__iron_helmet__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 165
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Chestplate",
+          "count": 1,
+          "item": "iron_chestplate",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_chestplate",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_chestplate",
+          "uid": "minecraft__iron_chestplate__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 240
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Leggings",
+          "count": 1,
+          "item": "iron_leggings",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_leggings",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_leggings",
+          "uid": "minecraft__iron_leggings__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 225
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Boots",
+          "count": 1,
+          "item": "iron_boots",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_boots",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_boots",
+          "uid": "minecraft__iron_boots__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 195
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Horse Armor",
+          "count": 1,
+          "item": "iron_horse_armor",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_horse_armor"
+          },
+          "resourceLocation": "minecraft:iron_horse_armor",
+          "uid": "minecraft__iron_horse_armor",
+          "damage": 0,
+          "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Chainmail Helmet",
+          "count": 1,
+          "item": "chainmail_helmet",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:chainmail_helmet",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:chainmail_helmet",
+          "uid": "minecraft__chainmail_helmet__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 165
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Chainmail Chestplate",
+          "count": 1,
+          "item": "chainmail_chestplate",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:chainmail_chestplate",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:chainmail_chestplate",
+          "uid": "minecraft__chainmail_chestplate__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 240
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Chainmail Leggings",
+          "count": 1,
+          "item": "chainmail_leggings",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:chainmail_leggings",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:chainmail_leggings",
+          "uid": "minecraft__chainmail_leggings__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 225
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Chainmail Boots",
+          "count": 1,
+          "item": "chainmail_boots",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:chainmail_boots",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:chainmail_boots",
+          "uid": "minecraft__chainmail_boots__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 195
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Iron Nugget",
+      "count": 1,
+      "item": "iron_nugget",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:iron_nugget"
+      },
+      "resourceLocation": "minecraft:iron_nugget",
+      "uid": "minecraft__iron_nugget",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.1",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Iron Pickaxe",
+            "count": 1,
+            "item": "iron_pickaxe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_pickaxe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_pickaxe",
+            "uid": "minecraft__iron_pickaxe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 250
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Shovel",
+            "count": 1,
+            "item": "iron_shovel",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_shovel",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_shovel",
+            "uid": "minecraft__iron_shovel__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 250
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Axe",
+            "count": 1,
+            "item": "iron_axe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_axe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_axe",
+            "uid": "minecraft__iron_axe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 250
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Hoe",
+            "count": 1,
+            "item": "iron_hoe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_hoe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_hoe",
+            "uid": "minecraft__iron_hoe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 250
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Sword",
+            "count": 1,
+            "item": "iron_sword",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_sword",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_sword",
+            "uid": "minecraft__iron_sword__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 250
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Helmet",
+            "count": 1,
+            "item": "iron_helmet",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_helmet",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_helmet",
+            "uid": "minecraft__iron_helmet__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 165
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Chestplate",
+            "count": 1,
+            "item": "iron_chestplate",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_chestplate",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_chestplate",
+            "uid": "minecraft__iron_chestplate__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 240
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Leggings",
+            "count": 1,
+            "item": "iron_leggings",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_leggings",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_leggings",
+            "uid": "minecraft__iron_leggings__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 225
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Boots",
+            "count": 1,
+            "item": "iron_boots",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_boots",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_boots",
+            "uid": "minecraft__iron_boots__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 195
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Horse Armor",
+            "count": 1,
+            "item": "iron_horse_armor",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_horse_armor"
+            },
+            "resourceLocation": "minecraft:iron_horse_armor",
+            "uid": "minecraft__iron_horse_armor",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Chainmail Helmet",
+            "count": 1,
+            "item": "chainmail_helmet",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chainmail_helmet",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:chainmail_helmet",
+            "uid": "minecraft__chainmail_helmet__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 165
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Chainmail Chestplate",
+            "count": 1,
+            "item": "chainmail_chestplate",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chainmail_chestplate",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:chainmail_chestplate",
+            "uid": "minecraft__chainmail_chestplate__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 240
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Chainmail Leggings",
+            "count": 1,
+            "item": "chainmail_leggings",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chainmail_leggings",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:chainmail_leggings",
+            "uid": "minecraft__chainmail_leggings__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 225
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Chainmail Boots",
+            "count": 1,
+            "item": "chainmail_boots",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chainmail_boots",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:chainmail_boots",
+            "uid": "minecraft__chainmail_boots__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 195
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Iron Nugget",
+            "count": 1,
+            "item": "iron_nugget",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_nugget"
+            },
+            "resourceLocation": "minecraft:iron_nugget",
+            "uid": "minecraft__iron_nugget",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:lapis_lazuli_from_blasting_deepslate_lapis_ore",
+    "group": "lapis_lazuli",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Deepslate Lapis Lazuli Ore",
+          "count": 1,
+          "item": "deepslate_lapis_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:deepslate_lapis_ore"
+          },
+          "resourceLocation": "minecraft:deepslate_lapis_ore",
+          "uid": "minecraft__deepslate_lapis_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Lapis Lazuli",
+      "count": 1,
+      "item": "lapis_lazuli",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:lapis_lazuli"
+      },
+      "resourceLocation": "minecraft:lapis_lazuli",
+      "uid": "minecraft__lapis_lazuli",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.2",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Deepslate Lapis Lazuli Ore",
+            "count": 1,
+            "item": "deepslate_lapis_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:deepslate_lapis_ore"
+            },
+            "resourceLocation": "minecraft:deepslate_lapis_ore",
+            "uid": "minecraft__deepslate_lapis_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Lapis Lazuli",
+            "count": 1,
+            "item": "lapis_lazuli",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:lapis_lazuli"
+            },
+            "resourceLocation": "minecraft:lapis_lazuli",
+            "uid": "minecraft__lapis_lazuli",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:lapis_lazuli_from_blasting_lapis_ore",
+    "group": "lapis_lazuli",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Lapis Lazuli Ore",
+          "count": 1,
+          "item": "lapis_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:lapis_ore"
+          },
+          "resourceLocation": "minecraft:lapis_ore",
+          "uid": "minecraft__lapis_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Lapis Lazuli",
+      "count": 1,
+      "item": "lapis_lazuli",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:lapis_lazuli"
+      },
+      "resourceLocation": "minecraft:lapis_lazuli",
+      "uid": "minecraft__lapis_lazuli",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.2",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Lapis Lazuli Ore",
+            "count": 1,
+            "item": "lapis_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:lapis_ore"
+            },
+            "resourceLocation": "minecraft:lapis_ore",
+            "uid": "minecraft__lapis_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Lapis Lazuli",
+            "count": 1,
+            "item": "lapis_lazuli",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:lapis_lazuli"
+            },
+            "resourceLocation": "minecraft:lapis_lazuli",
+            "uid": "minecraft__lapis_lazuli",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:netherite_scrap_from_blasting",
+    "group": "",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Ancient Debris",
+          "count": 1,
+          "item": "ancient_debris",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:ancient_debris"
+          },
+          "resourceLocation": "minecraft:ancient_debris",
+          "uid": "minecraft__ancient_debris",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Netherite Scrap",
+      "count": 1,
+      "item": "netherite_scrap",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:netherite_scrap"
+      },
+      "resourceLocation": "minecraft:netherite_scrap",
+      "uid": "minecraft__netherite_scrap",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "2.0",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Ancient Debris",
+            "count": 1,
+            "item": "ancient_debris",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:ancient_debris"
+            },
+            "resourceLocation": "minecraft:ancient_debris",
+            "uid": "minecraft__ancient_debris",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Scrap",
+            "count": 1,
+            "item": "netherite_scrap",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_scrap"
+            },
+            "resourceLocation": "minecraft:netherite_scrap",
+            "uid": "minecraft__netherite_scrap",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:quartz_from_blasting",
+    "group": "",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Nether Quartz Ore",
+          "count": 1,
+          "item": "nether_quartz_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:nether_quartz_ore"
+          },
+          "resourceLocation": "minecraft:nether_quartz_ore",
+          "uid": "minecraft__nether_quartz_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Nether Quartz",
+      "count": 1,
+      "item": "quartz",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:quartz"
+      },
+      "resourceLocation": "minecraft:quartz",
+      "uid": "minecraft__quartz",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.2",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Nether Quartz Ore",
+            "count": 1,
+            "item": "nether_quartz_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:nether_quartz_ore"
+            },
+            "resourceLocation": "minecraft:nether_quartz_ore",
+            "uid": "minecraft__nether_quartz_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Nether Quartz",
+            "count": 1,
+            "item": "quartz",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:quartz"
+            },
+            "resourceLocation": "minecraft:quartz",
+            "uid": "minecraft__quartz",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:redstone_from_blasting_deepslate_redstone_ore",
+    "group": "redstone",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Deepslate Redstone Ore",
+          "count": 1,
+          "item": "deepslate_redstone_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:deepslate_redstone_ore"
+          },
+          "resourceLocation": "minecraft:deepslate_redstone_ore",
+          "uid": "minecraft__deepslate_redstone_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Redstone Dust",
+      "count": 1,
+      "item": "redstone",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:redstone"
+      },
+      "resourceLocation": "minecraft:redstone",
+      "uid": "minecraft__redstone",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.7",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Deepslate Redstone Ore",
+            "count": 1,
+            "item": "deepslate_redstone_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:deepslate_redstone_ore"
+            },
+            "resourceLocation": "minecraft:deepslate_redstone_ore",
+            "uid": "minecraft__deepslate_redstone_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Redstone Dust",
+            "count": 1,
+            "item": "redstone",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:redstone"
+            },
+            "resourceLocation": "minecraft:redstone",
+            "uid": "minecraft__redstone",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:redstone_from_blasting_redstone_ore",
+    "group": "redstone",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Redstone Ore",
+          "count": 1,
+          "item": "redstone_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:redstone_ore"
+          },
+          "resourceLocation": "minecraft:redstone_ore",
+          "uid": "minecraft__redstone_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Redstone Dust",
+      "count": 1,
+      "item": "redstone",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:redstone"
+      },
+      "resourceLocation": "minecraft:redstone",
+      "uid": "minecraft__redstone",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.7",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Redstone Ore",
+            "count": 1,
+            "item": "redstone_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:redstone_ore"
+            },
+            "resourceLocation": "minecraft:redstone_ore",
+            "uid": "minecraft__redstone_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Redstone Dust",
+            "count": 1,
+            "item": "redstone",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:redstone"
+            },
+            "resourceLocation": "minecraft:redstone",
+            "uid": "minecraft__redstone",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  }
+]

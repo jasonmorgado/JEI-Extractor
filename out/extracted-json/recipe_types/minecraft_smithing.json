@@ -1,0 +1,1334 @@
+[
+  {
+    "_type": "UpgradeRecipe",
+    "base": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Axe",
+          "count": 1,
+          "item": "diamond_axe",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_axe",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_axe",
+          "uid": "minecraft__diamond_axe__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 1561
+        }
+      ]
+    },
+    "addition": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Ingot",
+          "count": 1,
+          "item": "netherite_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_ingot"
+          },
+          "resourceLocation": "minecraft:netherite_ingot",
+          "uid": "minecraft__netherite_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Netherite Axe",
+      "count": 1,
+      "item": "netherite_axe",
+      "tag": {
+        "Damage": 0.0
+      },
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:netherite_axe",
+        "tag": {
+          "Damage": 0.0
+        }
+      },
+      "resourceLocation": "minecraft:netherite_axe",
+      "uid": "minecraft__netherite_axe__f615bddfb62eda0c5d44ad803d556908",
+      "damage": 0,
+      "maxDamage": 2031
+    },
+    "id": "minecraft:netherite_axe_smithing",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Axe",
+            "count": 1,
+            "item": "diamond_axe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_axe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_axe",
+            "uid": "minecraft__diamond_axe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 1561
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 50,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Ingot",
+            "count": 1,
+            "item": "netherite_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_ingot"
+            },
+            "resourceLocation": "minecraft:netherite_ingot",
+            "uid": "minecraft__netherite_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 108,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Axe",
+            "count": 1,
+            "item": "netherite_axe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_axe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_axe",
+            "uid": "minecraft__netherite_axe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 2031
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "UpgradeRecipe",
+    "base": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Boots",
+          "count": 1,
+          "item": "diamond_boots",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_boots",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_boots",
+          "uid": "minecraft__diamond_boots__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 429
+        }
+      ]
+    },
+    "addition": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Ingot",
+          "count": 1,
+          "item": "netherite_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_ingot"
+          },
+          "resourceLocation": "minecraft:netherite_ingot",
+          "uid": "minecraft__netherite_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Netherite Boots",
+      "count": 1,
+      "item": "netherite_boots",
+      "tag": {
+        "Damage": 0.0
+      },
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:netherite_boots",
+        "tag": {
+          "Damage": 0.0
+        }
+      },
+      "resourceLocation": "minecraft:netherite_boots",
+      "uid": "minecraft__netherite_boots__f615bddfb62eda0c5d44ad803d556908",
+      "damage": 0,
+      "maxDamage": 481
+    },
+    "id": "minecraft:netherite_boots_smithing",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Boots",
+            "count": 1,
+            "item": "diamond_boots",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_boots",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_boots",
+            "uid": "minecraft__diamond_boots__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 429
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 50,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Ingot",
+            "count": 1,
+            "item": "netherite_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_ingot"
+            },
+            "resourceLocation": "minecraft:netherite_ingot",
+            "uid": "minecraft__netherite_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 108,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Boots",
+            "count": 1,
+            "item": "netherite_boots",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_boots",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_boots",
+            "uid": "minecraft__netherite_boots__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 481
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "UpgradeRecipe",
+    "base": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Chestplate",
+          "count": 1,
+          "item": "diamond_chestplate",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_chestplate",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_chestplate",
+          "uid": "minecraft__diamond_chestplate__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 528
+        }
+      ]
+    },
+    "addition": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Ingot",
+          "count": 1,
+          "item": "netherite_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_ingot"
+          },
+          "resourceLocation": "minecraft:netherite_ingot",
+          "uid": "minecraft__netherite_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Netherite Chestplate",
+      "count": 1,
+      "item": "netherite_chestplate",
+      "tag": {
+        "Damage": 0.0
+      },
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:netherite_chestplate",
+        "tag": {
+          "Damage": 0.0
+        }
+      },
+      "resourceLocation": "minecraft:netherite_chestplate",
+      "uid": "minecraft__netherite_chestplate__f615bddfb62eda0c5d44ad803d556908",
+      "damage": 0,
+      "maxDamage": 592
+    },
+    "id": "minecraft:netherite_chestplate_smithing",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Chestplate",
+            "count": 1,
+            "item": "diamond_chestplate",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_chestplate",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_chestplate",
+            "uid": "minecraft__diamond_chestplate__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 528
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 50,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Ingot",
+            "count": 1,
+            "item": "netherite_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_ingot"
+            },
+            "resourceLocation": "minecraft:netherite_ingot",
+            "uid": "minecraft__netherite_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 108,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Chestplate",
+            "count": 1,
+            "item": "netherite_chestplate",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_chestplate",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_chestplate",
+            "uid": "minecraft__netherite_chestplate__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 592
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "UpgradeRecipe",
+    "base": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Helmet",
+          "count": 1,
+          "item": "diamond_helmet",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_helmet",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_helmet",
+          "uid": "minecraft__diamond_helmet__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 363
+        }
+      ]
+    },
+    "addition": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Ingot",
+          "count": 1,
+          "item": "netherite_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_ingot"
+          },
+          "resourceLocation": "minecraft:netherite_ingot",
+          "uid": "minecraft__netherite_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Netherite Helmet",
+      "count": 1,
+      "item": "netherite_helmet",
+      "tag": {
+        "Damage": 0.0
+      },
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:netherite_helmet",
+        "tag": {
+          "Damage": 0.0
+        }
+      },
+      "resourceLocation": "minecraft:netherite_helmet",
+      "uid": "minecraft__netherite_helmet__f615bddfb62eda0c5d44ad803d556908",
+      "damage": 0,
+      "maxDamage": 407
+    },
+    "id": "minecraft:netherite_helmet_smithing",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Helmet",
+            "count": 1,
+            "item": "diamond_helmet",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_helmet",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_helmet",
+            "uid": "minecraft__diamond_helmet__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 363
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 50,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Ingot",
+            "count": 1,
+            "item": "netherite_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_ingot"
+            },
+            "resourceLocation": "minecraft:netherite_ingot",
+            "uid": "minecraft__netherite_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 108,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Helmet",
+            "count": 1,
+            "item": "netherite_helmet",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_helmet",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_helmet",
+            "uid": "minecraft__netherite_helmet__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 407
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "UpgradeRecipe",
+    "base": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Hoe",
+          "count": 1,
+          "item": "diamond_hoe",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_hoe",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_hoe",
+          "uid": "minecraft__diamond_hoe__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 1561
+        }
+      ]
+    },
+    "addition": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Ingot",
+          "count": 1,
+          "item": "netherite_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_ingot"
+          },
+          "resourceLocation": "minecraft:netherite_ingot",
+          "uid": "minecraft__netherite_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Netherite Hoe",
+      "count": 1,
+      "item": "netherite_hoe",
+      "tag": {
+        "Damage": 0.0
+      },
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:netherite_hoe",
+        "tag": {
+          "Damage": 0.0
+        }
+      },
+      "resourceLocation": "minecraft:netherite_hoe",
+      "uid": "minecraft__netherite_hoe__f615bddfb62eda0c5d44ad803d556908",
+      "damage": 0,
+      "maxDamage": 2031
+    },
+    "id": "minecraft:netherite_hoe_smithing",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Hoe",
+            "count": 1,
+            "item": "diamond_hoe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_hoe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_hoe",
+            "uid": "minecraft__diamond_hoe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 1561
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 50,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Ingot",
+            "count": 1,
+            "item": "netherite_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_ingot"
+            },
+            "resourceLocation": "minecraft:netherite_ingot",
+            "uid": "minecraft__netherite_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 108,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Hoe",
+            "count": 1,
+            "item": "netherite_hoe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_hoe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_hoe",
+            "uid": "minecraft__netherite_hoe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 2031
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "UpgradeRecipe",
+    "base": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Leggings",
+          "count": 1,
+          "item": "diamond_leggings",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_leggings",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_leggings",
+          "uid": "minecraft__diamond_leggings__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 495
+        }
+      ]
+    },
+    "addition": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Ingot",
+          "count": 1,
+          "item": "netherite_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_ingot"
+          },
+          "resourceLocation": "minecraft:netherite_ingot",
+          "uid": "minecraft__netherite_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Netherite Leggings",
+      "count": 1,
+      "item": "netherite_leggings",
+      "tag": {
+        "Damage": 0.0
+      },
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:netherite_leggings",
+        "tag": {
+          "Damage": 0.0
+        }
+      },
+      "resourceLocation": "minecraft:netherite_leggings",
+      "uid": "minecraft__netherite_leggings__f615bddfb62eda0c5d44ad803d556908",
+      "damage": 0,
+      "maxDamage": 555
+    },
+    "id": "minecraft:netherite_leggings_smithing",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Leggings",
+            "count": 1,
+            "item": "diamond_leggings",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_leggings",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_leggings",
+            "uid": "minecraft__diamond_leggings__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 495
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 50,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Ingot",
+            "count": 1,
+            "item": "netherite_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_ingot"
+            },
+            "resourceLocation": "minecraft:netherite_ingot",
+            "uid": "minecraft__netherite_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 108,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Leggings",
+            "count": 1,
+            "item": "netherite_leggings",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_leggings",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_leggings",
+            "uid": "minecraft__netherite_leggings__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 555
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "UpgradeRecipe",
+    "base": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Pickaxe",
+          "count": 1,
+          "item": "diamond_pickaxe",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_pickaxe",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_pickaxe",
+          "uid": "minecraft__diamond_pickaxe__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 1561
+        }
+      ]
+    },
+    "addition": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Ingot",
+          "count": 1,
+          "item": "netherite_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_ingot"
+          },
+          "resourceLocation": "minecraft:netherite_ingot",
+          "uid": "minecraft__netherite_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Netherite Pickaxe",
+      "count": 1,
+      "item": "netherite_pickaxe",
+      "tag": {
+        "Damage": 0.0
+      },
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:netherite_pickaxe",
+        "tag": {
+          "Damage": 0.0
+        }
+      },
+      "resourceLocation": "minecraft:netherite_pickaxe",
+      "uid": "minecraft__netherite_pickaxe__f615bddfb62eda0c5d44ad803d556908",
+      "damage": 0,
+      "maxDamage": 2031
+    },
+    "id": "minecraft:netherite_pickaxe_smithing",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Pickaxe",
+            "count": 1,
+            "item": "diamond_pickaxe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_pickaxe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_pickaxe",
+            "uid": "minecraft__diamond_pickaxe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 1561
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 50,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Ingot",
+            "count": 1,
+            "item": "netherite_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_ingot"
+            },
+            "resourceLocation": "minecraft:netherite_ingot",
+            "uid": "minecraft__netherite_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 108,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Pickaxe",
+            "count": 1,
+            "item": "netherite_pickaxe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_pickaxe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_pickaxe",
+            "uid": "minecraft__netherite_pickaxe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 2031
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "UpgradeRecipe",
+    "base": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Shovel",
+          "count": 1,
+          "item": "diamond_shovel",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_shovel",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_shovel",
+          "uid": "minecraft__diamond_shovel__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 1561
+        }
+      ]
+    },
+    "addition": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Ingot",
+          "count": 1,
+          "item": "netherite_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_ingot"
+          },
+          "resourceLocation": "minecraft:netherite_ingot",
+          "uid": "minecraft__netherite_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Netherite Shovel",
+      "count": 1,
+      "item": "netherite_shovel",
+      "tag": {
+        "Damage": 0.0
+      },
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:netherite_shovel",
+        "tag": {
+          "Damage": 0.0
+        }
+      },
+      "resourceLocation": "minecraft:netherite_shovel",
+      "uid": "minecraft__netherite_shovel__f615bddfb62eda0c5d44ad803d556908",
+      "damage": 0,
+      "maxDamage": 2031
+    },
+    "id": "minecraft:netherite_shovel_smithing",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Shovel",
+            "count": 1,
+            "item": "diamond_shovel",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_shovel",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_shovel",
+            "uid": "minecraft__diamond_shovel__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 1561
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 50,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Ingot",
+            "count": 1,
+            "item": "netherite_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_ingot"
+            },
+            "resourceLocation": "minecraft:netherite_ingot",
+            "uid": "minecraft__netherite_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 108,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Shovel",
+            "count": 1,
+            "item": "netherite_shovel",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_shovel",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_shovel",
+            "uid": "minecraft__netherite_shovel__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 2031
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "UpgradeRecipe",
+    "base": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Sword",
+          "count": 1,
+          "item": "diamond_sword",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_sword",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_sword",
+          "uid": "minecraft__diamond_sword__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 1561
+        }
+      ]
+    },
+    "addition": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Ingot",
+          "count": 1,
+          "item": "netherite_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_ingot"
+          },
+          "resourceLocation": "minecraft:netherite_ingot",
+          "uid": "minecraft__netherite_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Netherite Sword",
+      "count": 1,
+      "item": "netherite_sword",
+      "tag": {
+        "Damage": 0.0
+      },
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:netherite_sword",
+        "tag": {
+          "Damage": 0.0
+        }
+      },
+      "resourceLocation": "minecraft:netherite_sword",
+      "uid": "minecraft__netherite_sword__f615bddfb62eda0c5d44ad803d556908",
+      "damage": 0,
+      "maxDamage": 2031
+    },
+    "id": "minecraft:netherite_sword_smithing",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Sword",
+            "count": 1,
+            "item": "diamond_sword",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_sword",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_sword",
+            "uid": "minecraft__diamond_sword__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 1561
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 50,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Ingot",
+            "count": 1,
+            "item": "netherite_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_ingot"
+            },
+            "resourceLocation": "minecraft:netherite_ingot",
+            "uid": "minecraft__netherite_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 108,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Sword",
+            "count": 1,
+            "item": "netherite_sword",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_sword",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_sword",
+            "uid": "minecraft__netherite_sword__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 2031
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  }
+]

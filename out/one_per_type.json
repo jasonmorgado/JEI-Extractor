@@ -1,0 +1,1606 @@
+{
+  "minecraft:anvil": {
+    "_type": "AnvilRecipe",
+    "leftInputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Wooden Hoe",
+        "count": 1,
+        "item": "wooden_hoe",
+        "tag": {
+          "Damage": 0.0
+        },
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:wooden_hoe",
+          "tag": {
+            "Damage": 0.0
+          }
+        },
+        "resourceLocation": "minecraft:wooden_hoe",
+        "uid": "minecraft__wooden_hoe__f615bddfb62eda0c5d44ad803d556908",
+        "damage": 0,
+        "maxDamage": 59
+      }
+    ],
+    "rightInputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Enchanted Book",
+        "count": 1,
+        "item": "enchanted_book",
+        "tag": {
+          "StoredEnchantments": [
+            {
+              "id": "minecraft:unbreaking",
+              "lvl": "1s"
+            }
+          ]
+        },
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:enchanted_book",
+          "tag": {
+            "StoredEnchantments": [
+              {
+                "id": "minecraft:unbreaking",
+                "lvl": "1s"
+              }
+            ]
+          }
+        },
+        "resourceLocation": "minecraft:enchanted_book",
+        "uid": "minecraft__enchanted_book__447e047690b453e1a7e3859454532dcd",
+        "damage": 0,
+        "maxDamage": 0
+      },
+      {
+        "_type": "ItemStack",
+        "name": "Enchanted Book",
+        "count": 1,
+        "item": "enchanted_book",
+        "tag": {
+          "StoredEnchantments": [
+            {
+              "id": "minecraft:unbreaking",
+              "lvl": "2s"
+            }
+          ]
+        },
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:enchanted_book",
+          "tag": {
+            "StoredEnchantments": [
+              {
+                "id": "minecraft:unbreaking",
+                "lvl": "2s"
+              }
+            ]
+          }
+        },
+        "resourceLocation": "minecraft:enchanted_book",
+        "uid": "minecraft__enchanted_book__7d41f2aabd8d87f52026576688cc74f8",
+        "damage": 0,
+        "maxDamage": 0
+      },
+      {
+        "_type": "ItemStack",
+        "name": "Enchanted Book",
+        "count": 1,
+        "item": "enchanted_book",
+        "tag": {
+          "StoredEnchantments": [
+            {
+              "id": "minecraft:unbreaking",
+              "lvl": "3s"
+            }
+          ]
+        },
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:enchanted_book",
+          "tag": {
+            "StoredEnchantments": [
+              {
+                "id": "minecraft:unbreaking",
+                "lvl": "3s"
+              }
+            ]
+          }
+        },
+        "resourceLocation": "minecraft:enchanted_book",
+        "uid": "minecraft__enchanted_book__40fe345f46598869f77f8a85035b7d42",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "outputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Wooden Hoe",
+        "count": 1,
+        "item": "wooden_hoe",
+        "tag": {
+          "Damage": 0.0,
+          "Enchantments": [
+            {
+              "id": "minecraft:unbreaking",
+              "lvl": "1s"
+            }
+          ]
+        },
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:wooden_hoe",
+          "tag": {
+            "Damage": 0.0,
+            "Enchantments": [
+              {
+                "id": "minecraft:unbreaking",
+                "lvl": "1s"
+              }
+            ]
+          }
+        },
+        "resourceLocation": "minecraft:wooden_hoe",
+        "uid": "minecraft__wooden_hoe__ed009d51b14f9e0a0729a634fdaa3f9d",
+        "damage": 0,
+        "maxDamage": 59
+      },
+      {
+        "_type": "ItemStack",
+        "name": "Wooden Hoe",
+        "count": 1,
+        "item": "wooden_hoe",
+        "tag": {
+          "Damage": 0.0,
+          "Enchantments": [
+            {
+              "id": "minecraft:unbreaking",
+              "lvl": "2s"
+            }
+          ]
+        },
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:wooden_hoe",
+          "tag": {
+            "Damage": 0.0,
+            "Enchantments": [
+              {
+                "id": "minecraft:unbreaking",
+                "lvl": "2s"
+              }
+            ]
+          }
+        },
+        "resourceLocation": "minecraft:wooden_hoe",
+        "uid": "minecraft__wooden_hoe__c9f0c19d2dcbadb1c71a8b86d3e5cc24",
+        "damage": 0,
+        "maxDamage": 59
+      },
+      {
+        "_type": "ItemStack",
+        "name": "Wooden Hoe",
+        "count": 1,
+        "item": "wooden_hoe",
+        "tag": {
+          "Damage": 0.0,
+          "Enchantments": [
+            {
+              "id": "minecraft:unbreaking",
+              "lvl": "3s"
+            }
+          ]
+        },
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:wooden_hoe",
+          "tag": {
+            "Damage": 0.0,
+            "Enchantments": [
+              {
+                "id": "minecraft:unbreaking",
+                "lvl": "3s"
+              }
+            ]
+          }
+        },
+        "resourceLocation": "minecraft:wooden_hoe",
+        "uid": "minecraft__wooden_hoe__250d7e37c08369785dc18baae0c652cf",
+        "damage": 0,
+        "maxDamage": 59
+      }
+    ],
+    "id": "hash_002d5bd89d3090887d43b556f2f52297",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Wooden Hoe",
+            "count": 1,
+            "item": "wooden_hoe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:wooden_hoe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:wooden_hoe",
+            "uid": "minecraft__wooden_hoe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 59
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 50,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Enchanted Book",
+            "count": 1,
+            "item": "enchanted_book",
+            "tag": {
+              "StoredEnchantments": [
+                {
+                  "id": "minecraft:unbreaking",
+                  "lvl": "1s"
+                }
+              ]
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:enchanted_book",
+              "tag": {
+                "StoredEnchantments": [
+                  {
+                    "id": "minecraft:unbreaking",
+                    "lvl": "1s"
+                  }
+                ]
+              }
+            },
+            "resourceLocation": "minecraft:enchanted_book",
+            "uid": "minecraft__enchanted_book__447e047690b453e1a7e3859454532dcd",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Enchanted Book",
+            "count": 1,
+            "item": "enchanted_book",
+            "tag": {
+              "StoredEnchantments": [
+                {
+                  "id": "minecraft:unbreaking",
+                  "lvl": "2s"
+                }
+              ]
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:enchanted_book",
+              "tag": {
+                "StoredEnchantments": [
+                  {
+                    "id": "minecraft:unbreaking",
+                    "lvl": "2s"
+                  }
+                ]
+              }
+            },
+            "resourceLocation": "minecraft:enchanted_book",
+            "uid": "minecraft__enchanted_book__7d41f2aabd8d87f52026576688cc74f8",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Enchanted Book",
+            "count": 1,
+            "item": "enchanted_book",
+            "tag": {
+              "StoredEnchantments": [
+                {
+                  "id": "minecraft:unbreaking",
+                  "lvl": "3s"
+                }
+              ]
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:enchanted_book",
+              "tag": {
+                "StoredEnchantments": [
+                  {
+                    "id": "minecraft:unbreaking",
+                    "lvl": "3s"
+                  }
+                ]
+              }
+            },
+            "resourceLocation": "minecraft:enchanted_book",
+            "uid": "minecraft__enchanted_book__40fe345f46598869f77f8a85035b7d42",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 108,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Wooden Hoe",
+            "count": 1,
+            "item": "wooden_hoe",
+            "tag": {
+              "Damage": 0.0,
+              "Enchantments": [
+                {
+                  "id": "minecraft:unbreaking",
+                  "lvl": "1s"
+                }
+              ]
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:wooden_hoe",
+              "tag": {
+                "Damage": 0.0,
+                "Enchantments": [
+                  {
+                    "id": "minecraft:unbreaking",
+                    "lvl": "1s"
+                  }
+                ]
+              }
+            },
+            "resourceLocation": "minecraft:wooden_hoe",
+            "uid": "minecraft__wooden_hoe__ed009d51b14f9e0a0729a634fdaa3f9d",
+            "damage": 0,
+            "maxDamage": 59
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Wooden Hoe",
+            "count": 1,
+            "item": "wooden_hoe",
+            "tag": {
+              "Damage": 0.0,
+              "Enchantments": [
+                {
+                  "id": "minecraft:unbreaking",
+                  "lvl": "2s"
+                }
+              ]
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:wooden_hoe",
+              "tag": {
+                "Damage": 0.0,
+                "Enchantments": [
+                  {
+                    "id": "minecraft:unbreaking",
+                    "lvl": "2s"
+                  }
+                ]
+              }
+            },
+            "resourceLocation": "minecraft:wooden_hoe",
+            "uid": "minecraft__wooden_hoe__c9f0c19d2dcbadb1c71a8b86d3e5cc24",
+            "damage": 0,
+            "maxDamage": 59
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Wooden Hoe",
+            "count": 1,
+            "item": "wooden_hoe",
+            "tag": {
+              "Damage": 0.0,
+              "Enchantments": [
+                {
+                  "id": "minecraft:unbreaking",
+                  "lvl": "3s"
+                }
+              ]
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:wooden_hoe",
+              "tag": {
+                "Damage": 0.0,
+                "Enchantments": [
+                  {
+                    "id": "minecraft:unbreaking",
+                    "lvl": "3s"
+                  }
+                ]
+              }
+            },
+            "resourceLocation": "minecraft:wooden_hoe",
+            "uid": "minecraft__wooden_hoe__250d7e37c08369785dc18baae0c652cf",
+            "damage": 0,
+            "maxDamage": 59
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  "minecraft:blasting": {
+    "_type": "BlastingRecipe",
+    "type": "blasting",
+    "id": "minecraft:coal_from_blasting_coal_ore",
+    "group": "coal",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Coal Ore",
+          "count": 1,
+          "item": "coal_ore",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:coal_ore"
+          },
+          "resourceLocation": "minecraft:coal_ore",
+          "uid": "minecraft__coal_ore",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Coal",
+      "count": 1,
+      "item": "coal",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:coal"
+      },
+      "resourceLocation": "minecraft:coal",
+      "uid": "minecraft__coal",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.1",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Coal Ore",
+            "count": 1,
+            "item": "coal_ore",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:coal_ore"
+            },
+            "resourceLocation": "minecraft:coal_ore",
+            "uid": "minecraft__coal_ore",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Coal",
+            "count": 1,
+            "item": "coal",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:coal"
+            },
+            "resourceLocation": "minecraft:coal",
+            "uid": "minecraft__coal",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  "minecraft:brewing": {
+    "_type": "JeiBrewingRecipe",
+    "ingredients": [
+      {
+        "_type": "ItemStack",
+        "name": "Redstone Dust",
+        "count": 1,
+        "item": "redstone",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:redstone"
+        },
+        "resourceLocation": "minecraft:redstone",
+        "uid": "minecraft__redstone",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "potionInputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Potion of Water Breathing",
+        "count": 1,
+        "item": "potion",
+        "tag": {
+          "Potion": "minecraft:water_breathing"
+        },
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:potion",
+          "tag": {
+            "Potion": "minecraft:water_breathing"
+          }
+        },
+        "resourceLocation": "minecraft:potion",
+        "uid": "minecraft__potion__a8afe48529a0fd9c53b80fde95556192",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "potionOutput": {
+      "_type": "ItemStack",
+      "name": "Potion of Water Breathing",
+      "count": 1,
+      "item": "potion",
+      "tag": {
+        "Potion": "minecraft:long_water_breathing"
+      },
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:potion",
+        "tag": {
+          "Potion": "minecraft:long_water_breathing"
+        }
+      },
+      "resourceLocation": "minecraft:potion",
+      "uid": "minecraft__potion__5bfb814833db76e3df1ad0d1cb761702",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "id": "hash_016319d6e408d999c70064620e9c4da1",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 37,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Potion of Water Breathing",
+            "count": 1,
+            "item": "potion",
+            "tag": {
+              "Potion": "minecraft:water_breathing"
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:potion",
+              "tag": {
+                "Potion": "minecraft:water_breathing"
+              }
+            },
+            "resourceLocation": "minecraft:potion",
+            "uid": "minecraft__potion__a8afe48529a0fd9c53b80fde95556192",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 24,
+        "y": 44,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Potion of Water Breathing",
+            "count": 1,
+            "item": "potion",
+            "tag": {
+              "Potion": "minecraft:water_breathing"
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:potion",
+              "tag": {
+                "Potion": "minecraft:water_breathing"
+              }
+            },
+            "resourceLocation": "minecraft:potion",
+            "uid": "minecraft__potion__a8afe48529a0fd9c53b80fde95556192",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 47,
+        "y": 37,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Potion of Water Breathing",
+            "count": 1,
+            "item": "potion",
+            "tag": {
+              "Potion": "minecraft:water_breathing"
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:potion",
+              "tag": {
+                "Potion": "minecraft:water_breathing"
+              }
+            },
+            "resourceLocation": "minecraft:potion",
+            "uid": "minecraft__potion__a8afe48529a0fd9c53b80fde95556192",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 24,
+        "y": 3,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Redstone Dust",
+            "count": 1,
+            "item": "redstone",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:redstone"
+            },
+            "resourceLocation": "minecraft:redstone",
+            "uid": "minecraft__redstone",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 81,
+        "y": 3,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Potion of Water Breathing",
+            "count": 1,
+            "item": "potion",
+            "tag": {
+              "Potion": "minecraft:long_water_breathing"
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:potion",
+              "tag": {
+                "Potion": "minecraft:long_water_breathing"
+              }
+            },
+            "resourceLocation": "minecraft:potion",
+            "uid": "minecraft__potion__5bfb814833db76e3df1ad0d1cb761702",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  "minecraft:campfire": {
+    "_type": "CampfireCookingRecipe",
+    "type": "campfire_cooking",
+    "id": "minecraft:baked_potato_from_campfire_cooking",
+    "group": "",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Potato",
+          "count": 1,
+          "item": "potato",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:potato"
+          },
+          "resourceLocation": "minecraft:potato",
+          "uid": "minecraft__potato",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Baked Potato",
+      "count": 1,
+      "item": "baked_potato",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:baked_potato"
+      },
+      "resourceLocation": "minecraft:baked_potato",
+      "uid": "minecraft__baked_potato",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.35",
+    "cookingTime": "600",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Potato",
+            "count": 1,
+            "item": "potato",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:potato"
+            },
+            "resourceLocation": "minecraft:potato",
+            "uid": "minecraft__potato",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 9,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Baked Potato",
+            "count": 1,
+            "item": "baked_potato",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:baked_potato"
+            },
+            "resourceLocation": "minecraft:baked_potato",
+            "uid": "minecraft__baked_potato",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  "minecraft:compostable": {
+    "_type": "CompostingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Pumpkin Pie",
+        "count": 1,
+        "item": "pumpkin_pie",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:pumpkin_pie"
+        },
+        "resourceLocation": "minecraft:pumpkin_pie",
+        "uid": "minecraft__pumpkin_pie",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "chance": "1.0",
+    "id": "hash_025773a82a4e9eb6495e10f1f26c26d5",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Pumpkin Pie",
+            "count": 1,
+            "item": "pumpkin_pie",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:pumpkin_pie"
+            },
+            "resourceLocation": "minecraft:pumpkin_pie",
+            "uid": "minecraft__pumpkin_pie",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  "minecraft:crafting": {
+    "_type": "ShapedRecipe",
+    "MAX_WIDTH": "3",
+    "MAX_HEIGHT": "3",
+    "width": "3",
+    "height": "2",
+    "recipeItems": [
+      {
+        "_type": "Ingredient",
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Acacia Planks",
+            "count": 1,
+            "item": "acacia_planks",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:acacia_planks"
+            },
+            "resourceLocation": "minecraft:acacia_planks",
+            "uid": "minecraft__acacia_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ]
+      },
+      {
+        "_type": "Ingredient",
+        "items": []
+      },
+      {
+        "_type": "Ingredient",
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Acacia Planks",
+            "count": 1,
+            "item": "acacia_planks",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:acacia_planks"
+            },
+            "resourceLocation": "minecraft:acacia_planks",
+            "uid": "minecraft__acacia_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ]
+      },
+      {
+        "_type": "Ingredient",
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Acacia Planks",
+            "count": 1,
+            "item": "acacia_planks",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:acacia_planks"
+            },
+            "resourceLocation": "minecraft:acacia_planks",
+            "uid": "minecraft__acacia_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ]
+      },
+      {
+        "_type": "Ingredient",
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Acacia Planks",
+            "count": 1,
+            "item": "acacia_planks",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:acacia_planks"
+            },
+            "resourceLocation": "minecraft:acacia_planks",
+            "uid": "minecraft__acacia_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ]
+      },
+      {
+        "_type": "Ingredient",
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Acacia Planks",
+            "count": 1,
+            "item": "acacia_planks",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:acacia_planks"
+            },
+            "resourceLocation": "minecraft:acacia_planks",
+            "uid": "minecraft__acacia_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ]
+      }
+    ],
+    "result": {
+      "_type": "ItemStack",
+      "name": "Acacia Boat",
+      "count": 1,
+      "item": "acacia_boat",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:acacia_boat"
+      },
+      "resourceLocation": "minecraft:acacia_boat",
+      "uid": "minecraft__acacia_boat",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "id": "minecraft:acacia_boat",
+    "group": "boat",
+    "slots": [
+      {
+        "role": "OUTPUT",
+        "x": 95,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Acacia Boat",
+            "count": 1,
+            "item": "acacia_boat",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:acacia_boat"
+            },
+            "resourceLocation": "minecraft:acacia_boat",
+            "uid": "minecraft__acacia_boat",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 19,
+        "y": 1,
+        "items": [],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 37,
+        "y": 1,
+        "items": [],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Acacia Planks",
+            "count": 1,
+            "item": "acacia_planks",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:acacia_planks"
+            },
+            "resourceLocation": "minecraft:acacia_planks",
+            "uid": "minecraft__acacia_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 19,
+        "y": 19,
+        "items": [],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 37,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Acacia Planks",
+            "count": 1,
+            "item": "acacia_planks",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:acacia_planks"
+            },
+            "resourceLocation": "minecraft:acacia_planks",
+            "uid": "minecraft__acacia_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 37,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Acacia Planks",
+            "count": 1,
+            "item": "acacia_planks",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:acacia_planks"
+            },
+            "resourceLocation": "minecraft:acacia_planks",
+            "uid": "minecraft__acacia_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 19,
+        "y": 37,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Acacia Planks",
+            "count": 1,
+            "item": "acacia_planks",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:acacia_planks"
+            },
+            "resourceLocation": "minecraft:acacia_planks",
+            "uid": "minecraft__acacia_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 37,
+        "y": 37,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Acacia Planks",
+            "count": 1,
+            "item": "acacia_planks",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:acacia_planks"
+            },
+            "resourceLocation": "minecraft:acacia_planks",
+            "uid": "minecraft__acacia_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  "minecraft:fuel": {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Birch Trapdoor",
+        "count": 1,
+        "item": "birch_trapdoor",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:birch_trapdoor"
+        },
+        "resourceLocation": "minecraft:birch_trapdoor",
+        "uid": "minecraft__birch_trapdoor",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_015de188867a89de03677c8b6d91f9d8",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Birch Trapdoor",
+            "count": 1,
+            "item": "birch_trapdoor",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:birch_trapdoor"
+            },
+            "resourceLocation": "minecraft:birch_trapdoor",
+            "uid": "minecraft__birch_trapdoor",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  "minecraft:furnace": {
+    "_type": "SmeltingRecipe",
+    "type": "smelting",
+    "id": "minecraft:baked_potato",
+    "group": "",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Potato",
+          "count": 1,
+          "item": "potato",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:potato"
+          },
+          "resourceLocation": "minecraft:potato",
+          "uid": "minecraft__potato",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Baked Potato",
+      "count": 1,
+      "item": "baked_potato",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:baked_potato"
+      },
+      "resourceLocation": "minecraft:baked_potato",
+      "uid": "minecraft__baked_potato",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.35",
+    "cookingTime": "200",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Potato",
+            "count": 1,
+            "item": "potato",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:potato"
+            },
+            "resourceLocation": "minecraft:potato",
+            "uid": "minecraft__potato",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Baked Potato",
+            "count": 1,
+            "item": "baked_potato",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:baked_potato"
+            },
+            "resourceLocation": "minecraft:baked_potato",
+            "uid": "minecraft__baked_potato",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  "minecraft:smithing": {
+    "_type": "UpgradeRecipe",
+    "base": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Axe",
+          "count": 1,
+          "item": "diamond_axe",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_axe",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_axe",
+          "uid": "minecraft__diamond_axe__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 1561
+        }
+      ]
+    },
+    "addition": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Ingot",
+          "count": 1,
+          "item": "netherite_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_ingot"
+          },
+          "resourceLocation": "minecraft:netherite_ingot",
+          "uid": "minecraft__netherite_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Netherite Axe",
+      "count": 1,
+      "item": "netherite_axe",
+      "tag": {
+        "Damage": 0.0
+      },
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:netherite_axe",
+        "tag": {
+          "Damage": 0.0
+        }
+      },
+      "resourceLocation": "minecraft:netherite_axe",
+      "uid": "minecraft__netherite_axe__f615bddfb62eda0c5d44ad803d556908",
+      "damage": 0,
+      "maxDamage": 2031
+    },
+    "id": "minecraft:netherite_axe_smithing",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Axe",
+            "count": 1,
+            "item": "diamond_axe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_axe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_axe",
+            "uid": "minecraft__diamond_axe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 1561
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 50,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Ingot",
+            "count": 1,
+            "item": "netherite_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_ingot"
+            },
+            "resourceLocation": "minecraft:netherite_ingot",
+            "uid": "minecraft__netherite_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 108,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Axe",
+            "count": 1,
+            "item": "netherite_axe",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_axe",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_axe",
+            "uid": "minecraft__netherite_axe__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 2031
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  "minecraft:smoking": {
+    "_type": "SmokingRecipe",
+    "type": "smoking",
+    "id": "minecraft:baked_potato_from_smoking",
+    "group": "",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Potato",
+          "count": 1,
+          "item": "potato",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:potato"
+          },
+          "resourceLocation": "minecraft:potato",
+          "uid": "minecraft__potato",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Baked Potato",
+      "count": 1,
+      "item": "baked_potato",
+      "capNBT": {
+        "Count": "1b",
+        "id": "minecraft:baked_potato"
+      },
+      "resourceLocation": "minecraft:baked_potato",
+      "uid": "minecraft__baked_potato",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "experience": "0.35",
+    "cookingTime": "100",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 1,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Potato",
+            "count": 1,
+            "item": "potato",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:potato"
+            },
+            "resourceLocation": "minecraft:potato",
+            "uid": "minecraft__potato",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 19,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Baked Potato",
+            "count": 1,
+            "item": "baked_potato",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:baked_potato"
+            },
+            "resourceLocation": "minecraft:baked_potato",
+            "uid": "minecraft__baked_potato",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  "minecraft:stonecutting": {
+    "_type": "StonecutterRecipe",
+    "ingredient": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Andesite",
+          "count": 1,
+          "item": "andesite",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:andesite"
+          },
+          "resourceLocation": "minecraft:andesite",
+          "uid": "minecraft__andesite",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
+    "result": {
+      "_type": "ItemStack",
+      "name": "Andesite Slab",
+      "count": 2,
+      "item": "andesite_slab",
+      "capNBT": {
+        "Count": "2b",
+        "id": "minecraft:andesite_slab"
+      },
+      "resourceLocation": "minecraft:andesite_slab",
+      "uid": "minecraft__andesite_slab",
+      "damage": 0,
+      "maxDamage": 0
+    },
+    "type": "stonecutting",
+    "serializer": "net.minecraft.world.item.crafting.SingleItemRecipe$Serializer@1234",
+    "id": "minecraft:andesite_slab_from_andesite_stonecutting",
+    "group": "",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 9,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Andesite",
+            "count": 1,
+            "item": "andesite",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:andesite"
+            },
+            "resourceLocation": "minecraft:andesite",
+            "uid": "minecraft__andesite",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "OUTPUT",
+        "x": 61,
+        "y": 9,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Andesite Slab",
+            "count": 2,
+            "item": "andesite_slab",
+            "capNBT": {
+              "Count": "2b",
+              "id": "minecraft:andesite_slab"
+            },
+            "resourceLocation": "minecraft:andesite_slab",
+            "uid": "minecraft__andesite_slab",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  }
+}

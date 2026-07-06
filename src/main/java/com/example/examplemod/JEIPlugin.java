@@ -37,25 +37,33 @@ public class JEIPlugin implements IModPlugin {
         return ResourceLocation.fromNamespaceAndPath(ExampleMod.MODID, "jei_plugin");
     }
 
+    /**
+     * This function runs when the game initially loads, allowing modpacks to add their recipes to the JEI Runtime
+     * Also allowing us to scrape information out of it
+     * @param jeiRuntime
+     */
     @Override
     public void onRuntimeAvailable(IJeiRuntime jeiRuntime) {
         var recipeManager = jeiRuntime.getRecipeManager();
+        // outDir is the basic output folder for testing things. Contains extracted-json.
         var outDir = Paths.get("../out");
+        // extractedJsonDir is the Web Export, matches the frontend.
+        var extractedJsonDir = outDir.resolve("extracted-json");
 
         try {
-            Files.createDirectories(outDir);
+            Files.createDirectories(extractedJsonDir);
             var extractor = new IndexExtractor();
-            extractor.writeItemsFile(jeiRuntime, outDir); // items.json
+            extractor.writeItemsFile(jeiRuntime, extractedJsonDir); // -> items.json
 
-            // Writing recipes to out/recipe_types/
-            writeOnePerTypeFile(recipeManager, outDir);
-            writeRecipeTypesFiles(recipeManager, outDir);
+            writeOnePerTypeFile(recipeManager, outDir); // one_per_type.json
+            // Writing recipe_types/ to out/extracted-json/
+            writeRecipeTypesFiles(recipeManager, extractedJsonDir); // -> extracted-json/recipe_types/{mod}_{type}.json
 
-            // Build indexes from recipe types
-            Path recipeTypesDir = outDir.resolve("recipe_types");
-            Path indexDir = outDir.resolve("index");
+            // Build indexes from recipe types into extracted-json/ directly
+            // Generates recipe_index.json and recipe_type_index.json
+            Path recipeTypesDir = extractedJsonDir.resolve("recipe_types");
             var indexBuilder = new IndexBuilder();
-            indexBuilder.buildIndexes(recipeTypesDir, indexDir);
+            indexBuilder.buildIndexes(recipeTypesDir, extractedJsonDir);
 
             Collection<RecipeType<?>> recipeTypes = recipeManager.createRecipeCategoryLookup()
                     .get()
