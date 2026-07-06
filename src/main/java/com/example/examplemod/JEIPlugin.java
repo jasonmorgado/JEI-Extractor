@@ -38,9 +38,8 @@ public class JEIPlugin implements IModPlugin {
     }
 
     /**
-     * This function runs when the game initially loads, allowing modpacks to add their recipes to the JEI Runtime
-     * Also allowing us to scrape information out of it
-     * @param jeiRuntime
+     * This function runs when the game initially loads, after mods add their recipes to the game
+     * @param jeiRuntime - The JEI Runtime which includes the RecipeManager
      */
     @Override
     public void onRuntimeAvailable(IJeiRuntime jeiRuntime) {
@@ -80,7 +79,7 @@ public class JEIPlugin implements IModPlugin {
      * Writes one_per_type.json which contains a list of Recipes, one of each type.
      * @param recipeManager  JEI Recipe Manager
      * @param outDir Directory to write to
-     * @throws IOException Who knows
+     * @throws IOException Who knows?
      */
     private void writeOnePerTypeFile(IRecipeManager recipeManager, Path outDir) throws IOException {
         Collection<RecipeType<?>> recipeTypes = recipeManager.createRecipeCategoryLookup()
