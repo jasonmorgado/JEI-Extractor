@@ -22,6 +22,11 @@ public class RecipeScraper {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final Gson GSON_COMPACT = new Gson();
 
+    /**
+     * Takes an arbitrary Java object, typically a Recipe, and converts it to a Map for JSON conversion
+     * @param obj
+     * @return Map
+     */
     public Map<String, Object> objectToMap(Object obj) {
         String objType = obj.getClass().getSimpleName();
 
@@ -45,6 +50,12 @@ public class RecipeScraper {
                 Object value = field.get(obj);
                 String fieldName = field.getName();
 
+                // Skip hashcode and util objects that are not helpful
+                List<String> things_to_skip = List.of("hashcode", "util", "manager", "helper");
+                if (things_to_skip.stream().anyMatch(fieldName.toLowerCase()::contains)) {
+                    continue;
+                }
+
                 // Depending on the type, we may want to handle differently
                 if (value == null){
                     map.put(fieldName, null);
@@ -60,7 +71,13 @@ public class RecipeScraper {
                     map.put(fieldName, ingredientToMap((Ingredient) value));
                 } else {
                     // By default, just toString it, we can see what it is in the output JSON
-                    map.put(fieldName, String.valueOf(value));
+                    String str = String.valueOf(value);
+                    // Normalize Java object memory addresses (e.g. "@6a75d12" -> "@1234")
+                    // so the output is deterministic between runs.
+                    if (str.contains("@")) {
+                        str = str.replaceAll("@[0-9a-f]+(?!\\w)", "@1234");
+                    }
+                    map.put(fieldName, str);
                 }
             }
         } catch (Exception e) {
