@@ -96,6 +96,7 @@ public class IndexBuilder {
         // Process each {crafting_type}.json file in the recipe_types directory
         List<Path> recipeFiles = Files.list(recipeTypesDir)
                 .filter(p -> p.toString().endsWith(".json"))
+                .sorted()
                 .toList();
 
         for (Path recipeFile : recipeFiles) {

@@ -37,30 +37,32 @@ public class JEIPlugin implements IModPlugin {
         return ResourceLocation.fromNamespaceAndPath(ExampleMod.MODID, "jei_plugin");
     }
 
+    /**
+     * This function runs when the game initially loads, after mods add their recipes to the game
+     * @param jeiRuntime - The JEI Runtime which includes the RecipeManager
+     */
     @Override
     public void onRuntimeAvailable(IJeiRuntime jeiRuntime) {
         var recipeManager = jeiRuntime.getRecipeManager();
+        // outDir is the basic output folder for testing things. Contains extracted-json.
         var outDir = Paths.get("../out");
+        // extractedJsonDir is the Web Export, matches the frontend.
+        var extractedJsonDir = outDir.resolve("extracted-json");
 
         try {
-            Files.createDirectories(outDir);
+            Files.createDirectories(extractedJsonDir);
             var extractor = new IndexExtractor();
-            extractor.writeItemsFile(jeiRuntime, outDir); // items.json, works
-            // extractor.writeIndexToFiles(jeiRuntime, outDir); // index/ files, broken
+            extractor.writeItemsFile(jeiRuntime, extractedJsonDir); // -> items.json
 
-//            var slotExtractor = new SlotExtractor();
-//            slotExtractor.writeRecipeSlotsFile(recipeManager, outDir); // recipe_slots.json, working
+            writeOnePerTypeFile(recipeManager, outDir); // one_per_type.json
+            // Writing recipe_types/ to out/extracted-json/
+            writeRecipeTypesFiles(recipeManager, extractedJsonDir); // -> extracted-json/recipe_types/{mod}_{type}.json
 
-            // Writing recipes to out/recipe_types/
-            // Need to switch Crafting to verbose. Fix problems.
-            writeOnePerTypeFile(recipeManager, outDir);
-            writeRecipeTypesFiles(recipeManager, outDir);
-
-            // Build indexes from recipe types
-            Path recipeTypesDir = outDir.resolve("recipe_types");
-            Path indexDir = outDir.resolve("index");
+            // Build indexes from recipe types into extracted-json/ directly
+            // Generates recipe_index.json and recipe_type_index.json
+            Path recipeTypesDir = extractedJsonDir.resolve("recipe_types");
             var indexBuilder = new IndexBuilder();
-            indexBuilder.buildIndexes(recipeTypesDir, indexDir);
+            indexBuilder.buildIndexes(recipeTypesDir, extractedJsonDir);
 
             Collection<RecipeType<?>> recipeTypes = recipeManager.createRecipeCategoryLookup()
                     .get()
@@ -77,7 +79,7 @@ public class JEIPlugin implements IModPlugin {
      * Writes one_per_type.json which contains a list of Recipes, one of each type.
      * @param recipeManager  JEI Recipe Manager
      * @param outDir Directory to write to
-     * @throws IOException Who knows
+     * @throws IOException Who knows?
      */
     private void writeOnePerTypeFile(IRecipeManager recipeManager, Path outDir) throws IOException {
         Collection<RecipeType<?>> recipeTypes = recipeManager.createRecipeCategoryLookup()
@@ -106,17 +108,20 @@ public class JEIPlugin implements IModPlugin {
 
         List<IRecipeCategory<?>> categories = recipeManager.createRecipeCategoryLookup()
                 .get()
+                .sorted(Comparator.comparing(c -> c.getRecipeType().getUid().toString()))
                 .toList();
 
         for (IRecipeCategory<?> category : categories) {
             RecipeType<?> type = category.getRecipeType();
             IRecipeLookup<?> recipeLookup = recipeManager.createRecipeLookup(type);
-            Optional<?> firstRecipe = recipeLookup.get().findFirst();
-            if (firstRecipe.isEmpty()) {
+            List<?> sortedRecipes = recipeLookup.get()
+                    .sorted(Comparator.comparing(r -> scraper.getRecipeId(r)))
+                    .toList();
+            if (sortedRecipes.isEmpty()) {
                 continue;
             }
             // Note: child Recipes cannot be cast to Recipe
-            var recipe = firstRecipe.get();
+            var recipe = sortedRecipes.get(0);
             Map<String, Object> recipeMap = scraper.recipeToMap(recipe, category);
             onePerType.put(type.getUid().toString(), recipeMap);
         }
@@ -152,6 +157,7 @@ public class JEIPlugin implements IModPlugin {
 
         List<IRecipeCategory<?>> categories = recipeManager.createRecipeCategoryLookup()
                 .get()
+                .sorted(Comparator.comparing(c -> c.getRecipeType().getUid().toString()))
                 .toList();
 
         RecipeScraper scraper = new RecipeScraper();
@@ -164,7 +170,10 @@ public class JEIPlugin implements IModPlugin {
 
             // For Recipe in Recipes for this RecipeType, extract Recipe JSON
             List<Map<String, Object>> recipeJsonList = new ArrayList<>();
-            for (var recipe : recipeLookup.get().toList()) {
+            List<?> sortedRecipes = recipeLookup.get()
+                    .sorted(Comparator.comparing(r -> scraper.getRecipeId(r)))
+                    .toList();
+            for (var recipe : sortedRecipes) {
                 Map<String, Object> recipeJson = scraper.recipeToMap(recipe, category);
                 recipeJsonList.add(recipeJson);
             }
