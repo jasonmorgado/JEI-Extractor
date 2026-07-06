@@ -176,10 +176,13 @@ public class IndexExtractor {
                             (Map<RecipeType<?>, IngredientToRecipesMap<?>>)
                             mapField.get(recipeTable);
 
-                    // Iterate over RecipeType -> IngredientToRecipesMap entries
-                    for (Map.Entry<RecipeType<?>, IngredientToRecipesMap<?>> entry : ingredientTableMap.entrySet()) {
-                        RecipeType<?> recipeType = entry.getKey();
-                        IngredientToRecipesMap<?> ingredientToRecipesMap = entry.getValue();
+                    // Iterate over RecipeType -> IngredientToRecipesMap entries in sorted order
+                    List<RecipeType<?>> sortedTypes = ingredientTableMap.keySet().stream()
+                            .sorted(Comparator.comparing(t -> t.getUid().toString()))
+                            .collect(Collectors.toList());
+
+                    for (RecipeType<?> recipeType : sortedTypes) {
+                        IngredientToRecipesMap<?> ingredientToRecipesMap = ingredientTableMap.get(recipeType);
 
                         String recipeTypeId = recipeType.getUid().toString();
 
@@ -188,10 +191,12 @@ public class IndexExtractor {
                         uidToRecipesField.setAccessible(true);
                         Map<String, List<?>> uidToRecipes = (Map<String, List<?>>) uidToRecipesField.get(ingredientToRecipesMap);
 
-                        // Iterate over item UID -> recipes entries
-                        for (Map.Entry<String, List<?>> uidEntry : uidToRecipes.entrySet()) {
-                            String ingredientUid = uidEntry.getKey();
-                            List<?> recipes = uidEntry.getValue();
+                        // Iterate over item UID -> recipes entries in sorted order
+                        List<String> sortedUids = uidToRecipes.keySet().stream()
+                                .sorted()
+                                .collect(Collectors.toList());
+                        for (String ingredientUid : sortedUids) {
+                            List<?> recipes = uidToRecipes.get(ingredientUid);
 
                             // Build recipeTypeToItemToRecipeId: {recipe_type_id: {item_uid: {role: [recipe_id]}}}
                             List<String> recipeIdList = recipeTypeToItemToRecipeId.computeIfAbsent(recipeTypeId, k -> new LinkedHashMap<>())
@@ -256,10 +261,13 @@ public class IndexExtractor {
 
                     var mapInside = new LinkedHashMap<>();
 
-                    // Iterate over RecipeType -> IngredientToRecipesMap entries
-                    for (Map.Entry<RecipeType<?>, IngredientToRecipesMap<?>> entry : ingredientTableMap.entrySet()) {
-                        RecipeType<?> recipeType = entry.getKey();
-                        IngredientToRecipesMap<?> ingredientToRecipesMap = entry.getValue();
+                    // Iterate over RecipeType -> IngredientToRecipesMap entries in sorted order
+                    List<RecipeType<?>> sortedTypes = ingredientTableMap.keySet().stream()
+                            .sorted(Comparator.comparing(t -> t.getUid().toString()))
+                            .collect(Collectors.toList());
+
+                    for (RecipeType<?> recipeType : sortedTypes) {
+                        IngredientToRecipesMap<?> ingredientToRecipesMap = ingredientTableMap.get(recipeType);
 
                         String recipeTypeId = recipeType.getUid().toString();
 
@@ -270,10 +278,12 @@ public class IndexExtractor {
 
                         var uidToRecipeIds = new LinkedHashMap<>();
 
-                        // Iterate over item UID -> recipes entries
-                        for (Map.Entry<String, List<?>> uidEntry : uidToRecipes.entrySet()) {
-                            String ingredientUid = uidEntry.getKey();
-                            List<?> recipes = uidEntry.getValue();
+                        // Iterate over item UID -> recipes entries in sorted order
+                        List<String> sortedUids = uidToRecipes.keySet().stream()
+                                .sorted()
+                                .collect(Collectors.toList());
+                        for (String ingredientUid : sortedUids) {
+                            List<?> recipes = uidToRecipes.get(ingredientUid);
 
                             List<String> recipeIdList = new ArrayList<>();
                             for (Object recipe : recipes) {
