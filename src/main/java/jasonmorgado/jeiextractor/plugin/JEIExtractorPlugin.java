@@ -14,6 +14,10 @@ import org.slf4j.Logger;
 @JeiPlugin
 public class JEIExtractorPlugin implements IModPlugin {
 
+    /**
+     * JEI integration entry point. Handles running the recipe export pipeline when
+     * the JEI runtime becomes available during world load.
+     */
     private static final Logger LOGGER = LogUtils.getLogger();
 
     @Override
