@@ -1,11 +1,5 @@
 [
   {
-    "resourceLocation": "examplemod:example_block",
-    "uid": "examplemod__example_block",
-    "name": "block.examplemod.example_block",
-    "mod": "Example Mod"
-  },
-  {
     "resourceLocation": "minecraft:acacia_boat",
     "uid": "minecraft__acacia_boat",
     "name": "Acacia Boat",
