@@ -1,4 +1,4 @@
-package jasonmorgado.jeiextractor.index;
+package jasonmorgado.jeiextractor.export;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -362,7 +362,7 @@ public class IndexBuilder {
     private String convertFilenameToCraftingType(String filename) {
         // Remove .json extension
         String withoutExt = filename.endsWith(".json") ? filename.substring(0, filename.length() - 5) : filename;
-        // Replace first underscore with colon, keep rest as is
+        // Replace first underscore with colon, rest keep as is
         int firstUnderscore = withoutExt.indexOf('_');
         if (firstUnderscore > 0) {
             return withoutExt.substring(0, firstUnderscore) + ":" + withoutExt.substring(firstUnderscore + 1);

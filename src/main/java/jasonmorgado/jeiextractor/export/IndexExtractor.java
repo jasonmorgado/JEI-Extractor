@@ -1,4 +1,4 @@
-package jasonmorgado.jeiextractor.index;
+package jasonmorgado.jeiextractor.export;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -34,6 +34,18 @@ import java.nio.file.Path;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * Extracts JEI's ingredient and recipe index data into structured JSON files.
+ *
+ * <p>Writes three kinds of indexes:
+ * <ul>
+ *   <li>{@code items.json} — all registered items with id, name, mod, and tags</li>
+ *   <li>{@code index/item_to_recipe_types.json} — maps each item UID to the recipe types
+ *       (and roles) it appears in</li>
+ *   <li>{@code index/recipe_type_to_item_to_recipe_id.json} — maps each recipe type to
+ *       its items and the recipe IDs they participate in</li>
+ * </ul>
+ */
 public class IndexExtractor {
     private static final Logger LOGGER = LogUtils.getLogger();
     private static final Gson GSON = new GsonBuilder()
