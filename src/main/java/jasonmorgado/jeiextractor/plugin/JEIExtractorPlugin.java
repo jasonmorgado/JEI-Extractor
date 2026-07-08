@@ -1,6 +1,7 @@
-package com.example.examplemod;
+package jasonmorgado.jeiextractor.plugin;
 
 import com.mojang.logging.LogUtils;
+import jasonmorgado.jeiextractor.JEIExtractorMod;
 import jasonmorgado.jeiextractor.export.RecipeExportService;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
@@ -11,13 +12,13 @@ import org.slf4j.Logger;
 
 
 @JeiPlugin
-public class JEIPlugin implements IModPlugin {
+public class JEIExtractorPlugin implements IModPlugin {
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
     @Override
     public @NotNull ResourceLocation getPluginUid() {
-        return ResourceLocation.fromNamespaceAndPath(ExampleMod.MODID, "jei_plugin");
+        return ResourceLocation.fromNamespaceAndPath(JEIExtractorMod.MODID, "jei_plugin");
     }
 
     /**
