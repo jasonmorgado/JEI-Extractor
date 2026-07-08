@@ -24,6 +24,9 @@ import java.nio.file.Paths;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import jasonmorgado.jeiextractor.index.IndexBuilder;
+import jasonmorgado.jeiextractor.index.IndexExtractor;
+import jasonmorgado.jeiextractor.scrape.RecipeScraper;
 
 
 @JeiPlugin

@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package jasonmorgado.jeiextractor.index;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -7,6 +7,7 @@ import com.google.gson.JsonPrimitive;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
 import com.mojang.logging.LogUtils;
+import jasonmorgado.jeiextractor.scrape.RecipeScraper;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.runtime.IJeiRuntime;
@@ -257,7 +258,8 @@ public class IndexExtractor {
                     Field mapField = recipeTable.getClass().getDeclaredField("map");
                     mapField.setAccessible(true);
                     Map<RecipeType<?>, IngredientToRecipesMap<?>> ingredientTableMap =
-                            (Map<RecipeType<?>, IngredientToRecipesMap<?>>) mapField.get(recipeTable);
+                            (Map<RecipeType<?>, IngredientToRecipesMap<?>>)
+                            mapField.get(recipeTable);
 
                     var mapInside = new LinkedHashMap<>();
 

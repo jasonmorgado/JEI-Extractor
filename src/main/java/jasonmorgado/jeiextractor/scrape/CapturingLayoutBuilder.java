@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package jasonmorgado.jeiextractor.scrape;
 
 import mezz.jei.api.gui.builder.IIngredientAcceptor;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
