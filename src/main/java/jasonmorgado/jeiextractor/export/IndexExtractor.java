@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package jasonmorgado.jeiextractor.export;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -7,6 +7,7 @@ import com.google.gson.JsonPrimitive;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
 import com.mojang.logging.LogUtils;
+import jasonmorgado.jeiextractor.scrape.RecipeScraper;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.runtime.IJeiRuntime;
@@ -33,6 +34,18 @@ import java.nio.file.Path;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * Extracts JEI's ingredient and recipe index data into structured JSON files.
+ *
+ * <p>Writes three kinds of indexes:
+ * <ul>
+ *   <li>{@code items.json} — all registered items with id, name, mod, and tags</li>
+ *   <li>{@code index/item_to_recipe_types.json} — maps each item UID to the recipe types
+ *       (and roles) it appears in</li>
+ *   <li>{@code index/recipe_type_to_item_to_recipe_id.json} — maps each recipe type to
+ *       its items and the recipe IDs they participate in</li>
+ * </ul>
+ */
 public class IndexExtractor {
     private static final Logger LOGGER = LogUtils.getLogger();
     private static final Gson GSON = new GsonBuilder()
@@ -257,7 +270,8 @@ public class IndexExtractor {
                     Field mapField = recipeTable.getClass().getDeclaredField("map");
                     mapField.setAccessible(true);
                     Map<RecipeType<?>, IngredientToRecipesMap<?>> ingredientTableMap =
-                            (Map<RecipeType<?>, IngredientToRecipesMap<?>>) mapField.get(recipeTable);
+                            (Map<RecipeType<?>, IngredientToRecipesMap<?>>)
+                            mapField.get(recipeTable);
 
                     var mapInside = new LinkedHashMap<>();
 

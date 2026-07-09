@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package jasonmorgado.jeiextractor.scrape;
 
 import com.mojang.logging.LogUtils;
 import mezz.jei.api.recipe.category.IRecipeCategory;

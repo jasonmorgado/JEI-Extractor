@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package jasonmorgado.jeiextractor.scrape;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
