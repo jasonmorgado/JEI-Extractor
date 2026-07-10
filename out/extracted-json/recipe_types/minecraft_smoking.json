@@ -3,6 +3,7 @@
     "_type": "SmokingRecipe",
     "type": "smoking",
     "id": "minecraft:baked_potato_from_smoking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -63,6 +64,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -90,6 +98,7 @@
     "_type": "SmokingRecipe",
     "type": "smoking",
     "id": "minecraft:cooked_beef_from_smoking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -150,6 +159,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -177,6 +193,7 @@
     "_type": "SmokingRecipe",
     "type": "smoking",
     "id": "minecraft:cooked_chicken_from_smoking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -237,6 +254,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -264,6 +288,7 @@
     "_type": "SmokingRecipe",
     "type": "smoking",
     "id": "minecraft:cooked_cod_from_smoking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -324,6 +349,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -351,6 +383,7 @@
     "_type": "SmokingRecipe",
     "type": "smoking",
     "id": "minecraft:cooked_mutton_from_smoking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -411,6 +444,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -438,6 +478,7 @@
     "_type": "SmokingRecipe",
     "type": "smoking",
     "id": "minecraft:cooked_porkchop_from_smoking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -498,6 +539,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -525,6 +573,7 @@
     "_type": "SmokingRecipe",
     "type": "smoking",
     "id": "minecraft:cooked_rabbit_from_smoking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -585,6 +634,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -612,6 +668,7 @@
     "_type": "SmokingRecipe",
     "type": "smoking",
     "id": "minecraft:cooked_salmon_from_smoking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -672,6 +729,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -699,6 +763,7 @@
     "_type": "SmokingRecipe",
     "type": "smoking",
     "id": "minecraft:dried_kelp_from_smoking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -756,6 +821,13 @@
             "maxDamage": 0
           }
         ],
+        "fluids": []
+      },
+      {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
         "fluids": []
       },
       {

@@ -130,12 +130,13 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     
     // Add JEI
-    implementation fg.deobf("mezz.jei:jei-1.19.2-forge:11.4.0.286")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.19.2-forge:11.4.0.286")
+    implementation fg.deobf("mezz.jei:jei-1.20.1-forge:15.20.0.133")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.20.0.133")
 
     // IconExporter
-    implementation fg.deobf("curse.maven:iconexporter-327048:7210729")
-    implementation fg.deobf("curse.maven:cyclops-core-232758:7637988")
+    implementation fg.deobf("curse.maven:iconexporter-327048:7210746")
+    // Cyclops Core 1.22.1 (requires 1.18.14+)
+    implementation fg.deobf("curse.maven:cyclops-core-232758:8006236")
     
     // Create
     // implementation fg.deobf("com.simibubi.create:create-1.19.2:0.5.1.i")

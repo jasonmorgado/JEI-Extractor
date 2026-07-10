@@ -3,6 +3,7 @@
     "_type": "CampfireCookingRecipe",
     "type": "campfire_cooking",
     "id": "minecraft:baked_potato_from_campfire_cooking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -90,6 +91,7 @@
     "_type": "CampfireCookingRecipe",
     "type": "campfire_cooking",
     "id": "minecraft:cooked_beef_from_campfire_cooking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -177,6 +179,7 @@
     "_type": "CampfireCookingRecipe",
     "type": "campfire_cooking",
     "id": "minecraft:cooked_chicken_from_campfire_cooking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -264,6 +267,7 @@
     "_type": "CampfireCookingRecipe",
     "type": "campfire_cooking",
     "id": "minecraft:cooked_cod_from_campfire_cooking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -351,6 +355,7 @@
     "_type": "CampfireCookingRecipe",
     "type": "campfire_cooking",
     "id": "minecraft:cooked_mutton_from_campfire_cooking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -438,6 +443,7 @@
     "_type": "CampfireCookingRecipe",
     "type": "campfire_cooking",
     "id": "minecraft:cooked_porkchop_from_campfire_cooking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -525,6 +531,7 @@
     "_type": "CampfireCookingRecipe",
     "type": "campfire_cooking",
     "id": "minecraft:cooked_rabbit_from_campfire_cooking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -612,6 +619,7 @@
     "_type": "CampfireCookingRecipe",
     "type": "campfire_cooking",
     "id": "minecraft:cooked_salmon_from_campfire_cooking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -699,6 +707,7 @@
     "_type": "CampfireCookingRecipe",
     "type": "campfire_cooking",
     "id": "minecraft:dried_kelp_from_campfire_cooking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",

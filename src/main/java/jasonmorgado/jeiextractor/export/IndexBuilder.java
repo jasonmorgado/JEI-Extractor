@@ -94,8 +94,10 @@ public class IndexBuilder {
         var itemToRecipeTypes = new LinkedHashMap<String, Map<String, Set<String>>>();
 
         // Process each {crafting_type}.json file in the recipe_types directory
+        // Skip tag recipes — they're enormous and inflate indexes
         List<Path> recipeFiles = Files.list(recipeTypesDir)
                 .filter(p -> p.toString().endsWith(".json"))
+                .filter(p -> !p.getFileName().toString().contains("tag_recipes"))
                 .sorted()
                 .toList();
 
@@ -195,8 +197,10 @@ public class IndexBuilder {
         var recipeTypeToItemToRecipeId = new LinkedHashMap<String, Map<String, Map<String, Set<Integer>>>>();
 
         // Process each {crafting_type}.json file in the recipe_types directory
+        // Skip tag recipes — they're enormous and inflate indexes
         List<Path> recipeFiles = Files.list(recipeTypesDir)
                 .filter(p -> p.toString().endsWith(".json"))
+                .filter(p -> !p.getFileName().toString().contains("tag_recipes"))
                 .sorted()
                 .toList();
 

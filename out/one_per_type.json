@@ -4,23 +4,23 @@
     "leftInputs": [
       {
         "_type": "ItemStack",
-        "name": "Wooden Hoe",
+        "name": "Golden Axe",
         "count": 1,
-        "item": "wooden_hoe",
+        "item": "golden_axe",
         "tag": {
           "Damage": 0.0
         },
         "capNBT": {
           "Count": "1b",
-          "id": "minecraft:wooden_hoe",
+          "id": "minecraft:golden_axe",
           "tag": {
             "Damage": 0.0
           }
         },
-        "resourceLocation": "minecraft:wooden_hoe",
-        "uid": "minecraft__wooden_hoe__f615bddfb62eda0c5d44ad803d556908",
+        "resourceLocation": "minecraft:golden_axe",
+        "uid": "minecraft__golden_axe__f615bddfb62eda0c5d44ad803d556908",
         "damage": 0,
-        "maxDamage": 59
+        "maxDamage": 32
       }
     ],
     "rightInputs": [
@@ -32,7 +32,7 @@
         "tag": {
           "StoredEnchantments": [
             {
-              "id": "minecraft:unbreaking",
+              "id": "minecraft:smite",
               "lvl": "1s"
             }
           ]
@@ -43,14 +43,14 @@
           "tag": {
             "StoredEnchantments": [
               {
-                "id": "minecraft:unbreaking",
+                "id": "minecraft:smite",
                 "lvl": "1s"
               }
             ]
           }
         },
         "resourceLocation": "minecraft:enchanted_book",
-        "uid": "minecraft__enchanted_book__447e047690b453e1a7e3859454532dcd",
+        "uid": "minecraft__enchanted_book__a4dd8f2b526822d126ea94da057ca7e6",
         "damage": 0,
         "maxDamage": 0
       },
@@ -62,7 +62,7 @@
         "tag": {
           "StoredEnchantments": [
             {
-              "id": "minecraft:unbreaking",
+              "id": "minecraft:smite",
               "lvl": "2s"
             }
           ]
@@ -73,14 +73,14 @@
           "tag": {
             "StoredEnchantments": [
               {
-                "id": "minecraft:unbreaking",
+                "id": "minecraft:smite",
                 "lvl": "2s"
               }
             ]
           }
         },
         "resourceLocation": "minecraft:enchanted_book",
-        "uid": "minecraft__enchanted_book__7d41f2aabd8d87f52026576688cc74f8",
+        "uid": "minecraft__enchanted_book__ed8c8178817400287ca6d0e11a918eb5",
         "damage": 0,
         "maxDamage": 0
       },
@@ -92,7 +92,7 @@
         "tag": {
           "StoredEnchantments": [
             {
-              "id": "minecraft:unbreaking",
+              "id": "minecraft:smite",
               "lvl": "3s"
             }
           ]
@@ -103,14 +103,74 @@
           "tag": {
             "StoredEnchantments": [
               {
-                "id": "minecraft:unbreaking",
+                "id": "minecraft:smite",
                 "lvl": "3s"
               }
             ]
           }
         },
         "resourceLocation": "minecraft:enchanted_book",
-        "uid": "minecraft__enchanted_book__40fe345f46598869f77f8a85035b7d42",
+        "uid": "minecraft__enchanted_book__02dfab426825f4b023520749a05d7e8a",
+        "damage": 0,
+        "maxDamage": 0
+      },
+      {
+        "_type": "ItemStack",
+        "name": "Enchanted Book",
+        "count": 1,
+        "item": "enchanted_book",
+        "tag": {
+          "StoredEnchantments": [
+            {
+              "id": "minecraft:smite",
+              "lvl": "4s"
+            }
+          ]
+        },
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:enchanted_book",
+          "tag": {
+            "StoredEnchantments": [
+              {
+                "id": "minecraft:smite",
+                "lvl": "4s"
+              }
+            ]
+          }
+        },
+        "resourceLocation": "minecraft:enchanted_book",
+        "uid": "minecraft__enchanted_book__5172eb5500967d895c455c72231d1e14",
+        "damage": 0,
+        "maxDamage": 0
+      },
+      {
+        "_type": "ItemStack",
+        "name": "Enchanted Book",
+        "count": 1,
+        "item": "enchanted_book",
+        "tag": {
+          "StoredEnchantments": [
+            {
+              "id": "minecraft:smite",
+              "lvl": "5s"
+            }
+          ]
+        },
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:enchanted_book",
+          "tag": {
+            "StoredEnchantments": [
+              {
+                "id": "minecraft:smite",
+                "lvl": "5s"
+              }
+            ]
+          }
+        },
+        "resourceLocation": "minecraft:enchanted_book",
+        "uid": "minecraft__enchanted_book__079e01b0a04eb54edf8dc4ebc475223d",
         "damage": 0,
         "maxDamage": 0
       }
@@ -118,102 +178,167 @@
     "outputs": [
       {
         "_type": "ItemStack",
-        "name": "Wooden Hoe",
+        "name": "Golden Axe",
         "count": 1,
-        "item": "wooden_hoe",
+        "item": "golden_axe",
         "tag": {
           "Damage": 0.0,
           "Enchantments": [
             {
-              "id": "minecraft:unbreaking",
+              "id": "minecraft:smite",
               "lvl": "1s"
             }
           ]
         },
         "capNBT": {
           "Count": "1b",
-          "id": "minecraft:wooden_hoe",
+          "id": "minecraft:golden_axe",
           "tag": {
             "Damage": 0.0,
             "Enchantments": [
               {
-                "id": "minecraft:unbreaking",
+                "id": "minecraft:smite",
                 "lvl": "1s"
               }
             ]
           }
         },
-        "resourceLocation": "minecraft:wooden_hoe",
-        "uid": "minecraft__wooden_hoe__ed009d51b14f9e0a0729a634fdaa3f9d",
+        "resourceLocation": "minecraft:golden_axe",
+        "uid": "minecraft__golden_axe__63d8f454e07cc347b6f5fedf6fe9faa9",
         "damage": 0,
-        "maxDamage": 59
+        "maxDamage": 32
       },
       {
         "_type": "ItemStack",
-        "name": "Wooden Hoe",
+        "name": "Golden Axe",
         "count": 1,
-        "item": "wooden_hoe",
+        "item": "golden_axe",
         "tag": {
           "Damage": 0.0,
           "Enchantments": [
             {
-              "id": "minecraft:unbreaking",
+              "id": "minecraft:smite",
               "lvl": "2s"
             }
           ]
         },
         "capNBT": {
           "Count": "1b",
-          "id": "minecraft:wooden_hoe",
+          "id": "minecraft:golden_axe",
           "tag": {
             "Damage": 0.0,
             "Enchantments": [
               {
-                "id": "minecraft:unbreaking",
+                "id": "minecraft:smite",
                 "lvl": "2s"
               }
             ]
           }
         },
-        "resourceLocation": "minecraft:wooden_hoe",
-        "uid": "minecraft__wooden_hoe__c9f0c19d2dcbadb1c71a8b86d3e5cc24",
+        "resourceLocation": "minecraft:golden_axe",
+        "uid": "minecraft__golden_axe__b89ca4ec993d0dbc9a7521fab905e9b6",
         "damage": 0,
-        "maxDamage": 59
+        "maxDamage": 32
       },
       {
         "_type": "ItemStack",
-        "name": "Wooden Hoe",
+        "name": "Golden Axe",
         "count": 1,
-        "item": "wooden_hoe",
+        "item": "golden_axe",
         "tag": {
           "Damage": 0.0,
           "Enchantments": [
             {
-              "id": "minecraft:unbreaking",
+              "id": "minecraft:smite",
               "lvl": "3s"
             }
           ]
         },
         "capNBT": {
           "Count": "1b",
-          "id": "minecraft:wooden_hoe",
+          "id": "minecraft:golden_axe",
           "tag": {
             "Damage": 0.0,
             "Enchantments": [
               {
-                "id": "minecraft:unbreaking",
+                "id": "minecraft:smite",
                 "lvl": "3s"
               }
             ]
           }
         },
-        "resourceLocation": "minecraft:wooden_hoe",
-        "uid": "minecraft__wooden_hoe__250d7e37c08369785dc18baae0c652cf",
+        "resourceLocation": "minecraft:golden_axe",
+        "uid": "minecraft__golden_axe__3a547b3cd574e04daf2e999a012cb7a5",
         "damage": 0,
-        "maxDamage": 59
+        "maxDamage": 32
+      },
+      {
+        "_type": "ItemStack",
+        "name": "Golden Axe",
+        "count": 1,
+        "item": "golden_axe",
+        "tag": {
+          "Damage": 0.0,
+          "Enchantments": [
+            {
+              "id": "minecraft:smite",
+              "lvl": "4s"
+            }
+          ]
+        },
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:golden_axe",
+          "tag": {
+            "Damage": 0.0,
+            "Enchantments": [
+              {
+                "id": "minecraft:smite",
+                "lvl": "4s"
+              }
+            ]
+          }
+        },
+        "resourceLocation": "minecraft:golden_axe",
+        "uid": "minecraft__golden_axe__f431009ea9a38f220e55634b6048a316",
+        "damage": 0,
+        "maxDamage": 32
+      },
+      {
+        "_type": "ItemStack",
+        "name": "Golden Axe",
+        "count": 1,
+        "item": "golden_axe",
+        "tag": {
+          "Damage": 0.0,
+          "Enchantments": [
+            {
+              "id": "minecraft:smite",
+              "lvl": "5s"
+            }
+          ]
+        },
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:golden_axe",
+          "tag": {
+            "Damage": 0.0,
+            "Enchantments": [
+              {
+                "id": "minecraft:smite",
+                "lvl": "5s"
+              }
+            ]
+          }
+        },
+        "resourceLocation": "minecraft:golden_axe",
+        "uid": "minecraft__golden_axe__3aa01215bb4b79e644e47672f8ade623",
+        "damage": 0,
+        "maxDamage": 32
       }
     ],
-    "id": "hash_002d5bd89d3090887d43b556f2f52297",
+    "uid": "minecraft:enchantment.minecraft.golden_axe",
+    "id": "hash_006eff72961dd1f42cf6927a4a30c329",
     "slots": [
       {
         "role": "INPUT",
@@ -222,23 +347,23 @@
         "items": [
           {
             "_type": "ItemStack",
-            "name": "Wooden Hoe",
+            "name": "Golden Axe",
             "count": 1,
-            "item": "wooden_hoe",
+            "item": "golden_axe",
             "tag": {
               "Damage": 0.0
             },
             "capNBT": {
               "Count": "1b",
-              "id": "minecraft:wooden_hoe",
+              "id": "minecraft:golden_axe",
               "tag": {
                 "Damage": 0.0
               }
             },
-            "resourceLocation": "minecraft:wooden_hoe",
-            "uid": "minecraft__wooden_hoe__f615bddfb62eda0c5d44ad803d556908",
+            "resourceLocation": "minecraft:golden_axe",
+            "uid": "minecraft__golden_axe__f615bddfb62eda0c5d44ad803d556908",
             "damage": 0,
-            "maxDamage": 59
+            "maxDamage": 32
           }
         ],
         "fluids": []
@@ -256,7 +381,7 @@
             "tag": {
               "StoredEnchantments": [
                 {
-                  "id": "minecraft:unbreaking",
+                  "id": "minecraft:smite",
                   "lvl": "1s"
                 }
               ]
@@ -267,14 +392,14 @@
               "tag": {
                 "StoredEnchantments": [
                   {
-                    "id": "minecraft:unbreaking",
+                    "id": "minecraft:smite",
                     "lvl": "1s"
                   }
                 ]
               }
             },
             "resourceLocation": "minecraft:enchanted_book",
-            "uid": "minecraft__enchanted_book__447e047690b453e1a7e3859454532dcd",
+            "uid": "minecraft__enchanted_book__a4dd8f2b526822d126ea94da057ca7e6",
             "damage": 0,
             "maxDamage": 0
           },
@@ -286,7 +411,7 @@
             "tag": {
               "StoredEnchantments": [
                 {
-                  "id": "minecraft:unbreaking",
+                  "id": "minecraft:smite",
                   "lvl": "2s"
                 }
               ]
@@ -297,14 +422,14 @@
               "tag": {
                 "StoredEnchantments": [
                   {
-                    "id": "minecraft:unbreaking",
+                    "id": "minecraft:smite",
                     "lvl": "2s"
                   }
                 ]
               }
             },
             "resourceLocation": "minecraft:enchanted_book",
-            "uid": "minecraft__enchanted_book__7d41f2aabd8d87f52026576688cc74f8",
+            "uid": "minecraft__enchanted_book__ed8c8178817400287ca6d0e11a918eb5",
             "damage": 0,
             "maxDamage": 0
           },
@@ -316,7 +441,7 @@
             "tag": {
               "StoredEnchantments": [
                 {
-                  "id": "minecraft:unbreaking",
+                  "id": "minecraft:smite",
                   "lvl": "3s"
                 }
               ]
@@ -327,14 +452,74 @@
               "tag": {
                 "StoredEnchantments": [
                   {
-                    "id": "minecraft:unbreaking",
+                    "id": "minecraft:smite",
                     "lvl": "3s"
                   }
                 ]
               }
             },
             "resourceLocation": "minecraft:enchanted_book",
-            "uid": "minecraft__enchanted_book__40fe345f46598869f77f8a85035b7d42",
+            "uid": "minecraft__enchanted_book__02dfab426825f4b023520749a05d7e8a",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Enchanted Book",
+            "count": 1,
+            "item": "enchanted_book",
+            "tag": {
+              "StoredEnchantments": [
+                {
+                  "id": "minecraft:smite",
+                  "lvl": "4s"
+                }
+              ]
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:enchanted_book",
+              "tag": {
+                "StoredEnchantments": [
+                  {
+                    "id": "minecraft:smite",
+                    "lvl": "4s"
+                  }
+                ]
+              }
+            },
+            "resourceLocation": "minecraft:enchanted_book",
+            "uid": "minecraft__enchanted_book__5172eb5500967d895c455c72231d1e14",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Enchanted Book",
+            "count": 1,
+            "item": "enchanted_book",
+            "tag": {
+              "StoredEnchantments": [
+                {
+                  "id": "minecraft:smite",
+                  "lvl": "5s"
+                }
+              ]
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:enchanted_book",
+              "tag": {
+                "StoredEnchantments": [
+                  {
+                    "id": "minecraft:smite",
+                    "lvl": "5s"
+                  }
+                ]
+              }
+            },
+            "resourceLocation": "minecraft:enchanted_book",
+            "uid": "minecraft__enchanted_book__079e01b0a04eb54edf8dc4ebc475223d",
             "damage": 0,
             "maxDamage": 0
           }
@@ -348,99 +533,163 @@
         "items": [
           {
             "_type": "ItemStack",
-            "name": "Wooden Hoe",
+            "name": "Golden Axe",
             "count": 1,
-            "item": "wooden_hoe",
+            "item": "golden_axe",
             "tag": {
               "Damage": 0.0,
               "Enchantments": [
                 {
-                  "id": "minecraft:unbreaking",
+                  "id": "minecraft:smite",
                   "lvl": "1s"
                 }
               ]
             },
             "capNBT": {
               "Count": "1b",
-              "id": "minecraft:wooden_hoe",
+              "id": "minecraft:golden_axe",
               "tag": {
                 "Damage": 0.0,
                 "Enchantments": [
                   {
-                    "id": "minecraft:unbreaking",
+                    "id": "minecraft:smite",
                     "lvl": "1s"
                   }
                 ]
               }
             },
-            "resourceLocation": "minecraft:wooden_hoe",
-            "uid": "minecraft__wooden_hoe__ed009d51b14f9e0a0729a634fdaa3f9d",
+            "resourceLocation": "minecraft:golden_axe",
+            "uid": "minecraft__golden_axe__63d8f454e07cc347b6f5fedf6fe9faa9",
             "damage": 0,
-            "maxDamage": 59
+            "maxDamage": 32
           },
           {
             "_type": "ItemStack",
-            "name": "Wooden Hoe",
+            "name": "Golden Axe",
             "count": 1,
-            "item": "wooden_hoe",
+            "item": "golden_axe",
             "tag": {
               "Damage": 0.0,
               "Enchantments": [
                 {
-                  "id": "minecraft:unbreaking",
+                  "id": "minecraft:smite",
                   "lvl": "2s"
                 }
               ]
             },
             "capNBT": {
               "Count": "1b",
-              "id": "minecraft:wooden_hoe",
+              "id": "minecraft:golden_axe",
               "tag": {
                 "Damage": 0.0,
                 "Enchantments": [
                   {
-                    "id": "minecraft:unbreaking",
+                    "id": "minecraft:smite",
                     "lvl": "2s"
                   }
                 ]
               }
             },
-            "resourceLocation": "minecraft:wooden_hoe",
-            "uid": "minecraft__wooden_hoe__c9f0c19d2dcbadb1c71a8b86d3e5cc24",
+            "resourceLocation": "minecraft:golden_axe",
+            "uid": "minecraft__golden_axe__b89ca4ec993d0dbc9a7521fab905e9b6",
             "damage": 0,
-            "maxDamage": 59
+            "maxDamage": 32
           },
           {
             "_type": "ItemStack",
-            "name": "Wooden Hoe",
+            "name": "Golden Axe",
             "count": 1,
-            "item": "wooden_hoe",
+            "item": "golden_axe",
             "tag": {
               "Damage": 0.0,
               "Enchantments": [
                 {
-                  "id": "minecraft:unbreaking",
+                  "id": "minecraft:smite",
                   "lvl": "3s"
                 }
               ]
             },
             "capNBT": {
               "Count": "1b",
-              "id": "minecraft:wooden_hoe",
+              "id": "minecraft:golden_axe",
               "tag": {
                 "Damage": 0.0,
                 "Enchantments": [
                   {
-                    "id": "minecraft:unbreaking",
+                    "id": "minecraft:smite",
                     "lvl": "3s"
                   }
                 ]
               }
             },
-            "resourceLocation": "minecraft:wooden_hoe",
-            "uid": "minecraft__wooden_hoe__250d7e37c08369785dc18baae0c652cf",
+            "resourceLocation": "minecraft:golden_axe",
+            "uid": "minecraft__golden_axe__3a547b3cd574e04daf2e999a012cb7a5",
             "damage": 0,
-            "maxDamage": 59
+            "maxDamage": 32
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Axe",
+            "count": 1,
+            "item": "golden_axe",
+            "tag": {
+              "Damage": 0.0,
+              "Enchantments": [
+                {
+                  "id": "minecraft:smite",
+                  "lvl": "4s"
+                }
+              ]
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_axe",
+              "tag": {
+                "Damage": 0.0,
+                "Enchantments": [
+                  {
+                    "id": "minecraft:smite",
+                    "lvl": "4s"
+                  }
+                ]
+              }
+            },
+            "resourceLocation": "minecraft:golden_axe",
+            "uid": "minecraft__golden_axe__f431009ea9a38f220e55634b6048a316",
+            "damage": 0,
+            "maxDamage": 32
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Axe",
+            "count": 1,
+            "item": "golden_axe",
+            "tag": {
+              "Damage": 0.0,
+              "Enchantments": [
+                {
+                  "id": "minecraft:smite",
+                  "lvl": "5s"
+                }
+              ]
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_axe",
+              "tag": {
+                "Damage": 0.0,
+                "Enchantments": [
+                  {
+                    "id": "minecraft:smite",
+                    "lvl": "5s"
+                  }
+                ]
+              }
+            },
+            "resourceLocation": "minecraft:golden_axe",
+            "uid": "minecraft__golden_axe__3aa01215bb4b79e644e47672f8ade623",
+            "damage": 0,
+            "maxDamage": 32
           }
         ],
         "fluids": []
@@ -451,6 +700,7 @@
     "_type": "BlastingRecipe",
     "type": "blasting",
     "id": "minecraft:coal_from_blasting_coal_ore",
+    "category": "MISC",
     "group": "coal",
     "ingredient": {
       "_type": "Ingredient",
@@ -511,6 +761,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -539,15 +796,15 @@
     "ingredients": [
       {
         "_type": "ItemStack",
-        "name": "Redstone Dust",
+        "name": "Sugar",
         "count": 1,
-        "item": "redstone",
+        "item": "sugar",
         "capNBT": {
           "Count": "1b",
-          "id": "minecraft:redstone"
+          "id": "minecraft:sugar"
         },
-        "resourceLocation": "minecraft:redstone",
-        "uid": "minecraft__redstone",
+        "resourceLocation": "minecraft:sugar",
+        "uid": "minecraft__sugar",
         "damage": 0,
         "maxDamage": 0
       }
@@ -555,46 +812,47 @@
     "potionInputs": [
       {
         "_type": "ItemStack",
-        "name": "Potion of Water Breathing",
+        "name": "Awkward Potion",
         "count": 1,
         "item": "potion",
         "tag": {
-          "Potion": "minecraft:water_breathing"
+          "Potion": "minecraft:awkward"
         },
         "capNBT": {
           "Count": "1b",
           "id": "minecraft:potion",
           "tag": {
-            "Potion": "minecraft:water_breathing"
+            "Potion": "minecraft:awkward"
           }
         },
         "resourceLocation": "minecraft:potion",
-        "uid": "minecraft__potion__a8afe48529a0fd9c53b80fde95556192",
+        "uid": "minecraft__potion__4152983c62650be831e926e155f5d25e",
         "damage": 0,
         "maxDamage": 0
       }
     ],
     "potionOutput": {
       "_type": "ItemStack",
-      "name": "Potion of Water Breathing",
+      "name": "Potion of Swiftness",
       "count": 1,
       "item": "potion",
       "tag": {
-        "Potion": "minecraft:long_water_breathing"
+        "Potion": "minecraft:swiftness"
       },
       "capNBT": {
         "Count": "1b",
         "id": "minecraft:potion",
         "tag": {
-          "Potion": "minecraft:long_water_breathing"
+          "Potion": "minecraft:swiftness"
         }
       },
       "resourceLocation": "minecraft:potion",
-      "uid": "minecraft__potion__5bfb814833db76e3df1ad0d1cb761702",
+      "uid": "minecraft__potion__a6770248a7df811fb23a8934660c3ad0",
       "damage": 0,
       "maxDamage": 0
     },
-    "id": "hash_016319d6e408d999c70064620e9c4da1",
+    "uid": "minecraft:minecraft.potion.awkward.to.minecraft.potion.swiftness.effect.minecraft.speed...uration..3600",
+    "id": "hash_0058db5ff8b85c8146f3215f29b2136e",
     "slots": [
       {
         "role": "INPUT",
@@ -603,21 +861,21 @@
         "items": [
           {
             "_type": "ItemStack",
-            "name": "Potion of Water Breathing",
+            "name": "Awkward Potion",
             "count": 1,
             "item": "potion",
             "tag": {
-              "Potion": "minecraft:water_breathing"
+              "Potion": "minecraft:awkward"
             },
             "capNBT": {
               "Count": "1b",
               "id": "minecraft:potion",
               "tag": {
-                "Potion": "minecraft:water_breathing"
+                "Potion": "minecraft:awkward"
               }
             },
             "resourceLocation": "minecraft:potion",
-            "uid": "minecraft__potion__a8afe48529a0fd9c53b80fde95556192",
+            "uid": "minecraft__potion__4152983c62650be831e926e155f5d25e",
             "damage": 0,
             "maxDamage": 0
           }
@@ -631,21 +889,21 @@
         "items": [
           {
             "_type": "ItemStack",
-            "name": "Potion of Water Breathing",
+            "name": "Awkward Potion",
             "count": 1,
             "item": "potion",
             "tag": {
-              "Potion": "minecraft:water_breathing"
+              "Potion": "minecraft:awkward"
             },
             "capNBT": {
               "Count": "1b",
               "id": "minecraft:potion",
               "tag": {
-                "Potion": "minecraft:water_breathing"
+                "Potion": "minecraft:awkward"
               }
             },
             "resourceLocation": "minecraft:potion",
-            "uid": "minecraft__potion__a8afe48529a0fd9c53b80fde95556192",
+            "uid": "minecraft__potion__4152983c62650be831e926e155f5d25e",
             "damage": 0,
             "maxDamage": 0
           }
@@ -659,21 +917,21 @@
         "items": [
           {
             "_type": "ItemStack",
-            "name": "Potion of Water Breathing",
+            "name": "Awkward Potion",
             "count": 1,
             "item": "potion",
             "tag": {
-              "Potion": "minecraft:water_breathing"
+              "Potion": "minecraft:awkward"
             },
             "capNBT": {
               "Count": "1b",
               "id": "minecraft:potion",
               "tag": {
-                "Potion": "minecraft:water_breathing"
+                "Potion": "minecraft:awkward"
               }
             },
             "resourceLocation": "minecraft:potion",
-            "uid": "minecraft__potion__a8afe48529a0fd9c53b80fde95556192",
+            "uid": "minecraft__potion__4152983c62650be831e926e155f5d25e",
             "damage": 0,
             "maxDamage": 0
           }
@@ -687,15 +945,15 @@
         "items": [
           {
             "_type": "ItemStack",
-            "name": "Redstone Dust",
+            "name": "Sugar",
             "count": 1,
-            "item": "redstone",
+            "item": "sugar",
             "capNBT": {
               "Count": "1b",
-              "id": "minecraft:redstone"
+              "id": "minecraft:sugar"
             },
-            "resourceLocation": "minecraft:redstone",
-            "uid": "minecraft__redstone",
+            "resourceLocation": "minecraft:sugar",
+            "uid": "minecraft__sugar",
             "damage": 0,
             "maxDamage": 0
           }
@@ -709,21 +967,21 @@
         "items": [
           {
             "_type": "ItemStack",
-            "name": "Potion of Water Breathing",
+            "name": "Potion of Swiftness",
             "count": 1,
             "item": "potion",
             "tag": {
-              "Potion": "minecraft:long_water_breathing"
+              "Potion": "minecraft:swiftness"
             },
             "capNBT": {
               "Count": "1b",
               "id": "minecraft:potion",
               "tag": {
-                "Potion": "minecraft:long_water_breathing"
+                "Potion": "minecraft:swiftness"
               }
             },
             "resourceLocation": "minecraft:potion",
-            "uid": "minecraft__potion__5bfb814833db76e3df1ad0d1cb761702",
+            "uid": "minecraft__potion__a6770248a7df811fb23a8934660c3ad0",
             "damage": 0,
             "maxDamage": 0
           }
@@ -736,6 +994,7 @@
     "_type": "CampfireCookingRecipe",
     "type": "campfire_cooking",
     "id": "minecraft:baked_potato_from_campfire_cooking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -824,21 +1083,22 @@
     "inputs": [
       {
         "_type": "ItemStack",
-        "name": "Pumpkin Pie",
+        "name": "Hanging Roots",
         "count": 1,
-        "item": "pumpkin_pie",
+        "item": "hanging_roots",
         "capNBT": {
           "Count": "1b",
-          "id": "minecraft:pumpkin_pie"
+          "id": "minecraft:hanging_roots"
         },
-        "resourceLocation": "minecraft:pumpkin_pie",
-        "uid": "minecraft__pumpkin_pie",
+        "resourceLocation": "minecraft:hanging_roots",
+        "uid": "minecraft__hanging_roots",
         "damage": 0,
         "maxDamage": 0
       }
     ],
-    "chance": "1.0",
-    "id": "hash_025773a82a4e9eb6495e10f1f26c26d5",
+    "chance": "0.3",
+    "uid": "jei:minecraft.hanging_roots",
+    "id": "hash_002fc8cf4d9ec6335a48ef2de3bb555e",
     "slots": [
       {
         "role": "INPUT",
@@ -847,15 +1107,15 @@
         "items": [
           {
             "_type": "ItemStack",
-            "name": "Pumpkin Pie",
+            "name": "Hanging Roots",
             "count": 1,
-            "item": "pumpkin_pie",
+            "item": "hanging_roots",
             "capNBT": {
               "Count": "1b",
-              "id": "minecraft:pumpkin_pie"
+              "id": "minecraft:hanging_roots"
             },
-            "resourceLocation": "minecraft:pumpkin_pie",
-            "uid": "minecraft__pumpkin_pie",
+            "resourceLocation": "minecraft:hanging_roots",
+            "uid": "minecraft__hanging_roots",
             "damage": 0,
             "maxDamage": 0
           }
@@ -987,6 +1247,8 @@
     },
     "id": "minecraft:acacia_boat",
     "group": "boat",
+    "category": "MISC",
+    "showNotification": "true",
     "slots": [
       {
         "role": "OUTPUT",
@@ -1199,6 +1461,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:baked_potato",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -1259,6 +1522,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -1283,35 +1553,619 @@
     ]
   },
   "minecraft:smithing": {
-    "_type": "UpgradeRecipe",
+    "_type": "SmithingTrimRecipe",
+    "id": "minecraft:coast_armor_trim_smithing_template_smithing_trim",
+    "template": {
+      "_type": "Ingredient",
+      "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Smithing Template",
+          "count": 1,
+          "item": "coast_armor_trim_smithing_template",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:coast_armor_trim_smithing_template"
+          },
+          "resourceLocation": "minecraft:coast_armor_trim_smithing_template",
+          "uid": "minecraft__coast_armor_trim_smithing_template",
+          "damage": 0,
+          "maxDamage": 0
+        }
+      ]
+    },
     "base": {
       "_type": "Ingredient",
       "items": [
         {
           "_type": "ItemStack",
-          "name": "Diamond Axe",
+          "name": "Netherite Helmet",
           "count": 1,
-          "item": "diamond_axe",
+          "item": "netherite_helmet",
           "tag": {
             "Damage": 0.0
           },
           "capNBT": {
             "Count": "1b",
-            "id": "minecraft:diamond_axe",
+            "id": "minecraft:netherite_helmet",
             "tag": {
               "Damage": 0.0
             }
           },
-          "resourceLocation": "minecraft:diamond_axe",
-          "uid": "minecraft__diamond_axe__f615bddfb62eda0c5d44ad803d556908",
+          "resourceLocation": "minecraft:netherite_helmet",
+          "uid": "minecraft__netherite_helmet__f615bddfb62eda0c5d44ad803d556908",
           "damage": 0,
-          "maxDamage": 1561
+          "maxDamage": 407
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Chestplate",
+          "count": 1,
+          "item": "netherite_chestplate",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_chestplate",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:netherite_chestplate",
+          "uid": "minecraft__netherite_chestplate__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 592
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Leggings",
+          "count": 1,
+          "item": "netherite_leggings",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_leggings",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:netherite_leggings",
+          "uid": "minecraft__netherite_leggings__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 555
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Netherite Boots",
+          "count": 1,
+          "item": "netherite_boots",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:netherite_boots",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:netherite_boots",
+          "uid": "minecraft__netherite_boots__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 481
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Helmet",
+          "count": 1,
+          "item": "diamond_helmet",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_helmet",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_helmet",
+          "uid": "minecraft__diamond_helmet__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 363
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Chestplate",
+          "count": 1,
+          "item": "diamond_chestplate",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_chestplate",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_chestplate",
+          "uid": "minecraft__diamond_chestplate__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 528
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Leggings",
+          "count": 1,
+          "item": "diamond_leggings",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_leggings",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_leggings",
+          "uid": "minecraft__diamond_leggings__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 495
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Diamond Boots",
+          "count": 1,
+          "item": "diamond_boots",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond_boots",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:diamond_boots",
+          "uid": "minecraft__diamond_boots__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 429
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Helmet",
+          "count": 1,
+          "item": "golden_helmet",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_helmet",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_helmet",
+          "uid": "minecraft__golden_helmet__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 77
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Chestplate",
+          "count": 1,
+          "item": "golden_chestplate",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_chestplate",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_chestplate",
+          "uid": "minecraft__golden_chestplate__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 112
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Leggings",
+          "count": 1,
+          "item": "golden_leggings",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_leggings",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_leggings",
+          "uid": "minecraft__golden_leggings__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 105
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Golden Boots",
+          "count": 1,
+          "item": "golden_boots",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:golden_boots",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:golden_boots",
+          "uid": "minecraft__golden_boots__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 91
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Helmet",
+          "count": 1,
+          "item": "iron_helmet",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_helmet",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_helmet",
+          "uid": "minecraft__iron_helmet__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 165
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Chestplate",
+          "count": 1,
+          "item": "iron_chestplate",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_chestplate",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_chestplate",
+          "uid": "minecraft__iron_chestplate__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 240
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Leggings",
+          "count": 1,
+          "item": "iron_leggings",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_leggings",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_leggings",
+          "uid": "minecraft__iron_leggings__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 225
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Iron Boots",
+          "count": 1,
+          "item": "iron_boots",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_boots",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:iron_boots",
+          "uid": "minecraft__iron_boots__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 195
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Chainmail Helmet",
+          "count": 1,
+          "item": "chainmail_helmet",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:chainmail_helmet",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:chainmail_helmet",
+          "uid": "minecraft__chainmail_helmet__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 165
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Chainmail Chestplate",
+          "count": 1,
+          "item": "chainmail_chestplate",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:chainmail_chestplate",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:chainmail_chestplate",
+          "uid": "minecraft__chainmail_chestplate__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 240
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Chainmail Leggings",
+          "count": 1,
+          "item": "chainmail_leggings",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:chainmail_leggings",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:chainmail_leggings",
+          "uid": "minecraft__chainmail_leggings__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 225
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Chainmail Boots",
+          "count": 1,
+          "item": "chainmail_boots",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:chainmail_boots",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:chainmail_boots",
+          "uid": "minecraft__chainmail_boots__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 195
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Leather Cap",
+          "count": 1,
+          "item": "leather_helmet",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:leather_helmet",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:leather_helmet",
+          "uid": "minecraft__leather_helmet__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 55
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Leather Tunic",
+          "count": 1,
+          "item": "leather_chestplate",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:leather_chestplate",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:leather_chestplate",
+          "uid": "minecraft__leather_chestplate__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 80
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Leather Pants",
+          "count": 1,
+          "item": "leather_leggings",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:leather_leggings",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:leather_leggings",
+          "uid": "minecraft__leather_leggings__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 75
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Leather Boots",
+          "count": 1,
+          "item": "leather_boots",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:leather_boots",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:leather_boots",
+          "uid": "minecraft__leather_boots__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 65
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Turtle Shell",
+          "count": 1,
+          "item": "turtle_helmet",
+          "tag": {
+            "Damage": 0.0
+          },
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:turtle_helmet",
+            "tag": {
+              "Damage": 0.0
+            }
+          },
+          "resourceLocation": "minecraft:turtle_helmet",
+          "uid": "minecraft__turtle_helmet__f615bddfb62eda0c5d44ad803d556908",
+          "damage": 0,
+          "maxDamage": 275
         }
       ]
     },
     "addition": {
       "_type": "Ingredient",
       "items": [
+        {
+          "_type": "ItemStack",
+          "name": "Iron Ingot",
+          "count": 1,
+          "item": "iron_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:iron_ingot"
+          },
+          "resourceLocation": "minecraft:iron_ingot",
+          "uid": "minecraft__iron_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Copper Ingot",
+          "count": 1,
+          "item": "copper_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:copper_ingot"
+          },
+          "resourceLocation": "minecraft:copper_ingot",
+          "uid": "minecraft__copper_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Gold Ingot",
+          "count": 1,
+          "item": "gold_ingot",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:gold_ingot"
+          },
+          "resourceLocation": "minecraft:gold_ingot",
+          "uid": "minecraft__gold_ingot",
+          "damage": 0,
+          "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Lapis Lazuli",
+          "count": 1,
+          "item": "lapis_lazuli",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:lapis_lazuli"
+          },
+          "resourceLocation": "minecraft:lapis_lazuli",
+          "uid": "minecraft__lapis_lazuli",
+          "damage": 0,
+          "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Emerald",
+          "count": 1,
+          "item": "emerald",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:emerald"
+          },
+          "resourceLocation": "minecraft:emerald",
+          "uid": "minecraft__emerald",
+          "damage": 0,
+          "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Diamond",
+          "count": 1,
+          "item": "diamond",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:diamond"
+          },
+          "resourceLocation": "minecraft:diamond",
+          "uid": "minecraft__diamond",
+          "damage": 0,
+          "maxDamage": 0
+        },
         {
           "_type": "ItemStack",
           "name": "Netherite Ingot",
@@ -1325,64 +2179,671 @@
           "uid": "minecraft__netherite_ingot",
           "damage": 0,
           "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Redstone Dust",
+          "count": 1,
+          "item": "redstone",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:redstone"
+          },
+          "resourceLocation": "minecraft:redstone",
+          "uid": "minecraft__redstone",
+          "damage": 0,
+          "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Nether Quartz",
+          "count": 1,
+          "item": "quartz",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:quartz"
+          },
+          "resourceLocation": "minecraft:quartz",
+          "uid": "minecraft__quartz",
+          "damage": 0,
+          "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Amethyst Shard",
+          "count": 1,
+          "item": "amethyst_shard",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:amethyst_shard"
+          },
+          "resourceLocation": "minecraft:amethyst_shard",
+          "uid": "minecraft__amethyst_shard",
+          "damage": 0,
+          "maxDamage": 0
         }
       ]
     },
-    "result": {
-      "_type": "ItemStack",
-      "name": "Netherite Axe",
-      "count": 1,
-      "item": "netherite_axe",
-      "tag": {
-        "Damage": 0.0
-      },
-      "capNBT": {
-        "Count": "1b",
-        "id": "minecraft:netherite_axe",
-        "tag": {
-          "Damage": 0.0
-        }
-      },
-      "resourceLocation": "minecraft:netherite_axe",
-      "uid": "minecraft__netherite_axe__f615bddfb62eda0c5d44ad803d556908",
-      "damage": 0,
-      "maxDamage": 2031
-    },
-    "id": "minecraft:netherite_axe_smithing",
     "slots": [
       {
         "role": "INPUT",
         "x": 1,
-        "y": 1,
+        "y": 6,
         "items": [
           {
             "_type": "ItemStack",
-            "name": "Diamond Axe",
+            "name": "Smithing Template",
             "count": 1,
-            "item": "diamond_axe",
-            "tag": {
-              "Damage": 0.0
-            },
+            "item": "coast_armor_trim_smithing_template",
             "capNBT": {
               "Count": "1b",
-              "id": "minecraft:diamond_axe",
-              "tag": {
-                "Damage": 0.0
-              }
+              "id": "minecraft:coast_armor_trim_smithing_template"
             },
-            "resourceLocation": "minecraft:diamond_axe",
-            "uid": "minecraft__diamond_axe__f615bddfb62eda0c5d44ad803d556908",
+            "resourceLocation": "minecraft:coast_armor_trim_smithing_template",
+            "uid": "minecraft__coast_armor_trim_smithing_template",
             "damage": 0,
-            "maxDamage": 1561
+            "maxDamage": 0
           }
         ],
         "fluids": []
       },
       {
         "role": "INPUT",
-        "x": 50,
-        "y": 1,
+        "x": 19,
+        "y": 6,
         "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Helmet",
+            "count": 1,
+            "item": "netherite_helmet",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_helmet",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_helmet",
+            "uid": "minecraft__netherite_helmet__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 407
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Chestplate",
+            "count": 1,
+            "item": "netherite_chestplate",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_chestplate",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_chestplate",
+            "uid": "minecraft__netherite_chestplate__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 592
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Leggings",
+            "count": 1,
+            "item": "netherite_leggings",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_leggings",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_leggings",
+            "uid": "minecraft__netherite_leggings__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 555
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Boots",
+            "count": 1,
+            "item": "netherite_boots",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_boots",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:netherite_boots",
+            "uid": "minecraft__netherite_boots__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 481
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Helmet",
+            "count": 1,
+            "item": "diamond_helmet",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_helmet",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_helmet",
+            "uid": "minecraft__diamond_helmet__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 363
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Chestplate",
+            "count": 1,
+            "item": "diamond_chestplate",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_chestplate",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_chestplate",
+            "uid": "minecraft__diamond_chestplate__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 528
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Leggings",
+            "count": 1,
+            "item": "diamond_leggings",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_leggings",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_leggings",
+            "uid": "minecraft__diamond_leggings__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 495
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Boots",
+            "count": 1,
+            "item": "diamond_boots",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_boots",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:diamond_boots",
+            "uid": "minecraft__diamond_boots__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 429
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Helmet",
+            "count": 1,
+            "item": "golden_helmet",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_helmet",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_helmet",
+            "uid": "minecraft__golden_helmet__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 77
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Chestplate",
+            "count": 1,
+            "item": "golden_chestplate",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_chestplate",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_chestplate",
+            "uid": "minecraft__golden_chestplate__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 112
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Leggings",
+            "count": 1,
+            "item": "golden_leggings",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_leggings",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_leggings",
+            "uid": "minecraft__golden_leggings__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 105
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Boots",
+            "count": 1,
+            "item": "golden_boots",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_boots",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:golden_boots",
+            "uid": "minecraft__golden_boots__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 91
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Helmet",
+            "count": 1,
+            "item": "iron_helmet",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_helmet",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_helmet",
+            "uid": "minecraft__iron_helmet__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 165
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Chestplate",
+            "count": 1,
+            "item": "iron_chestplate",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_chestplate",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_chestplate",
+            "uid": "minecraft__iron_chestplate__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 240
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Leggings",
+            "count": 1,
+            "item": "iron_leggings",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_leggings",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_leggings",
+            "uid": "minecraft__iron_leggings__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 225
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Boots",
+            "count": 1,
+            "item": "iron_boots",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_boots",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:iron_boots",
+            "uid": "minecraft__iron_boots__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 195
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Chainmail Helmet",
+            "count": 1,
+            "item": "chainmail_helmet",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chainmail_helmet",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:chainmail_helmet",
+            "uid": "minecraft__chainmail_helmet__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 165
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Chainmail Chestplate",
+            "count": 1,
+            "item": "chainmail_chestplate",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chainmail_chestplate",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:chainmail_chestplate",
+            "uid": "minecraft__chainmail_chestplate__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 240
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Chainmail Leggings",
+            "count": 1,
+            "item": "chainmail_leggings",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chainmail_leggings",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:chainmail_leggings",
+            "uid": "minecraft__chainmail_leggings__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 225
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Chainmail Boots",
+            "count": 1,
+            "item": "chainmail_boots",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chainmail_boots",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:chainmail_boots",
+            "uid": "minecraft__chainmail_boots__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 195
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Leather Cap",
+            "count": 1,
+            "item": "leather_helmet",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:leather_helmet",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:leather_helmet",
+            "uid": "minecraft__leather_helmet__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 55
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Leather Tunic",
+            "count": 1,
+            "item": "leather_chestplate",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:leather_chestplate",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:leather_chestplate",
+            "uid": "minecraft__leather_chestplate__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 80
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Leather Pants",
+            "count": 1,
+            "item": "leather_leggings",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:leather_leggings",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:leather_leggings",
+            "uid": "minecraft__leather_leggings__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 75
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Leather Boots",
+            "count": 1,
+            "item": "leather_boots",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:leather_boots",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:leather_boots",
+            "uid": "minecraft__leather_boots__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 65
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Turtle Shell",
+            "count": 1,
+            "item": "turtle_helmet",
+            "tag": {
+              "Damage": 0.0
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:turtle_helmet",
+              "tag": {
+                "Damage": 0.0
+              }
+            },
+            "resourceLocation": "minecraft:turtle_helmet",
+            "uid": "minecraft__turtle_helmet__f615bddfb62eda0c5d44ad803d556908",
+            "damage": 0,
+            "maxDamage": 275
+          }
+        ],
+        "fluids": []
+      },
+      {
+        "role": "INPUT",
+        "x": 37,
+        "y": 6,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Iron Ingot",
+            "count": 1,
+            "item": "iron_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_ingot"
+            },
+            "resourceLocation": "minecraft:iron_ingot",
+            "uid": "minecraft__iron_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Copper Ingot",
+            "count": 1,
+            "item": "copper_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:copper_ingot"
+            },
+            "resourceLocation": "minecraft:copper_ingot",
+            "uid": "minecraft__copper_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Gold Ingot",
+            "count": 1,
+            "item": "gold_ingot",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:gold_ingot"
+            },
+            "resourceLocation": "minecraft:gold_ingot",
+            "uid": "minecraft__gold_ingot",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Lapis Lazuli",
+            "count": 1,
+            "item": "lapis_lazuli",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:lapis_lazuli"
+            },
+            "resourceLocation": "minecraft:lapis_lazuli",
+            "uid": "minecraft__lapis_lazuli",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Emerald",
+            "count": 1,
+            "item": "emerald",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:emerald"
+            },
+            "resourceLocation": "minecraft:emerald",
+            "uid": "minecraft__emerald",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Diamond",
+            "count": 1,
+            "item": "diamond",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond"
+            },
+            "resourceLocation": "minecraft:diamond",
+            "uid": "minecraft__diamond",
+            "damage": 0,
+            "maxDamage": 0
+          },
           {
             "_type": "ItemStack",
             "name": "Netherite Ingot",
@@ -1396,34 +2857,756 @@
             "uid": "minecraft__netherite_ingot",
             "damage": 0,
             "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Redstone Dust",
+            "count": 1,
+            "item": "redstone",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:redstone"
+            },
+            "resourceLocation": "minecraft:redstone",
+            "uid": "minecraft__redstone",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Nether Quartz",
+            "count": 1,
+            "item": "quartz",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:quartz"
+            },
+            "resourceLocation": "minecraft:quartz",
+            "uid": "minecraft__quartz",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Amethyst Shard",
+            "count": 1,
+            "item": "amethyst_shard",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:amethyst_shard"
+            },
+            "resourceLocation": "minecraft:amethyst_shard",
+            "uid": "minecraft__amethyst_shard",
+            "damage": 0,
+            "maxDamage": 0
           }
         ],
         "fluids": []
       },
       {
         "role": "OUTPUT",
-        "x": 108,
-        "y": 1,
+        "x": 91,
+        "y": 6,
         "items": [
           {
             "_type": "ItemStack",
-            "name": "Netherite Axe",
+            "name": "Netherite Helmet",
             "count": 1,
-            "item": "netherite_axe",
+            "item": "netherite_helmet",
             "tag": {
-              "Damage": 0.0
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
             },
             "capNBT": {
               "Count": "1b",
-              "id": "minecraft:netherite_axe",
+              "id": "minecraft:netherite_helmet",
               "tag": {
-                "Damage": 0.0
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
               }
             },
-            "resourceLocation": "minecraft:netherite_axe",
-            "uid": "minecraft__netherite_axe__f615bddfb62eda0c5d44ad803d556908",
+            "resourceLocation": "minecraft:netherite_helmet",
+            "uid": "minecraft__netherite_helmet__4d8383259104a400fe8c04aebc256a8e",
             "damage": 0,
-            "maxDamage": 2031
+            "maxDamage": 407
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Chestplate",
+            "count": 1,
+            "item": "netherite_chestplate",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_chestplate",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:netherite_chestplate",
+            "uid": "minecraft__netherite_chestplate__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 592
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Leggings",
+            "count": 1,
+            "item": "netherite_leggings",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_leggings",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:netherite_leggings",
+            "uid": "minecraft__netherite_leggings__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 555
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Netherite Boots",
+            "count": 1,
+            "item": "netherite_boots",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:netherite_boots",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:netherite_boots",
+            "uid": "minecraft__netherite_boots__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 481
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Helmet",
+            "count": 1,
+            "item": "diamond_helmet",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_helmet",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:diamond_helmet",
+            "uid": "minecraft__diamond_helmet__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 363
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Chestplate",
+            "count": 1,
+            "item": "diamond_chestplate",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_chestplate",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:diamond_chestplate",
+            "uid": "minecraft__diamond_chestplate__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 528
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Leggings",
+            "count": 1,
+            "item": "diamond_leggings",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_leggings",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:diamond_leggings",
+            "uid": "minecraft__diamond_leggings__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 495
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Diamond Boots",
+            "count": 1,
+            "item": "diamond_boots",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:diamond_boots",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:diamond_boots",
+            "uid": "minecraft__diamond_boots__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 429
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Helmet",
+            "count": 1,
+            "item": "golden_helmet",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_helmet",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:golden_helmet",
+            "uid": "minecraft__golden_helmet__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 77
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Chestplate",
+            "count": 1,
+            "item": "golden_chestplate",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_chestplate",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:golden_chestplate",
+            "uid": "minecraft__golden_chestplate__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 112
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Leggings",
+            "count": 1,
+            "item": "golden_leggings",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_leggings",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:golden_leggings",
+            "uid": "minecraft__golden_leggings__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 105
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Golden Boots",
+            "count": 1,
+            "item": "golden_boots",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:golden_boots",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:golden_boots",
+            "uid": "minecraft__golden_boots__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 91
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Helmet",
+            "count": 1,
+            "item": "iron_helmet",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_helmet",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:iron_helmet",
+            "uid": "minecraft__iron_helmet__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 165
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Chestplate",
+            "count": 1,
+            "item": "iron_chestplate",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_chestplate",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:iron_chestplate",
+            "uid": "minecraft__iron_chestplate__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 240
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Leggings",
+            "count": 1,
+            "item": "iron_leggings",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_leggings",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:iron_leggings",
+            "uid": "minecraft__iron_leggings__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 225
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Iron Boots",
+            "count": 1,
+            "item": "iron_boots",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:iron_boots",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:iron_boots",
+            "uid": "minecraft__iron_boots__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 195
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Chainmail Helmet",
+            "count": 1,
+            "item": "chainmail_helmet",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chainmail_helmet",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:chainmail_helmet",
+            "uid": "minecraft__chainmail_helmet__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 165
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Chainmail Chestplate",
+            "count": 1,
+            "item": "chainmail_chestplate",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chainmail_chestplate",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:chainmail_chestplate",
+            "uid": "minecraft__chainmail_chestplate__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 240
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Chainmail Leggings",
+            "count": 1,
+            "item": "chainmail_leggings",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chainmail_leggings",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:chainmail_leggings",
+            "uid": "minecraft__chainmail_leggings__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 225
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Chainmail Boots",
+            "count": 1,
+            "item": "chainmail_boots",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chainmail_boots",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:chainmail_boots",
+            "uid": "minecraft__chainmail_boots__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 195
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Leather Cap",
+            "count": 1,
+            "item": "leather_helmet",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:leather_helmet",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:leather_helmet",
+            "uid": "minecraft__leather_helmet__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 55
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Leather Tunic",
+            "count": 1,
+            "item": "leather_chestplate",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:leather_chestplate",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:leather_chestplate",
+            "uid": "minecraft__leather_chestplate__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 80
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Leather Pants",
+            "count": 1,
+            "item": "leather_leggings",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:leather_leggings",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:leather_leggings",
+            "uid": "minecraft__leather_leggings__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 75
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Leather Boots",
+            "count": 1,
+            "item": "leather_boots",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:leather_boots",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:leather_boots",
+            "uid": "minecraft__leather_boots__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 65
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Turtle Shell",
+            "count": 1,
+            "item": "turtle_helmet",
+            "tag": {
+              "Damage": 0.0,
+              "Trim": {
+                "material": "minecraft:iron",
+                "pattern": "minecraft:coast"
+              }
+            },
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:turtle_helmet",
+              "tag": {
+                "Damage": 0.0,
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:coast"
+                }
+              }
+            },
+            "resourceLocation": "minecraft:turtle_helmet",
+            "uid": "minecraft__turtle_helmet__4d8383259104a400fe8c04aebc256a8e",
+            "damage": 0,
+            "maxDamage": 275
           }
         ],
         "fluids": []
@@ -1434,6 +3617,7 @@
     "_type": "SmokingRecipe",
     "type": "smoking",
     "id": "minecraft:baked_potato_from_smoking",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -1491,6 +3675,13 @@
             "maxDamage": 0
           }
         ],
+        "fluids": []
+      },
+      {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
         "fluids": []
       },
       {

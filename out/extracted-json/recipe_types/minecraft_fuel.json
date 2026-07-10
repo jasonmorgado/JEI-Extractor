@@ -229,6 +229,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Block of Stripped Bamboo",
+        "count": 1,
+        "item": "stripped_bamboo_block",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:stripped_bamboo_block"
+        },
+        "resourceLocation": "minecraft:stripped_bamboo_block",
+        "uid": "minecraft__stripped_bamboo_block",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_069005828640527b762e220814eda591",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Block of Stripped Bamboo",
+            "count": 1,
+            "item": "stripped_bamboo_block",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:stripped_bamboo_block"
+            },
+            "resourceLocation": "minecraft:stripped_bamboo_block",
+            "uid": "minecraft__stripped_bamboo_block",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Mangrove Fence Gate",
         "count": 1,
         "item": "mangrove_fence_gate",
@@ -409,6 +454,96 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Bamboo Sign",
+        "count": 1,
+        "item": "bamboo_sign",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_sign"
+        },
+        "resourceLocation": "minecraft:bamboo_sign",
+        "uid": "minecraft__bamboo_sign",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "200",
+    "id": "hash_09081955e75ae63cf0e06d594e78c0df",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Sign",
+            "count": 1,
+            "item": "bamboo_sign",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_sign"
+            },
+            "resourceLocation": "minecraft:bamboo_sign",
+            "uid": "minecraft__bamboo_sign",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Block of Bamboo",
+        "count": 1,
+        "item": "bamboo_block",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_block"
+        },
+        "resourceLocation": "minecraft:bamboo_block",
+        "uid": "minecraft__bamboo_block",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_09ba2bce4bbd0bbc90331a5c6a296f82",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Block of Bamboo",
+            "count": 1,
+            "item": "bamboo_block",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_block"
+            },
+            "resourceLocation": "minecraft:bamboo_block",
+            "uid": "minecraft__bamboo_block",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Jungle Sapling",
         "count": 1,
         "item": "jungle_sapling",
@@ -531,6 +666,51 @@
             },
             "resourceLocation": "minecraft:lectern",
             "uid": "minecraft__lectern",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Stripped Cherry Wood",
+        "count": 1,
+        "item": "stripped_cherry_wood",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:stripped_cherry_wood"
+        },
+        "resourceLocation": "minecraft:stripped_cherry_wood",
+        "uid": "minecraft__stripped_cherry_wood",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_0ce2d411e4b3268d534da3669360eed2",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Stripped Cherry Wood",
+            "count": 1,
+            "item": "stripped_cherry_wood",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:stripped_cherry_wood"
+            },
+            "resourceLocation": "minecraft:stripped_cherry_wood",
+            "uid": "minecraft__stripped_cherry_wood",
             "damage": 0,
             "maxDamage": 0
           }
@@ -781,6 +961,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Spruce Hanging Sign",
+        "count": 1,
+        "item": "spruce_hanging_sign",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:spruce_hanging_sign"
+        },
+        "resourceLocation": "minecraft:spruce_hanging_sign",
+        "uid": "minecraft__spruce_hanging_sign",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "800",
+    "id": "hash_148b8bc3bc5fc0a0fb854c62ead4a2cb",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Spruce Hanging Sign",
+            "count": 1,
+            "item": "spruce_hanging_sign",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:spruce_hanging_sign"
+            },
+            "resourceLocation": "minecraft:spruce_hanging_sign",
+            "uid": "minecraft__spruce_hanging_sign",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Acacia Sapling",
         "count": 1,
         "item": "acacia_sapling",
@@ -813,6 +1038,51 @@
             },
             "resourceLocation": "minecraft:acacia_sapling",
             "uid": "minecraft__acacia_sapling",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Mangrove Hanging Sign",
+        "count": 1,
+        "item": "mangrove_hanging_sign",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:mangrove_hanging_sign"
+        },
+        "resourceLocation": "minecraft:mangrove_hanging_sign",
+        "uid": "minecraft__mangrove_hanging_sign",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "800",
+    "id": "hash_163881fd57239cb69ea52abaf022b1b6",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Mangrove Hanging Sign",
+            "count": 1,
+            "item": "mangrove_hanging_sign",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:mangrove_hanging_sign"
+            },
+            "resourceLocation": "minecraft:mangrove_hanging_sign",
+            "uid": "minecraft__mangrove_hanging_sign",
             "damage": 0,
             "maxDamage": 0
           }
@@ -1333,6 +1603,96 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Stripped Cherry Log",
+        "count": 1,
+        "item": "stripped_cherry_log",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:stripped_cherry_log"
+        },
+        "resourceLocation": "minecraft:stripped_cherry_log",
+        "uid": "minecraft__stripped_cherry_log",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_2684fe3977dcad57cf7bf5356245b234",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Stripped Cherry Log",
+            "count": 1,
+            "item": "stripped_cherry_log",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:stripped_cherry_log"
+            },
+            "resourceLocation": "minecraft:stripped_cherry_log",
+            "uid": "minecraft__stripped_cherry_log",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Cherry Log",
+        "count": 1,
+        "item": "cherry_log",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_log"
+        },
+        "resourceLocation": "minecraft:cherry_log",
+        "uid": "minecraft__cherry_log",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_26c26388c33b3e70bd95e0480a550ac0",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Log",
+            "count": 1,
+            "item": "cherry_log",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_log"
+            },
+            "resourceLocation": "minecraft:cherry_log",
+            "uid": "minecraft__cherry_log",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Acacia Fence",
         "count": 1,
         "item": "acacia_fence",
@@ -1423,6 +1783,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Birch Hanging Sign",
+        "count": 1,
+        "item": "birch_hanging_sign",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:birch_hanging_sign"
+        },
+        "resourceLocation": "minecraft:birch_hanging_sign",
+        "uid": "minecraft__birch_hanging_sign",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "800",
+    "id": "hash_2a300984de679b8ef4f25a18019000b1",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Birch Hanging Sign",
+            "count": 1,
+            "item": "birch_hanging_sign",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:birch_hanging_sign"
+            },
+            "resourceLocation": "minecraft:birch_hanging_sign",
+            "uid": "minecraft__birch_hanging_sign",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Daylight Detector",
         "count": 1,
         "item": "daylight_detector",
@@ -1455,6 +1860,51 @@
             },
             "resourceLocation": "minecraft:daylight_detector",
             "uid": "minecraft__daylight_detector",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Cherry Boat",
+        "count": 1,
+        "item": "cherry_boat",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_boat"
+        },
+        "resourceLocation": "minecraft:cherry_boat",
+        "uid": "minecraft__cherry_boat",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "1200",
+    "id": "hash_2aa63271b69484dcbc298bb06f0eaec6",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Boat",
+            "count": 1,
+            "item": "cherry_boat",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_boat"
+            },
+            "resourceLocation": "minecraft:cherry_boat",
+            "uid": "minecraft__cherry_boat",
             "damage": 0,
             "maxDamage": 0
           }
@@ -1558,6 +2008,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Cherry Hanging Sign",
+        "count": 1,
+        "item": "cherry_hanging_sign",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_hanging_sign"
+        },
+        "resourceLocation": "minecraft:cherry_hanging_sign",
+        "uid": "minecraft__cherry_hanging_sign",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "800",
+    "id": "hash_2c5e92041a962aa8de9790ea8d0dd07c",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Hanging Sign",
+            "count": 1,
+            "item": "cherry_hanging_sign",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_hanging_sign"
+            },
+            "resourceLocation": "minecraft:cherry_hanging_sign",
+            "uid": "minecraft__cherry_hanging_sign",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Pink Wool",
         "count": 1,
         "item": "pink_wool",
@@ -1590,6 +2085,96 @@
             },
             "resourceLocation": "minecraft:pink_wool",
             "uid": "minecraft__pink_wool",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Bamboo Pressure Plate",
+        "count": 1,
+        "item": "bamboo_pressure_plate",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_pressure_plate"
+        },
+        "resourceLocation": "minecraft:bamboo_pressure_plate",
+        "uid": "minecraft__bamboo_pressure_plate",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_2f11c4d71435f2d60b8cbc86c591df17",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Pressure Plate",
+            "count": 1,
+            "item": "bamboo_pressure_plate",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_pressure_plate"
+            },
+            "resourceLocation": "minecraft:bamboo_pressure_plate",
+            "uid": "minecraft__bamboo_pressure_plate",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Bamboo Button",
+        "count": 1,
+        "item": "bamboo_button",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_button"
+        },
+        "resourceLocation": "minecraft:bamboo_button",
+        "uid": "minecraft__bamboo_button",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "100",
+    "id": "hash_30a5940a4d9b8f61cf99d5cdb6991bd8",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Button",
+            "count": 1,
+            "item": "bamboo_button",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_button"
+            },
+            "resourceLocation": "minecraft:bamboo_button",
+            "uid": "minecraft__bamboo_button",
             "damage": 0,
             "maxDamage": 0
           }
@@ -1987,6 +2572,96 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Bamboo Door",
+        "count": 1,
+        "item": "bamboo_door",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_door"
+        },
+        "resourceLocation": "minecraft:bamboo_door",
+        "uid": "minecraft__bamboo_door",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "200",
+    "id": "hash_36a1fd7b0c88efd4ea9c7820c539a7dd",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Door",
+            "count": 1,
+            "item": "bamboo_door",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_door"
+            },
+            "resourceLocation": "minecraft:bamboo_door",
+            "uid": "minecraft__bamboo_door",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Bamboo Raft with Chest",
+        "count": 1,
+        "item": "bamboo_chest_raft",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_chest_raft"
+        },
+        "resourceLocation": "minecraft:bamboo_chest_raft",
+        "uid": "minecraft__bamboo_chest_raft",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "1200",
+    "id": "hash_37e212e04f2b1b6746cb1c7667ccf489",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Raft with Chest",
+            "count": 1,
+            "item": "bamboo_chest_raft",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_chest_raft"
+            },
+            "resourceLocation": "minecraft:bamboo_chest_raft",
+            "uid": "minecraft__bamboo_chest_raft",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Dark Oak Log",
         "count": 1,
         "item": "dark_oak_log",
@@ -2302,6 +2977,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Bamboo Mosaic",
+        "count": 1,
+        "item": "bamboo_mosaic",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_mosaic"
+        },
+        "resourceLocation": "minecraft:bamboo_mosaic",
+        "uid": "minecraft__bamboo_mosaic",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_44345b5ffe9d4d2d48702e6acb7e2dad",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Mosaic",
+            "count": 1,
+            "item": "bamboo_mosaic",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_mosaic"
+            },
+            "resourceLocation": "minecraft:bamboo_mosaic",
+            "uid": "minecraft__bamboo_mosaic",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Oak Fence Gate",
         "count": 1,
         "item": "oak_fence_gate",
@@ -2334,6 +3054,51 @@
             },
             "resourceLocation": "minecraft:oak_fence_gate",
             "uid": "minecraft__oak_fence_gate",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Bamboo Trapdoor",
+        "count": 1,
+        "item": "bamboo_trapdoor",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_trapdoor"
+        },
+        "resourceLocation": "minecraft:bamboo_trapdoor",
+        "uid": "minecraft__bamboo_trapdoor",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_47af2ba7b050a4af0e0dd8c0031d8366",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Trapdoor",
+            "count": 1,
+            "item": "bamboo_trapdoor",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_trapdoor"
+            },
+            "resourceLocation": "minecraft:bamboo_trapdoor",
+            "uid": "minecraft__bamboo_trapdoor",
             "damage": 0,
             "maxDamage": 0
           }
@@ -2437,6 +3202,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Cherry Planks",
+        "count": 1,
+        "item": "cherry_planks",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_planks"
+        },
+        "resourceLocation": "minecraft:cherry_planks",
+        "uid": "minecraft__cherry_planks",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_4c1b9e0b03f21de0e43b7234ae266a26",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Planks",
+            "count": 1,
+            "item": "cherry_planks",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_planks"
+            },
+            "resourceLocation": "minecraft:cherry_planks",
+            "uid": "minecraft__cherry_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Jungle Trapdoor",
         "count": 1,
         "item": "jungle_trapdoor",
@@ -2469,6 +3279,51 @@
             },
             "resourceLocation": "minecraft:jungle_trapdoor",
             "uid": "minecraft__jungle_trapdoor",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Bamboo Raft",
+        "count": 1,
+        "item": "bamboo_raft",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_raft"
+        },
+        "resourceLocation": "minecraft:bamboo_raft",
+        "uid": "minecraft__bamboo_raft",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "1200",
+    "id": "hash_51aab7ab640d1a8254bde647eae945f3",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Raft",
+            "count": 1,
+            "item": "bamboo_raft",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_raft"
+            },
+            "resourceLocation": "minecraft:bamboo_raft",
+            "uid": "minecraft__bamboo_raft",
             "damage": 0,
             "maxDamage": 0
           }
@@ -2559,6 +3414,51 @@
             },
             "resourceLocation": "minecraft:jungle_planks",
             "uid": "minecraft__jungle_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Cherry Sign",
+        "count": 1,
+        "item": "cherry_sign",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_sign"
+        },
+        "resourceLocation": "minecraft:cherry_sign",
+        "uid": "minecraft__cherry_sign",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "200",
+    "id": "hash_55811ad28d8e0096354bf0cc01cd0513",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Sign",
+            "count": 1,
+            "item": "cherry_sign",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_sign"
+            },
+            "resourceLocation": "minecraft:cherry_sign",
+            "uid": "minecraft__cherry_sign",
             "damage": 0,
             "maxDamage": 0
           }
@@ -2919,6 +3819,51 @@
             },
             "resourceLocation": "minecraft:birch_sapling",
             "uid": "minecraft__birch_sapling",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Cherry Sapling",
+        "count": 1,
+        "item": "cherry_sapling",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_sapling"
+        },
+        "resourceLocation": "minecraft:cherry_sapling",
+        "uid": "minecraft__cherry_sapling",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "100",
+    "id": "hash_6030afa7d4ce76eed17c61773590134a",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Sapling",
+            "count": 1,
+            "item": "cherry_sapling",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_sapling"
+            },
+            "resourceLocation": "minecraft:cherry_sapling",
+            "uid": "minecraft__cherry_sapling",
             "damage": 0,
             "maxDamage": 0
           }
@@ -3517,6 +4462,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Bamboo Hanging Sign",
+        "count": 1,
+        "item": "bamboo_hanging_sign",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_hanging_sign"
+        },
+        "resourceLocation": "minecraft:bamboo_hanging_sign",
+        "uid": "minecraft__bamboo_hanging_sign",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "800",
+    "id": "hash_75e95f7adf7726feb8ac238e94a6338d",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Hanging Sign",
+            "count": 1,
+            "item": "bamboo_hanging_sign",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_hanging_sign"
+            },
+            "resourceLocation": "minecraft:bamboo_hanging_sign",
+            "uid": "minecraft__bamboo_hanging_sign",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Oak Wood",
         "count": 1,
         "item": "oak_wood",
@@ -3562,6 +4552,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Cherry Wood",
+        "count": 1,
+        "item": "cherry_wood",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_wood"
+        },
+        "resourceLocation": "minecraft:cherry_wood",
+        "uid": "minecraft__cherry_wood",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_7708d3ee1864ded93fbd8bf8df85b738",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Wood",
+            "count": 1,
+            "item": "cherry_wood",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_wood"
+            },
+            "resourceLocation": "minecraft:cherry_wood",
+            "uid": "minecraft__cherry_wood",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Ladder",
         "count": 1,
         "item": "ladder",
@@ -3594,6 +4629,51 @@
             },
             "resourceLocation": "minecraft:ladder",
             "uid": "minecraft__ladder",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Bamboo Slab",
+        "count": 1,
+        "item": "bamboo_slab",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_slab"
+        },
+        "resourceLocation": "minecraft:bamboo_slab",
+        "uid": "minecraft__bamboo_slab",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "150",
+    "id": "hash_78d9d6dae984593bc27779a43527aac1",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Slab",
+            "count": 1,
+            "item": "bamboo_slab",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_slab"
+            },
+            "resourceLocation": "minecraft:bamboo_slab",
+            "uid": "minecraft__bamboo_slab",
             "damage": 0,
             "maxDamage": 0
           }
@@ -4114,6 +5194,96 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Dark Oak Hanging Sign",
+        "count": 1,
+        "item": "dark_oak_hanging_sign",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:dark_oak_hanging_sign"
+        },
+        "resourceLocation": "minecraft:dark_oak_hanging_sign",
+        "uid": "minecraft__dark_oak_hanging_sign",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "800",
+    "id": "hash_855384a84a90fa79754e73149203afc2",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Dark Oak Hanging Sign",
+            "count": 1,
+            "item": "dark_oak_hanging_sign",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:dark_oak_hanging_sign"
+            },
+            "resourceLocation": "minecraft:dark_oak_hanging_sign",
+            "uid": "minecraft__dark_oak_hanging_sign",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Cherry Pressure Plate",
+        "count": 1,
+        "item": "cherry_pressure_plate",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_pressure_plate"
+        },
+        "resourceLocation": "minecraft:cherry_pressure_plate",
+        "uid": "minecraft__cherry_pressure_plate",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_85601d8d05cdb48caaf47da19b8861fb",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Pressure Plate",
+            "count": 1,
+            "item": "cherry_pressure_plate",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_pressure_plate"
+            },
+            "resourceLocation": "minecraft:cherry_pressure_plate",
+            "uid": "minecraft__cherry_pressure_plate",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Cyan Carpet",
         "count": 1,
         "item": "cyan_carpet",
@@ -4474,6 +5644,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Bamboo Stairs",
+        "count": 1,
+        "item": "bamboo_stairs",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_stairs"
+        },
+        "resourceLocation": "minecraft:bamboo_stairs",
+        "uid": "minecraft__bamboo_stairs",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_915f7118fcd8cb4290416961de57a421",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Stairs",
+            "count": 1,
+            "item": "bamboo_stairs",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_stairs"
+            },
+            "resourceLocation": "minecraft:bamboo_stairs",
+            "uid": "minecraft__bamboo_stairs",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Light Gray Wool",
         "count": 1,
         "item": "light_gray_wool",
@@ -4551,6 +5766,51 @@
             },
             "resourceLocation": "minecraft:stripped_dark_oak_log",
             "uid": "minecraft__stripped_dark_oak_log",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Cherry Button",
+        "count": 1,
+        "item": "cherry_button",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_button"
+        },
+        "resourceLocation": "minecraft:cherry_button",
+        "uid": "minecraft__cherry_button",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "100",
+    "id": "hash_97656d98f09594bed94261113d77ffde",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Button",
+            "count": 1,
+            "item": "cherry_button",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_button"
+            },
+            "resourceLocation": "minecraft:cherry_button",
+            "uid": "minecraft__cherry_button",
             "damage": 0,
             "maxDamage": 0
           }
@@ -4878,6 +6138,96 @@
             },
             "resourceLocation": "minecraft:mangrove_trapdoor",
             "uid": "minecraft__mangrove_trapdoor",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Cherry Fence",
+        "count": 1,
+        "item": "cherry_fence",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_fence"
+        },
+        "resourceLocation": "minecraft:cherry_fence",
+        "uid": "minecraft__cherry_fence",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_9c4414d9f75f47ab67ce238c7dc69ca7",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Fence",
+            "count": 1,
+            "item": "cherry_fence",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_fence"
+            },
+            "resourceLocation": "minecraft:cherry_fence",
+            "uid": "minecraft__cherry_fence",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Bamboo Fence",
+        "count": 1,
+        "item": "bamboo_fence",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_fence"
+        },
+        "resourceLocation": "minecraft:bamboo_fence",
+        "uid": "minecraft__bamboo_fence",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_9c4c536a45431112a39f1578aeed92df",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Fence",
+            "count": 1,
+            "item": "bamboo_fence",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_fence"
+            },
+            "resourceLocation": "minecraft:bamboo_fence",
+            "uid": "minecraft__bamboo_fence",
             "damage": 0,
             "maxDamage": 0
           }
@@ -5296,6 +6646,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Bamboo Fence Gate",
+        "count": 1,
+        "item": "bamboo_fence_gate",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_fence_gate"
+        },
+        "resourceLocation": "minecraft:bamboo_fence_gate",
+        "uid": "minecraft__bamboo_fence_gate",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_a41c888b26a69a211743bd13f889a951",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Fence Gate",
+            "count": 1,
+            "item": "bamboo_fence_gate",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_fence_gate"
+            },
+            "resourceLocation": "minecraft:bamboo_fence_gate",
+            "uid": "minecraft__bamboo_fence_gate",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Light Blue Carpet",
         "count": 1,
         "item": "light_blue_carpet",
@@ -5656,6 +7051,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Cherry Slab",
+        "count": 1,
+        "item": "cherry_slab",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_slab"
+        },
+        "resourceLocation": "minecraft:cherry_slab",
+        "uid": "minecraft__cherry_slab",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "150",
+    "id": "hash_aa4dea6abb7a13ee4201575d73b41ac1",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Slab",
+            "count": 1,
+            "item": "cherry_slab",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_slab"
+            },
+            "resourceLocation": "minecraft:cherry_slab",
+            "uid": "minecraft__cherry_slab",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Dark Oak Stairs",
         "count": 1,
         "item": "dark_oak_stairs",
@@ -5868,6 +7308,51 @@
             },
             "resourceLocation": "minecraft:composter",
             "uid": "minecraft__composter",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Jungle Hanging Sign",
+        "count": 1,
+        "item": "jungle_hanging_sign",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:jungle_hanging_sign"
+        },
+        "resourceLocation": "minecraft:jungle_hanging_sign",
+        "uid": "minecraft__jungle_hanging_sign",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "800",
+    "id": "hash_ad6d05346bf062557904883e2e999278",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Jungle Hanging Sign",
+            "count": 1,
+            "item": "jungle_hanging_sign",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:jungle_hanging_sign"
+            },
+            "resourceLocation": "minecraft:jungle_hanging_sign",
+            "uid": "minecraft__jungle_hanging_sign",
             "damage": 0,
             "maxDamage": 0
           }
@@ -6478,6 +7963,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Bamboo Mosaic Stairs",
+        "count": 1,
+        "item": "bamboo_mosaic_stairs",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_mosaic_stairs"
+        },
+        "resourceLocation": "minecraft:bamboo_mosaic_stairs",
+        "uid": "minecraft__bamboo_mosaic_stairs",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_bb56e17b78d82915fe85bd22617da274",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Mosaic Stairs",
+            "count": 1,
+            "item": "bamboo_mosaic_stairs",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_mosaic_stairs"
+            },
+            "resourceLocation": "minecraft:bamboo_mosaic_stairs",
+            "uid": "minecraft__bamboo_mosaic_stairs",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Jungle Button",
         "count": 1,
         "item": "jungle_button",
@@ -6555,6 +8085,51 @@
             },
             "resourceLocation": "minecraft:jungle_log",
             "uid": "minecraft__jungle_log",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Bamboo Planks",
+        "count": 1,
+        "item": "bamboo_planks",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_planks"
+        },
+        "resourceLocation": "minecraft:bamboo_planks",
+        "uid": "minecraft__bamboo_planks",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_be8679aa819256401cf2c79724315f82",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Planks",
+            "count": 1,
+            "item": "bamboo_planks",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_planks"
+            },
+            "resourceLocation": "minecraft:bamboo_planks",
+            "uid": "minecraft__bamboo_planks",
             "damage": 0,
             "maxDamage": 0
           }
@@ -7333,6 +8908,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Cherry Fence Gate",
+        "count": 1,
+        "item": "cherry_fence_gate",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_fence_gate"
+        },
+        "resourceLocation": "minecraft:cherry_fence_gate",
+        "uid": "minecraft__cherry_fence_gate",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_d1d0da70a5219b7802f02d5ad0ea9bb1",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Fence Gate",
+            "count": 1,
+            "item": "cherry_fence_gate",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_fence_gate"
+            },
+            "resourceLocation": "minecraft:cherry_fence_gate",
+            "uid": "minecraft__cherry_fence_gate",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Mangrove Door",
         "count": 1,
         "item": "mangrove_door",
@@ -7410,6 +9030,51 @@
             },
             "resourceLocation": "minecraft:oak_stairs",
             "uid": "minecraft__oak_stairs",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Bamboo Mosaic Slab",
+        "count": 1,
+        "item": "bamboo_mosaic_slab",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:bamboo_mosaic_slab"
+        },
+        "resourceLocation": "minecraft:bamboo_mosaic_slab",
+        "uid": "minecraft__bamboo_mosaic_slab",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "150",
+    "id": "hash_d660ea52d91efc3ead73e675d0e7fd7f",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Bamboo Mosaic Slab",
+            "count": 1,
+            "item": "bamboo_mosaic_slab",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:bamboo_mosaic_slab"
+            },
+            "resourceLocation": "minecraft:bamboo_mosaic_slab",
+            "uid": "minecraft__bamboo_mosaic_slab",
             "damage": 0,
             "maxDamage": 0
           }
@@ -7590,6 +9255,51 @@
             },
             "resourceLocation": "minecraft:spruce_planks",
             "uid": "minecraft__spruce_planks",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Cherry Trapdoor",
+        "count": 1,
+        "item": "cherry_trapdoor",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_trapdoor"
+        },
+        "resourceLocation": "minecraft:cherry_trapdoor",
+        "uid": "minecraft__cherry_trapdoor",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_dab8c9fc4528392cfe49b42e46815f7f",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Trapdoor",
+            "count": 1,
+            "item": "cherry_trapdoor",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_trapdoor"
+            },
+            "resourceLocation": "minecraft:cherry_trapdoor",
+            "uid": "minecraft__cherry_trapdoor",
             "damage": 0,
             "maxDamage": 0
           }
@@ -7963,6 +9673,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Cherry Boat with Chest",
+        "count": 1,
+        "item": "cherry_chest_boat",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_chest_boat"
+        },
+        "resourceLocation": "minecraft:cherry_chest_boat",
+        "uid": "minecraft__cherry_chest_boat",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "1200",
+    "id": "hash_df818757636a19bdbf3400f0b0061d13",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Boat with Chest",
+            "count": 1,
+            "item": "cherry_chest_boat",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_chest_boat"
+            },
+            "resourceLocation": "minecraft:cherry_chest_boat",
+            "uid": "minecraft__cherry_chest_boat",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Purple Wool",
         "count": 1,
         "item": "purple_wool",
@@ -8053,6 +9808,51 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Cherry Stairs",
+        "count": 1,
+        "item": "cherry_stairs",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_stairs"
+        },
+        "resourceLocation": "minecraft:cherry_stairs",
+        "uid": "minecraft__cherry_stairs",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_e08c2d5da048990ac015e10d149b052f",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Stairs",
+            "count": 1,
+            "item": "cherry_stairs",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_stairs"
+            },
+            "resourceLocation": "minecraft:cherry_stairs",
+            "uid": "minecraft__cherry_stairs",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Acacia Planks",
         "count": 1,
         "item": "acacia_planks",
@@ -8130,6 +9930,51 @@
             },
             "resourceLocation": "minecraft:cyan_banner",
             "uid": "minecraft__cyan_banner",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Acacia Hanging Sign",
+        "count": 1,
+        "item": "acacia_hanging_sign",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:acacia_hanging_sign"
+        },
+        "resourceLocation": "minecraft:acacia_hanging_sign",
+        "uid": "minecraft__acacia_hanging_sign",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "800",
+    "id": "hash_e5c32a1044665c4f33b91c3042916d51",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Acacia Hanging Sign",
+            "count": 1,
+            "item": "acacia_hanging_sign",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:acacia_hanging_sign"
+            },
+            "resourceLocation": "minecraft:acacia_hanging_sign",
+            "uid": "minecraft__acacia_hanging_sign",
             "damage": 0,
             "maxDamage": 0
           }
@@ -8515,6 +10360,96 @@
     "inputs": [
       {
         "_type": "ItemStack",
+        "name": "Cherry Door",
+        "count": 1,
+        "item": "cherry_door",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:cherry_door"
+        },
+        "resourceLocation": "minecraft:cherry_door",
+        "uid": "minecraft__cherry_door",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "200",
+    "id": "hash_ec708da923c4e599a3e8440e3bcd8232",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Door",
+            "count": 1,
+            "item": "cherry_door",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_door"
+            },
+            "resourceLocation": "minecraft:cherry_door",
+            "uid": "minecraft__cherry_door",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Oak Hanging Sign",
+        "count": 1,
+        "item": "oak_hanging_sign",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:oak_hanging_sign"
+        },
+        "resourceLocation": "minecraft:oak_hanging_sign",
+        "uid": "minecraft__oak_hanging_sign",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "800",
+    "id": "hash_f10a6fc3aaa2e2a8a5e7321585309d35",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Oak Hanging Sign",
+            "count": 1,
+            "item": "oak_hanging_sign",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:oak_hanging_sign"
+            },
+            "resourceLocation": "minecraft:oak_hanging_sign",
+            "uid": "minecraft__oak_hanging_sign",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
         "name": "Spruce Sign",
         "count": 1,
         "item": "spruce_sign",
@@ -8727,6 +10662,51 @@
             },
             "resourceLocation": "minecraft:oak_trapdoor",
             "uid": "minecraft__oak_trapdoor",
+            "damage": 0,
+            "maxDamage": 0
+          }
+        ],
+        "fluids": []
+      }
+    ]
+  },
+  {
+    "_type": "FuelingRecipe",
+    "inputs": [
+      {
+        "_type": "ItemStack",
+        "name": "Chiseled Bookshelf",
+        "count": 1,
+        "item": "chiseled_bookshelf",
+        "capNBT": {
+          "Count": "1b",
+          "id": "minecraft:chiseled_bookshelf"
+        },
+        "resourceLocation": "minecraft:chiseled_bookshelf",
+        "uid": "minecraft__chiseled_bookshelf",
+        "damage": 0,
+        "maxDamage": 0
+      }
+    ],
+    "burnTime": "300",
+    "id": "hash_f4027e8ef3111d018209007f2c3f90d5",
+    "slots": [
+      {
+        "role": "INPUT",
+        "x": 1,
+        "y": 17,
+        "items": [
+          {
+            "_type": "ItemStack",
+            "name": "Chiseled Bookshelf",
+            "count": 1,
+            "item": "chiseled_bookshelf",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:chiseled_bookshelf"
+            },
+            "resourceLocation": "minecraft:chiseled_bookshelf",
+            "uid": "minecraft__chiseled_bookshelf",
             "damage": 0,
             "maxDamage": 0
           }

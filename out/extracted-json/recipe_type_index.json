@@ -1,8 +1,9 @@
 {
-  "minecraft:wooden_hoe": {
+  "minecraft:golden_axe": {
     "INPUT": [
       "minecraft:anvil",
-      "minecraft:fuel"
+      "minecraft:blasting",
+      "minecraft:furnace"
     ],
     "OUTPUT": [
       "minecraft:anvil",
@@ -14,137 +15,7 @@
       "minecraft:anvil"
     ]
   },
-  "minecraft:iron_leggings": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:trident": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil"
-    ]
-  },
-  "minecraft:golden_helmet": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:chainmail_chestplate": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil"
-    ]
-  },
-  "minecraft:wooden_sword": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:iron_axe": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:iron_ingot": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ],
-    "OUTPUT": [
-      "minecraft:blasting",
-      "minecraft:crafting",
-      "minecraft:furnace"
-    ]
-  },
-  "minecraft:golden_sword": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:leather_helmet": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:flint_and_steel": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:chainmail_boots": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil"
-    ]
-  },
-  "minecraft:leather_boots": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:turtle_helmet": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:brewing"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:diamond_helmet": {
+  "minecraft:diamond_shovel": {
     "INPUT": [
       "minecraft:anvil",
       "minecraft:smithing"
@@ -154,70 +25,9 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:netherite_axe": {
+  "minecraft:stone_shovel": {
     "INPUT": [
       "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:smithing"
-    ]
-  },
-  "minecraft:netherite_ingot": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting",
-      "minecraft:smithing"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:iron_pickaxe": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:diamond_axe": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:smithing"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:diamond_leggings": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:smithing"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:leather_chestplate": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:golden_leggings": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
     ],
     "OUTPUT": [
       "minecraft:anvil",
@@ -231,18 +41,162 @@
     ],
     "OUTPUT": [
       "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:leather_helmet": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:wooden_pickaxe": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
       "minecraft:crafting"
     ]
   },
-  "minecraft:gold_ingot": {
+  "minecraft:carrot_on_a_stick": {
     "INPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
+      "minecraft:anvil"
     ],
     "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:chainmail_chestplate": {
+    "INPUT": [
+      "minecraft:anvil",
       "minecraft:blasting",
-      "minecraft:crafting",
+      "minecraft:furnace",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:netherite_helmet": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:netherite_hoe": {
+    "INPUT": [
+      "minecraft:anvil"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:diamond_sword": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:iron_shovel": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
       "minecraft:furnace"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:bow": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:warped_fungus_on_a_stick": {
+    "INPUT": [
+      "minecraft:anvil"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:golden_helmet": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:iron_leggings": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:iron_chestplate": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:iron_helmet": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
     ]
   },
   "minecraft:diamond_chestplate": {
@@ -252,19 +206,11 @@
     ],
     "OUTPUT": [
       "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:netherite_helmet": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
+      "minecraft:crafting",
       "minecraft:smithing"
     ]
   },
-  "minecraft:iron_boots": {
+  "minecraft:golden_pickaxe": {
     "INPUT": [
       "minecraft:anvil",
       "minecraft:blasting",
@@ -275,7 +221,7 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:netherite_leggings": {
+  "minecraft:netherite_pickaxe": {
     "INPUT": [
       "minecraft:anvil"
     ],
@@ -284,7 +230,79 @@
       "minecraft:smithing"
     ]
   },
-  "minecraft:leather_leggings": {
+  "minecraft:diamond_hoe": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:fishing_rod": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:netherite_leggings": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:chainmail_boots": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:diamond_leggings": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:netherite_sword": {
+    "INPUT": [
+      "minecraft:anvil"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:netherite_axe": {
+    "INPUT": [
+      "minecraft:anvil"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:stone_sword": {
     "INPUT": [
       "minecraft:anvil"
     ],
@@ -293,13 +311,38 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:netherite_chestplate": {
+  "minecraft:chainmail_leggings": {
     "INPUT": [
-      "minecraft:anvil"
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace",
+      "minecraft:smithing"
     ],
     "OUTPUT": [
       "minecraft:anvil",
       "minecraft:smithing"
+    ]
+  },
+  "minecraft:wooden_hoe": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:iron_ingot": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:blasting",
+      "minecraft:crafting",
+      "minecraft:furnace"
     ]
   },
   "minecraft:stone_axe": {
@@ -311,10 +354,324 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:netherite_boots": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:leather_boots": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:iron_axe": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:crossbow": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:chainmail_helmet": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:wooden_sword": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:golden_sword": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:gold_ingot": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:blasting",
+      "minecraft:crafting",
+      "minecraft:furnace"
+    ]
+  },
+  "minecraft:leather_chestplate": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
   "minecraft:wooden_axe": {
     "INPUT": [
       "minecraft:anvil",
       "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:diamond_helmet": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:turtle_helmet": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:brewing",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:golden_leggings": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:leather_leggings": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:netherite_chestplate": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:golden_hoe": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:diamond": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:blasting",
+      "minecraft:crafting",
+      "minecraft:furnace"
+    ]
+  },
+  "minecraft:elytra": {
+    "INPUT": [
+      "minecraft:anvil"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil"
+    ]
+  },
+  "minecraft:shield": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:golden_shovel": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:golden_boots": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:trident": {
+    "INPUT": [
+      "minecraft:anvil"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil"
+    ]
+  },
+  "minecraft:iron_boots": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:stone_hoe": {
+    "INPUT": [
+      "minecraft:anvil"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:netherite_ingot": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:stone_pickaxe": {
+    "INPUT": [
+      "minecraft:anvil"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:cobblestone": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:furnace",
+      "minecraft:stonecutting"
+    ]
+  },
+  "minecraft:blackstone": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:stonecutting"
+    ]
+  },
+  "minecraft:cobbled_deepslate": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:furnace",
+      "minecraft:stonecutting"
+    ]
+  },
+  "minecraft:iron_hoe": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:iron_pickaxe": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace"
     ],
     "OUTPUT": [
       "minecraft:anvil",
@@ -409,37 +766,53 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:netherite_sword": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:smithing"
-    ]
-  },
-  "minecraft:chainmail_leggings": {
+  "minecraft:bamboo_planks": {
     "INPUT": [
       "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
+      "minecraft:crafting",
+      "minecraft:fuel"
     ],
     "OUTPUT": [
-      "minecraft:anvil"
+      "minecraft:crafting"
     ]
   },
-  "minecraft:elytra": {
+  "minecraft:cherry_planks": {
     "INPUT": [
-      "minecraft:anvil"
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:fuel"
     ],
     "OUTPUT": [
-      "minecraft:anvil"
+      "minecraft:crafting"
     ]
   },
-  "minecraft:crossbow": {
+  "minecraft:wooden_shovel": {
     "INPUT": [
       "minecraft:anvil",
       "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:golden_chestplate": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:blasting",
+      "minecraft:furnace",
+      "minecraft:smithing"
+    ],
+    "OUTPUT": [
+      "minecraft:anvil",
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:diamond_axe": {
+    "INPUT": [
+      "minecraft:anvil",
+      "minecraft:smithing"
     ],
     "OUTPUT": [
       "minecraft:anvil",
@@ -452,101 +825,16 @@
       "minecraft:brewing"
     ]
   },
-  "minecraft:stone_pickaxe": {
+  "minecraft:leather": {
     "INPUT": [
-      "minecraft:anvil"
+      "minecraft:anvil",
+      "minecraft:crafting"
     ],
     "OUTPUT": [
-      "minecraft:anvil",
       "minecraft:crafting"
     ]
   },
-  "minecraft:cobblestone": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting",
-      "minecraft:furnace",
-      "minecraft:stonecutting"
-    ]
-  },
-  "minecraft:blackstone": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting",
-      "minecraft:stonecutting"
-    ]
-  },
-  "minecraft:cobbled_deepslate": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting",
-      "minecraft:furnace",
-      "minecraft:stonecutting"
-    ]
-  },
-  "minecraft:golden_hoe": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:golden_chestplate": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:netherite_boots": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:smithing"
-    ]
-  },
-  "minecraft:golden_pickaxe": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:netherite_hoe": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:smithing"
-    ]
-  },
-  "minecraft:fishing_rod": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:diamond_sword": {
+  "minecraft:diamond_pickaxe": {
     "INPUT": [
       "minecraft:anvil",
       "minecraft:smithing"
@@ -556,22 +844,18 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:iron_hoe": {
+  "minecraft:netherite_shovel": {
     "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
+      "minecraft:anvil"
     ],
     "OUTPUT": [
       "minecraft:anvil",
-      "minecraft:crafting"
+      "minecraft:smithing"
     ]
   },
-  "minecraft:iron_helmet": {
+  "minecraft:shears": {
     "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
+      "minecraft:anvil"
     ],
     "OUTPUT": [
       "minecraft:anvil",
@@ -589,218 +873,9 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:golden_axe": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:diamond": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ],
-    "OUTPUT": [
-      "minecraft:blasting",
-      "minecraft:crafting",
-      "minecraft:furnace"
-    ]
-  },
-  "minecraft:chainmail_helmet": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil"
-    ]
-  },
-  "minecraft:netherite_shovel": {
+  "minecraft:flint_and_steel": {
     "INPUT": [
       "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:smithing"
-    ]
-  },
-  "minecraft:iron_chestplate": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:stone_sword": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:diamond_shovel": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:smithing"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:warped_fungus_on_a_stick": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:iron_shovel": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:wooden_shovel": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:netherite_pickaxe": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:smithing"
-    ]
-  },
-  "minecraft:diamond_hoe": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:smithing"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:wooden_pickaxe": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:golden_boots": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:shears": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:stone_hoe": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:leather": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:bow": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:stone_shovel": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:golden_shovel": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:blasting",
-      "minecraft:furnace"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:carrot_on_a_stick": {
-    "INPUT": [
-      "minecraft:anvil"
-    ],
-    "OUTPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:diamond_pickaxe": {
-    "INPUT": [
-      "minecraft:anvil",
-      "minecraft:smithing"
     ],
     "OUTPUT": [
       "minecraft:anvil",
@@ -813,10 +888,9 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:shield": {
+  "minecraft:brush": {
     "INPUT": [
-      "minecraft:anvil",
-      "minecraft:crafting"
+      "minecraft:anvil"
     ],
     "OUTPUT": [
       "minecraft:anvil",
@@ -859,7 +933,8 @@
       "minecraft:furnace"
     ],
     "INPUT": [
-      "minecraft:crafting"
+      "minecraft:crafting",
+      "minecraft:smithing"
     ]
   },
   "minecraft:deepslate_copper_ore": {
@@ -903,7 +978,8 @@
       "minecraft:furnace"
     ],
     "INPUT": [
-      "minecraft:crafting"
+      "minecraft:crafting",
+      "minecraft:smithing"
     ]
   },
   "minecraft:emerald_ore": {
@@ -1007,7 +1083,8 @@
       "minecraft:furnace"
     ],
     "INPUT": [
-      "minecraft:crafting"
+      "minecraft:crafting",
+      "minecraft:smithing"
     ]
   },
   "minecraft:lapis_ore": {
@@ -1043,7 +1120,8 @@
       "minecraft:furnace"
     ],
     "INPUT": [
-      "minecraft:crafting"
+      "minecraft:crafting",
+      "minecraft:smithing"
     ]
   },
   "minecraft:deepslate_redstone_ore": {
@@ -1060,7 +1138,8 @@
     ],
     "INPUT": [
       "minecraft:brewing",
-      "minecraft:crafting"
+      "minecraft:crafting",
+      "minecraft:smithing"
     ]
   },
   "minecraft:redstone_ore": {
@@ -1077,6 +1156,15 @@
       "minecraft:brewing"
     ]
   },
+  "minecraft:sugar": {
+    "INPUT": [
+      "minecraft:brewing",
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
   "minecraft:splash_potion": {
     "INPUT": [
       "minecraft:brewing"
@@ -1085,23 +1173,26 @@
       "minecraft:brewing"
     ]
   },
-  "minecraft:dragon_breath": {
-    "INPUT": [
-      "minecraft:brewing"
-    ]
-  },
-  "minecraft:lingering_potion": {
-    "OUTPUT": [
-      "minecraft:brewing"
-    ],
+  "minecraft:glowstone_dust": {
     "INPUT": [
       "minecraft:brewing",
       "minecraft:crafting"
     ]
   },
-  "minecraft:glowstone_dust": {
+  "minecraft:lingering_potion": {
     "INPUT": [
       "minecraft:brewing",
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:brewing"
+    ]
+  },
+  "minecraft:fermented_spider_eye": {
+    "INPUT": [
+      "minecraft:brewing"
+    ],
+    "OUTPUT": [
       "minecraft:crafting"
     ]
   },
@@ -1113,21 +1204,49 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:dragon_breath": {
+    "INPUT": [
+      "minecraft:brewing"
+    ]
+  },
+  "minecraft:rabbit_foot": {
+    "INPUT": [
+      "minecraft:brewing"
+    ]
+  },
+  "minecraft:gunpowder": {
+    "INPUT": [
+      "minecraft:brewing",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:spider_eye": {
+    "INPUT": [
+      "minecraft:brewing",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:nether_wart": {
+    "INPUT": [
+      "minecraft:brewing",
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
   "minecraft:pufferfish": {
     "INPUT": [
       "minecraft:brewing"
     ]
   },
-  "minecraft:blaze_powder": {
+  "minecraft:glistering_melon_slice": {
     "INPUT": [
-      "minecraft:brewing",
-      "minecraft:crafting"
+      "minecraft:brewing"
     ],
     "OUTPUT": [
       "minecraft:crafting"
     ]
   },
-  "minecraft:gunpowder": {
+  "minecraft:ghast_tear": {
     "INPUT": [
       "minecraft:brewing",
       "minecraft:crafting"
@@ -1142,52 +1261,12 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:ghast_tear": {
-    "INPUT": [
-      "minecraft:brewing",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:fermented_spider_eye": {
-    "INPUT": [
-      "minecraft:brewing"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:spider_eye": {
-    "INPUT": [
-      "minecraft:brewing",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:rabbit_foot": {
-    "INPUT": [
-      "minecraft:brewing"
-    ]
-  },
-  "minecraft:sugar": {
+  "minecraft:blaze_powder": {
     "INPUT": [
       "minecraft:brewing",
       "minecraft:crafting"
     ],
     "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:glistering_melon_slice": {
-    "INPUT": [
-      "minecraft:brewing"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:nether_wart": {
-    "INPUT": [
-      "minecraft:brewing",
-      "minecraft:compostable",
       "minecraft:crafting"
     ]
   },
@@ -1331,20 +1410,31 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:pumpkin_pie": {
+  "minecraft:hanging_roots": {
     "INPUT": [
       "minecraft:compostable"
-    ],
-    "OUTPUT": [
+    ]
+  },
+  "minecraft:azure_bluet": {
+    "INPUT": [
+      "minecraft:compostable",
       "minecraft:crafting"
     ]
   },
-  "minecraft:pumpkin_seeds": {
+  "minecraft:red_mushroom_block": {
     "INPUT": [
       "minecraft:compostable"
-    ],
-    "OUTPUT": [
+    ]
+  },
+  "minecraft:warped_fungus": {
+    "INPUT": [
+      "minecraft:compostable",
       "minecraft:crafting"
+    ]
+  },
+  "minecraft:spruce_leaves": {
+    "INPUT": [
+      "minecraft:compostable"
     ]
   },
   "minecraft:red_mushroom": {
@@ -1353,81 +1443,12 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:nether_sprouts": {
+  "minecraft:seagrass": {
     "INPUT": [
       "minecraft:compostable"
     ]
   },
-  "minecraft:sunflower": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:azalea_leaves": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:azalea": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:fuel"
-    ]
-  },
-  "minecraft:dandelion": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:melon": {
-    "INPUT": [
-      "minecraft:compostable"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:small_dripleaf": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:brown_mushroom_block": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:pumpkin": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:oak_sapling": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:fuel"
-    ]
-  },
-  "minecraft:crimson_fungus": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:pink_tulip": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:weeping_vines": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:beetroot": {
+  "minecraft:red_tulip": {
     "INPUT": [
       "minecraft:compostable",
       "minecraft:crafting"
@@ -1439,63 +1460,10 @@
       "minecraft:fuel"
     ]
   },
-  "minecraft:tall_grass": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:allium": {
+  "minecraft:lilac": {
     "INPUT": [
       "minecraft:compostable",
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:acacia_leaves": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:apple": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:mangrove_propagule": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:fuel"
-    ]
-  },
-  "minecraft:nether_wart_block": {
-    "INPUT": [
-      "minecraft:compostable"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:birch_sapling": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:fuel"
-    ]
-  },
-  "minecraft:cocoa_beans": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:cactus": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:furnace"
-    ]
-  },
-  "minecraft:spore_blossom": {
-    "INPUT": [
-      "minecraft:compostable"
     ]
   },
   "minecraft:wheat": {
@@ -1507,302 +1475,7 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:azure_bluet": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:mangrove_leaves": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:wheat_seeds": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:oak_leaves": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:red_tulip": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:flowering_azalea_leaves": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:oxeye_daisy": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:warped_roots": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:melon_slice": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:jungle_leaves": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:red_mushroom_block": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:sugar_cane": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:glow_lichen": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:bread": {
-    "INPUT": [
-      "minecraft:compostable"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:white_tulip": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:cornflower": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:lilac": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:shroomlight": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:lily_pad": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:blue_orchid": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:carved_pumpkin": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:mangrove_roots": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ]
-  },
-  "minecraft:brown_mushroom": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:lily_of_the_valley": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:warped_wart_block": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
   "minecraft:carrot": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:grass": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:peony": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:crimson_roots": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:hay_block": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:flowering_azalea": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:fuel"
-    ]
-  },
-  "minecraft:seagrass": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:poppy": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:cookie": {
-    "INPUT": [
-      "minecraft:compostable"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:dried_kelp_block": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:sea_pickle": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:furnace"
-    ]
-  },
-  "minecraft:mushroom_stem": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:dark_oak_leaves": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:twisting_vines": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:acacia_sapling": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:fuel"
-    ]
-  },
-  "minecraft:large_fern": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:orange_tulip": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:sweet_berries": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:jungle_sapling": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:fuel"
-    ]
-  },
-  "minecraft:moss_block": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:hanging_roots": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:big_dripleaf": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:fern": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:rose_bush": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:warped_fungus": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:birch_leaves": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:wither_rose": {
     "INPUT": [
       "minecraft:compostable",
       "minecraft:crafting"
@@ -1816,29 +1489,59 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:spruce_leaves": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:glow_berries": {
-    "INPUT": [
-      "minecraft:compostable"
-    ]
-  },
-  "minecraft:spruce_sapling": {
-    "INPUT": [
-      "minecraft:compostable",
-      "minecraft:fuel"
-    ]
-  },
-  "minecraft:vine": {
+  "minecraft:poppy": {
     "INPUT": [
       "minecraft:compostable",
       "minecraft:crafting"
     ]
   },
-  "minecraft:moss_carpet": {
+  "minecraft:carved_pumpkin": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:oxeye_daisy": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:peony": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:cherry_sapling": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:warped_wart_block": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:glow_lichen": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:white_tulip": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:jungle_sapling": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:pumpkin_pie": {
     "INPUT": [
       "minecraft:compostable"
     ],
@@ -1854,9 +1557,424 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:cornflower": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:wither_rose": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:spruce_sapling": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:spore_blossom": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:small_dripleaf": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:crimson_roots": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:rose_bush": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:acacia_sapling": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:cocoa_beans": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:glow_berries": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:jungle_leaves": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:grass": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:blue_orchid": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:wheat_seeds": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:torchflower": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:azalea": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:pumpkin_seeds": {
+    "INPUT": [
+      "minecraft:compostable"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
   "minecraft:beetroot_seeds": {
     "INPUT": [
       "minecraft:compostable"
+    ]
+  },
+  "minecraft:moss_carpet": {
+    "INPUT": [
+      "minecraft:compostable"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:crimson_fungus": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:pitcher_plant": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:mangrove_roots": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:flowering_azalea_leaves": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:melon_slice": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:acacia_leaves": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:torchflower_seeds": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:large_fern": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:sugar_cane": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:mushroom_stem": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:dandelion": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:flowering_azalea": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:oak_leaves": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:tall_grass": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:cookie": {
+    "INPUT": [
+      "minecraft:compostable"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:dark_oak_leaves": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:nether_wart_block": {
+    "INPUT": [
+      "minecraft:compostable"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:moss_block": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:melon": {
+    "INPUT": [
+      "minecraft:compostable"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:sunflower": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:oak_sapling": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:shroomlight": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:weeping_vines": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:pink_tulip": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:pumpkin": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:lily_of_the_valley": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:apple": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:allium": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:beetroot": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:vine": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:twisting_vines": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:birch_leaves": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:sweet_berries": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:warped_roots": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:lily_pad": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:cactus": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:furnace"
+    ]
+  },
+  "minecraft:birch_sapling": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:orange_tulip": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:azalea_leaves": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:mangrove_propagule": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:brown_mushroom": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:dried_kelp_block": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:big_dripleaf": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:cherry_leaves": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:pitcher_pod": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:pink_petals": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:sea_pickle": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:furnace"
+    ]
+  },
+  "minecraft:fern": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:hay_block": {
+    "INPUT": [
+      "minecraft:compostable",
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:nether_sprouts": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:mangrove_leaves": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:brown_mushroom_block": {
+    "INPUT": [
+      "minecraft:compostable"
+    ]
+  },
+  "minecraft:bread": {
+    "INPUT": [
+      "minecraft:compostable"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
     ]
   },
   "minecraft:acacia_boat": {
@@ -1935,6 +2053,29 @@
       "minecraft:fuel"
     ]
   },
+  "minecraft:acacia_hanging_sign": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:chain": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:stripped_acacia_log": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel",
+      "minecraft:furnace"
+    ]
+  },
   "minecraft:acacia_log": {
     "INPUT": [
       "minecraft:crafting",
@@ -1950,13 +2091,6 @@
     ],
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:stripped_acacia_log": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel",
-      "minecraft:furnace"
     ]
   },
   "minecraft:stripped_acacia_wood": {
@@ -2030,7 +2164,8 @@
   },
   "minecraft:amethyst_shard": {
     "INPUT": [
-      "minecraft:crafting"
+      "minecraft:crafting",
+      "minecraft:smithing"
     ]
   },
   "minecraft:andesite": {
@@ -2114,6 +2249,150 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:bamboo_block": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_button": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_chest_raft": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_raft": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:bamboo_door": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_fence": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_fence_gate": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_hanging_sign": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:stripped_bamboo_block": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_mosaic": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_slab": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:bamboo_mosaic_slab": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_mosaic_stairs": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_pressure_plate": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_sign": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_stairs": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:bamboo_trapdoor": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
   "minecraft:barrel": {
     "OUTPUT": [
       "minecraft:crafting"
@@ -2184,6 +2463,15 @@
     ]
   },
   "minecraft:mangrove_slab": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:cherry_slab": {
     "INPUT": [
       "minecraft:crafting",
       "minecraft:fuel"
@@ -2288,6 +2576,21 @@
       "minecraft:fuel"
     ]
   },
+  "minecraft:birch_hanging_sign": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:stripped_birch_log": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel",
+      "minecraft:furnace"
+    ]
+  },
   "minecraft:birch_log": {
     "INPUT": [
       "minecraft:crafting",
@@ -2303,13 +2606,6 @@
     ],
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:stripped_birch_log": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel",
-      "minecraft:furnace"
     ]
   },
   "minecraft:stripped_birch_wood": {
@@ -2375,21 +2671,8 @@
   "minecraft:black_bed": {
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:white_bed": {
-    "INPUT": [
-      "minecraft:crafting"
     ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:black_dye": {
     "INPUT": [
-      "minecraft:crafting"
-    ],
-    "OUTPUT": [
       "minecraft:crafting"
     ]
   },
@@ -2406,21 +2689,21 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:black_dye": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
   "minecraft:black_carpet": {
     "OUTPUT": [
       "minecraft:crafting"
     ],
     "INPUT": [
-      "minecraft:fuel"
-    ]
-  },
-  "minecraft:white_carpet": {
-    "INPUT": [
       "minecraft:crafting",
       "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
     ]
   },
   "minecraft:black_concrete_powder": {
@@ -2479,15 +2762,6 @@
     ],
     "OUTPUT": [
       "minecraft:furnace"
-    ]
-  },
-  "minecraft:white_wool": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
     ]
   },
   "minecraft:blackstone_slab": {
@@ -2557,6 +2831,14 @@
   "minecraft:blue_bed": {
     "OUTPUT": [
       "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:blue_candle": {
+    "OUTPUT": [
+      "minecraft:crafting"
     ]
   },
   "minecraft:blue_dye": {
@@ -2567,16 +2849,12 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:blue_candle": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:blue_carpet": {
     "OUTPUT": [
       "minecraft:crafting"
     ],
     "INPUT": [
+      "minecraft:crafting",
       "minecraft:fuel"
     ]
   },
@@ -2731,6 +3009,14 @@
   "minecraft:brown_bed": {
     "OUTPUT": [
       "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:brown_candle": {
+    "OUTPUT": [
+      "minecraft:crafting"
     ]
   },
   "minecraft:brown_dye": {
@@ -2741,16 +3027,12 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:brown_candle": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:brown_carpet": {
     "OUTPUT": [
       "minecraft:crafting"
     ],
     "INPUT": [
+      "minecraft:crafting",
       "minecraft:fuel"
     ]
   },
@@ -2791,6 +3073,16 @@
     ]
   },
   "minecraft:egg": {
+    "INPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:calibrated_sculk_sensor": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:sculk_sensor": {
     "INPUT": [
       "minecraft:crafting"
     ]
@@ -2979,6 +3271,40 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:cherry_log": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel",
+      "minecraft:furnace"
+    ]
+  },
+  "minecraft:cherry_wood": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel",
+      "minecraft:furnace"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:stripped_cherry_log": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel",
+      "minecraft:furnace"
+    ]
+  },
+  "minecraft:stripped_cherry_wood": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel",
+      "minecraft:furnace"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
   "minecraft:crimson_stem": {
     "INPUT": [
       "minecraft:crafting"
@@ -3044,9 +3370,93 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:chain": {
+  "minecraft:cherry_boat": {
     "OUTPUT": [
       "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:cherry_button": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:cherry_chest_boat": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:cherry_door": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:cherry_fence": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:cherry_fence_gate": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:cherry_hanging_sign": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:cherry_pressure_plate": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:cherry_sign": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:cherry_stairs": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:cherry_trapdoor": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
     ]
   },
   "minecraft:chest_minecart": {
@@ -3060,6 +3470,14 @@
     ],
     "OUTPUT": [
       "minecraft:crafting"
+    ]
+  },
+  "minecraft:chiseled_bookshelf": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
     ]
   },
   "minecraft:chiseled_deepslate": {
@@ -3217,6 +3635,15 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:coast_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
   "minecraft:cobbled_deepslate_stairs": {
     "OUTPUT": [
       "minecraft:crafting",
@@ -3345,6 +3772,11 @@
     ]
   },
   "minecraft:crimson_fence_gate": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:crimson_hanging_sign": {
     "OUTPUT": [
       "minecraft:crafting"
     ]
@@ -3478,6 +3910,14 @@
   "minecraft:cyan_bed": {
     "OUTPUT": [
       "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:cyan_candle": {
+    "OUTPUT": [
+      "minecraft:crafting"
     ]
   },
   "minecraft:cyan_dye": {
@@ -3488,16 +3928,12 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:cyan_candle": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:cyan_carpet": {
     "OUTPUT": [
       "minecraft:crafting"
     ],
     "INPUT": [
+      "minecraft:crafting",
       "minecraft:fuel"
     ]
   },
@@ -3584,6 +4020,14 @@
       "minecraft:fuel"
     ]
   },
+  "minecraft:dark_oak_hanging_sign": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
   "minecraft:dark_oak_pressure_plate": {
     "OUTPUT": [
       "minecraft:crafting"
@@ -3648,6 +4092,11 @@
     ],
     "INPUT": [
       "minecraft:fuel"
+    ]
+  },
+  "minecraft:decorated_pot": {
+    "OUTPUT": [
+      "minecraft:crafting"
     ]
   },
   "minecraft:deepslate_brick_slab": {
@@ -3777,6 +4226,416 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:dune_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:gray_bed": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:green_bed": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:light_blue_bed": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:light_gray_bed": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:lime_bed": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:magenta_bed": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:orange_bed": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:pink_bed": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:purple_bed": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:red_bed": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:yellow_bed": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:white_bed": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:gray_carpet": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:green_carpet": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:light_blue_carpet": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:light_gray_carpet": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:lime_carpet": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:magenta_carpet": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:orange_carpet": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:pink_carpet": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:purple_carpet": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:red_carpet": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:yellow_carpet": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:white_carpet": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:gray_wool": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:green_wool": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:light_blue_wool": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:light_gray_wool": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:lime_wool": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:magenta_wool": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:orange_wool": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:pink_wool": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:purple_wool": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:red_wool": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:yellow_wool": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:white_wool": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:fuel"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:gray_dye": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:light_blue_dye": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:light_gray_dye": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:lime_dye": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting",
+      "minecraft:furnace"
+    ]
+  },
+  "minecraft:magenta_dye": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:orange_dye": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:pink_dye": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:purple_dye": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:red_dye": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:white_dye": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:yellow_dye": {
+    "INPUT": [
+      "minecraft:crafting"
+    ],
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
   "minecraft:emerald_block": {
     "INPUT": [
       "minecraft:crafting"
@@ -3892,6 +4751,15 @@
     ],
     "INPUT": [
       "minecraft:crafting"
+    ]
+  },
+  "minecraft:eye_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
     ]
   },
   "minecraft:fire_charge": {
@@ -4010,50 +4878,12 @@
       "minecraft:fuel"
     ]
   },
-  "minecraft:gray_wool": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:gray_bed": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:gray_dye": {
-    "INPUT": [
-      "minecraft:crafting"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:gray_candle": {
     "OUTPUT": [
       "minecraft:crafting"
     ]
   },
-  "minecraft:gray_carpet": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ],
-    "INPUT": [
-      "minecraft:fuel"
-    ]
-  },
   "minecraft:gray_concrete_powder": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:white_dye": {
-    "INPUT": [
-      "minecraft:crafting"
-    ],
     "OUTPUT": [
       "minecraft:crafting"
     ]
@@ -4088,31 +4918,9 @@
       "minecraft:fuel"
     ]
   },
-  "minecraft:green_wool": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:green_bed": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:green_candle": {
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:green_carpet": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ],
-    "INPUT": [
-      "minecraft:fuel"
     ]
   },
   "minecraft:green_concrete_powder": {
@@ -4192,6 +5000,15 @@
   "minecraft:hopper_minecart": {
     "OUTPUT": [
       "minecraft:crafting"
+    ]
+  },
+  "minecraft:host_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
     ]
   },
   "minecraft:iron_bars": {
@@ -4355,23 +5172,7 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:light_blue_dye": {
-    "INPUT": [
-      "minecraft:crafting"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:light_gray_shulker_box": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:light_gray_dye": {
-    "INPUT": [
-      "minecraft:crafting"
-    ],
     "OUTPUT": [
       "minecraft:crafting"
     ]
@@ -4381,24 +5182,7 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:lime_dye": {
-    "INPUT": [
-      "minecraft:crafting"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting",
-      "minecraft:furnace"
-    ]
-  },
   "minecraft:magenta_shulker_box": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:magenta_dye": {
-    "INPUT": [
-      "minecraft:crafting"
-    ],
     "OUTPUT": [
       "minecraft:crafting"
     ]
@@ -4408,23 +5192,7 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:orange_dye": {
-    "INPUT": [
-      "minecraft:crafting"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:pink_shulker_box": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:pink_dye": {
-    "INPUT": [
-      "minecraft:crafting"
-    ],
     "OUTPUT": [
       "minecraft:crafting"
     ]
@@ -4434,23 +5202,7 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:purple_dye": {
-    "INPUT": [
-      "minecraft:crafting"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:red_shulker_box": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:red_dye": {
-    "INPUT": [
-      "minecraft:crafting"
-    ],
     "OUTPUT": [
       "minecraft:crafting"
     ]
@@ -4461,14 +5213,6 @@
     ]
   },
   "minecraft:yellow_shulker_box": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:yellow_dye": {
-    "INPUT": [
-      "minecraft:crafting"
-    ],
     "OUTPUT": [
       "minecraft:crafting"
     ]
@@ -4533,6 +5277,14 @@
     ]
   },
   "minecraft:jungle_fence_gate": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:jungle_hanging_sign": {
     "OUTPUT": [
       "minecraft:crafting"
     ],
@@ -4629,31 +5381,9 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:light_blue_wool": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:light_blue_bed": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:light_blue_candle": {
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:light_blue_carpet": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ],
-    "INPUT": [
-      "minecraft:fuel"
     ]
   },
   "minecraft:light_blue_concrete_powder": {
@@ -4682,31 +5412,9 @@
       "minecraft:furnace"
     ]
   },
-  "minecraft:light_gray_wool": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:light_gray_bed": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:light_gray_candle": {
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:light_gray_carpet": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ],
-    "INPUT": [
-      "minecraft:fuel"
     ]
   },
   "minecraft:light_gray_concrete_powder": {
@@ -4745,31 +5453,9 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:lime_wool": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:lime_bed": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:lime_candle": {
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:lime_carpet": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ],
-    "INPUT": [
-      "minecraft:fuel"
     ]
   },
   "minecraft:lime_concrete_powder": {
@@ -4811,31 +5497,9 @@
       "minecraft:fuel"
     ]
   },
-  "minecraft:magenta_wool": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:magenta_bed": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:magenta_candle": {
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:magenta_carpet": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ],
-    "INPUT": [
-      "minecraft:fuel"
     ]
   },
   "minecraft:magenta_concrete_powder": {
@@ -4911,6 +5575,14 @@
     ]
   },
   "minecraft:mangrove_fence_gate": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:mangrove_hanging_sign": {
     "OUTPUT": [
       "minecraft:crafting"
     ],
@@ -5133,6 +5805,21 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:netherite_upgrade_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:netherrack": {
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:furnace"
+    ]
+  },
   "minecraft:note_block": {
     "OUTPUT": [
       "minecraft:crafting"
@@ -5190,6 +5877,14 @@
       "minecraft:fuel"
     ]
   },
+  "minecraft:oak_hanging_sign": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
   "minecraft:oak_pressure_plate": {
     "OUTPUT": [
       "minecraft:crafting"
@@ -5227,31 +5922,9 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:orange_wool": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:orange_bed": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:orange_candle": {
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:orange_carpet": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ],
-    "INPUT": [
-      "minecraft:fuel"
     ]
   },
   "minecraft:orange_concrete_powder": {
@@ -5324,58 +5997,9 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:yellow_wool": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:pink_wool": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:purple_wool": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:red_wool": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ],
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
-  "minecraft:pink_bed": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:pink_candle": {
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:pink_carpet": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ],
-    "INPUT": [
-      "minecraft:fuel"
     ]
   },
   "minecraft:pink_concrete_powder": {
@@ -5623,22 +6247,9 @@
       "minecraft:stonecutting"
     ]
   },
-  "minecraft:purple_bed": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:purple_candle": {
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:purple_carpet": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ],
-    "INPUT": [
-      "minecraft:fuel"
     ]
   },
   "minecraft:purple_concrete_powder": {
@@ -5741,6 +6352,15 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:raiser_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
   "minecraft:raw_copper_block": {
     "INPUT": [
       "minecraft:crafting"
@@ -5775,22 +6395,9 @@
       "minecraft:crafting"
     ]
   },
-  "minecraft:red_bed": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ]
-  },
   "minecraft:red_candle": {
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:red_carpet": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ],
-    "INPUT": [
-      "minecraft:fuel"
     ]
   },
   "minecraft:red_concrete_powder": {
@@ -5892,6 +6499,15 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:rib_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
   "minecraft:sandstone_stairs": {
     "OUTPUT": [
       "minecraft:crafting",
@@ -5912,12 +6528,6 @@
       "minecraft:fuel"
     ]
   },
-  "minecraft:bamboo": {
-    "INPUT": [
-      "minecraft:crafting",
-      "minecraft:fuel"
-    ]
-  },
   "minecraft:sea_lantern": {
     "OUTPUT": [
       "minecraft:crafting"
@@ -5928,9 +6538,36 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:sentry_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:shaper_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
   "minecraft:shulker_shell": {
     "INPUT": [
       "minecraft:crafting"
+    ]
+  },
+  "minecraft:silence_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
     ]
   },
   "minecraft:skull_banner_pattern": {
@@ -6027,6 +6664,15 @@
       "minecraft:stonecutting"
     ]
   },
+  "minecraft:snout_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
   "minecraft:snow": {
     "OUTPUT": [
       "minecraft:crafting"
@@ -6078,6 +6724,15 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:spire_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
   "minecraft:spruce_boat": {
     "OUTPUT": [
       "minecraft:crafting"
@@ -6120,6 +6775,14 @@
     ]
   },
   "minecraft:spruce_fence_gate": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:fuel"
+    ]
+  },
+  "minecraft:spruce_hanging_sign": {
     "OUTPUT": [
       "minecraft:crafting"
     ],
@@ -6202,6 +6865,15 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:tide_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
   "minecraft:tinted_glass": {
     "OUTPUT": [
       "minecraft:crafting"
@@ -6220,6 +6892,24 @@
       "minecraft:crafting"
     ]
   },
+  "minecraft:vex_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
+  "minecraft:ward_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
   "minecraft:warped_button": {
     "OUTPUT": [
       "minecraft:crafting"
@@ -6236,6 +6926,11 @@
     ]
   },
   "minecraft:warped_fence_gate": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ]
+  },
+  "minecraft:warped_hanging_sign": {
     "OUTPUT": [
       "minecraft:crafting"
     ]
@@ -6409,6 +7104,15 @@
       "minecraft:stonecutting"
     ]
   },
+  "minecraft:wayfinder_armor_trim_smithing_template": {
+    "OUTPUT": [
+      "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
+    ]
+  },
   "minecraft:white_candle": {
     "OUTPUT": [
       "minecraft:crafting"
@@ -6440,12 +7144,16 @@
       "minecraft:furnace"
     ]
   },
-  "minecraft:writable_book": {
+  "minecraft:wild_armor_trim_smithing_template": {
     "OUTPUT": [
       "minecraft:crafting"
+    ],
+    "INPUT": [
+      "minecraft:crafting",
+      "minecraft:smithing"
     ]
   },
-  "minecraft:yellow_bed": {
+  "minecraft:writable_book": {
     "OUTPUT": [
       "minecraft:crafting"
     ]
@@ -6453,14 +7161,6 @@
   "minecraft:yellow_candle": {
     "OUTPUT": [
       "minecraft:crafting"
-    ]
-  },
-  "minecraft:yellow_carpet": {
-    "OUTPUT": [
-      "minecraft:crafting"
-    ],
-    "INPUT": [
-      "minecraft:fuel"
     ]
   },
   "minecraft:yellow_concrete_powder": {
@@ -6576,11 +7276,6 @@
   },
   "minecraft:magenta_glazed_terracotta": {
     "OUTPUT": [
-      "minecraft:furnace"
-    ]
-  },
-  "minecraft:netherrack": {
-    "INPUT": [
       "minecraft:furnace"
     ]
   },
