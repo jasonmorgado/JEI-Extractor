@@ -36,6 +36,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:acacia_hanging_sign",
+    "uid": "minecraft__acacia_hanging_sign",
+    "name": "Acacia Hanging Sign",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:acacia_leaves",
     "uid": "minecraft__acacia_leaves",
     "name": "Acacia Leaves",
@@ -162,6 +168,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:angler_pottery_sherd",
+    "uid": "minecraft__angler_pottery_sherd",
+    "name": "Angler Pottery Sherd",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:anvil",
     "uid": "minecraft__anvil",
     "name": "Anvil",
@@ -174,9 +186,21 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:archer_pottery_sherd",
+    "uid": "minecraft__archer_pottery_sherd",
+    "name": "Archer Pottery Sherd",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:armor_stand",
     "uid": "minecraft__armor_stand",
     "name": "Armor Stand",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:arms_up_pottery_sherd",
+    "uid": "minecraft__arms_up_pottery_sherd",
+    "name": "Arms Up Pottery Sherd",
     "mod": "Minecraft"
   },
   {
@@ -225,6 +249,108 @@
     "resourceLocation": "minecraft:bamboo",
     "uid": "minecraft__bamboo",
     "name": "Bamboo",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_block",
+    "uid": "minecraft__bamboo_block",
+    "name": "Block of Bamboo",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_button",
+    "uid": "minecraft__bamboo_button",
+    "name": "Bamboo Button",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_chest_raft",
+    "uid": "minecraft__bamboo_chest_raft",
+    "name": "Bamboo Raft with Chest",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_door",
+    "uid": "minecraft__bamboo_door",
+    "name": "Bamboo Door",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_fence",
+    "uid": "minecraft__bamboo_fence",
+    "name": "Bamboo Fence",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_fence_gate",
+    "uid": "minecraft__bamboo_fence_gate",
+    "name": "Bamboo Fence Gate",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_hanging_sign",
+    "uid": "minecraft__bamboo_hanging_sign",
+    "name": "Bamboo Hanging Sign",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_mosaic",
+    "uid": "minecraft__bamboo_mosaic",
+    "name": "Bamboo Mosaic",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_mosaic_slab",
+    "uid": "minecraft__bamboo_mosaic_slab",
+    "name": "Bamboo Mosaic Slab",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_mosaic_stairs",
+    "uid": "minecraft__bamboo_mosaic_stairs",
+    "name": "Bamboo Mosaic Stairs",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_planks",
+    "uid": "minecraft__bamboo_planks",
+    "name": "Bamboo Planks",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_pressure_plate",
+    "uid": "minecraft__bamboo_pressure_plate",
+    "name": "Bamboo Pressure Plate",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_raft",
+    "uid": "minecraft__bamboo_raft",
+    "name": "Bamboo Raft",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_sign",
+    "uid": "minecraft__bamboo_sign",
+    "name": "Bamboo Sign",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_slab",
+    "uid": "minecraft__bamboo_slab",
+    "name": "Bamboo Slab",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_stairs",
+    "uid": "minecraft__bamboo_stairs",
+    "name": "Bamboo Stairs",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:bamboo_trapdoor",
+    "uid": "minecraft__bamboo_trapdoor",
+    "name": "Bamboo Trapdoor",
     "mod": "Minecraft"
   },
   {
@@ -345,6 +471,12 @@
     "resourceLocation": "minecraft:birch_fence_gate",
     "uid": "minecraft__birch_fence_gate",
     "name": "Birch Fence Gate",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:birch_hanging_sign",
+    "uid": "minecraft__birch_hanging_sign",
+    "name": "Birch Hanging Sign",
     "mod": "Minecraft"
   },
   {
@@ -507,6 +639,12 @@
     "resourceLocation": "minecraft:blackstone_wall",
     "uid": "minecraft__blackstone_wall",
     "name": "Blackstone Wall",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:blade_pottery_sherd",
+    "uid": "minecraft__blade_pottery_sherd",
+    "name": "Blade Pottery Sherd",
     "mod": "Minecraft"
   },
   {
@@ -693,6 +831,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:brewer_pottery_sherd",
+    "uid": "minecraft__brewer_pottery_sherd",
+    "name": "Brewer Pottery Sherd",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:brewing_stand",
     "uid": "minecraft__brewing_stand",
     "name": "Brewing Stand",
@@ -819,6 +963,15 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:brush",
+    "uid": "minecraft__brush__f615bddfb62eda0c5d44ad803d556908",
+    "name": "Brush",
+    "mod": "Minecraft",
+    "tags": {
+      "Damage": 0.0
+    }
+  },
+  {
     "resourceLocation": "minecraft:bubble_coral",
     "uid": "minecraft__bubble_coral",
     "name": "Bubble Coral",
@@ -849,6 +1002,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:burn_pottery_sherd",
+    "uid": "minecraft__burn_pottery_sherd",
+    "name": "Burn Pottery Sherd",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:cactus",
     "uid": "minecraft__cactus",
     "name": "Cactus",
@@ -864,6 +1023,18 @@
     "resourceLocation": "minecraft:calcite",
     "uid": "minecraft__calcite",
     "name": "Calcite",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:calibrated_sculk_sensor",
+    "uid": "minecraft__calibrated_sculk_sensor",
+    "name": "Calibrated Sculk Sensor",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:camel_spawn_egg",
+    "uid": "minecraft__camel_spawn_egg",
+    "name": "Camel Spawn Egg",
     "mod": "Minecraft"
   },
   {
@@ -972,6 +1143,108 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:cherry_boat",
+    "uid": "minecraft__cherry_boat",
+    "name": "Cherry Boat",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_button",
+    "uid": "minecraft__cherry_button",
+    "name": "Cherry Button",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_chest_boat",
+    "uid": "minecraft__cherry_chest_boat",
+    "name": "Cherry Boat with Chest",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_door",
+    "uid": "minecraft__cherry_door",
+    "name": "Cherry Door",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_fence",
+    "uid": "minecraft__cherry_fence",
+    "name": "Cherry Fence",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_fence_gate",
+    "uid": "minecraft__cherry_fence_gate",
+    "name": "Cherry Fence Gate",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_hanging_sign",
+    "uid": "minecraft__cherry_hanging_sign",
+    "name": "Cherry Hanging Sign",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_leaves",
+    "uid": "minecraft__cherry_leaves",
+    "name": "Cherry Leaves",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_log",
+    "uid": "minecraft__cherry_log",
+    "name": "Cherry Log",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_planks",
+    "uid": "minecraft__cherry_planks",
+    "name": "Cherry Planks",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_pressure_plate",
+    "uid": "minecraft__cherry_pressure_plate",
+    "name": "Cherry Pressure Plate",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_sapling",
+    "uid": "minecraft__cherry_sapling",
+    "name": "Cherry Sapling",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_sign",
+    "uid": "minecraft__cherry_sign",
+    "name": "Cherry Sign",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_slab",
+    "uid": "minecraft__cherry_slab",
+    "name": "Cherry Slab",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_stairs",
+    "uid": "minecraft__cherry_stairs",
+    "name": "Cherry Stairs",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_trapdoor",
+    "uid": "minecraft__cherry_trapdoor",
+    "name": "Cherry Trapdoor",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:cherry_wood",
+    "uid": "minecraft__cherry_wood",
+    "name": "Cherry Wood",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:chest",
     "uid": "minecraft__chest",
     "name": "Chest",
@@ -999,6 +1272,12 @@
     "resourceLocation": "minecraft:chipped_anvil",
     "uid": "minecraft__chipped_anvil",
     "name": "Chipped Anvil",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:chiseled_bookshelf",
+    "uid": "minecraft__chiseled_bookshelf",
+    "name": "Chiseled Bookshelf",
     "mod": "Minecraft"
   },
   {
@@ -1101,6 +1380,12 @@
     "resourceLocation": "minecraft:coarse_dirt",
     "uid": "minecraft__coarse_dirt",
     "name": "Coarse Dirt",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:coast_armor_trim_smithing_template",
+    "uid": "minecraft__coast_armor_trim_smithing_template",
+    "name": "Smithing Template",
     "mod": "Minecraft"
   },
   {
@@ -1368,6 +1653,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:crimson_hanging_sign",
+    "uid": "minecraft__crimson_hanging_sign",
+    "name": "Crimson Hanging Sign",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:crimson_hyphae",
     "uid": "minecraft__crimson_hyphae",
     "name": "Crimson Hyphae",
@@ -1575,6 +1866,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:danger_pottery_sherd",
+    "uid": "minecraft__danger_pottery_sherd",
+    "name": "Danger Pottery Sherd",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:dark_oak_boat",
     "uid": "minecraft__dark_oak_boat",
     "name": "Dark Oak Boat",
@@ -1608,6 +1905,12 @@
     "resourceLocation": "minecraft:dark_oak_fence_gate",
     "uid": "minecraft__dark_oak_fence_gate",
     "name": "Dark Oak Fence Gate",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:dark_oak_hanging_sign",
+    "uid": "minecraft__dark_oak_hanging_sign",
+    "name": "Dark Oak Hanging Sign",
     "mod": "Minecraft"
   },
   {
@@ -1788,6 +2091,12 @@
     "resourceLocation": "minecraft:dead_tube_coral_fan",
     "uid": "minecraft__dead_tube_coral_fan",
     "name": "Dead Tube Coral Fan",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:decorated_pot",
+    "uid": "minecraft__decorated_pot",
+    "name": "Decorated Pot",
     "mod": "Minecraft"
   },
   {
@@ -2070,6 +2379,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:dragon_egg",
+    "uid": "minecraft__dragon_egg",
+    "name": "Dragon Egg",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:dragon_head",
     "uid": "minecraft__dragon_head",
     "name": "Dragon Head",
@@ -2103,6 +2418,12 @@
     "resourceLocation": "minecraft:drowned_spawn_egg",
     "uid": "minecraft__drowned_spawn_egg",
     "name": "Drowned Spawn Egg",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:dune_armor_trim_smithing_template",
+    "uid": "minecraft__dune_armor_trim_smithing_template",
+    "name": "Smithing Template",
     "mod": "Minecraft"
   },
   {
@@ -3835,6 +4156,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:explorer_pottery_sherd",
+    "uid": "minecraft__explorer_pottery_sherd",
+    "name": "Explorer Pottery Sherd",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:exposed_copper",
     "uid": "minecraft__exposed_copper",
     "name": "Exposed Copper",
@@ -3856,6 +4183,12 @@
     "resourceLocation": "minecraft:exposed_cut_copper_stairs",
     "uid": "minecraft__exposed_cut_copper_stairs",
     "name": "Exposed Cut Copper Stairs",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:eye_armor_trim_smithing_template",
+    "uid": "minecraft__eye_armor_trim_smithing_template",
+    "name": "Smithing Template",
     "mod": "Minecraft"
   },
   {
@@ -3908,9 +4241,36 @@
   },
   {
     "resourceLocation": "minecraft:firework_rocket",
-    "uid": "minecraft__firework_rocket",
+    "uid": "minecraft__firework_rocket__8a191e61b9a45a72ef14efba7849a4e2",
     "name": "Firework Rocket",
-    "mod": "Minecraft"
+    "mod": "Minecraft",
+    "tags": {
+      "Fireworks": {
+        "Flight": "1b"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:firework_rocket",
+    "uid": "minecraft__firework_rocket__92f66aec8afc1c84492c958ce39e2f92",
+    "name": "Firework Rocket",
+    "mod": "Minecraft",
+    "tags": {
+      "Fireworks": {
+        "Flight": "2b"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:firework_rocket",
+    "uid": "minecraft__firework_rocket__d634cca73295c5a57d1c993d3f916646",
+    "name": "Firework Rocket",
+    "mod": "Minecraft",
+    "tags": {
+      "Fireworks": {
+        "Flight": "3b"
+      }
+    }
   },
   {
     "resourceLocation": "minecraft:firework_star",
@@ -3976,6 +4336,12 @@
     "resourceLocation": "minecraft:fox_spawn_egg",
     "uid": "minecraft__fox_spawn_egg",
     "name": "Fox Spawn Egg",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:friend_pottery_sherd",
+    "uid": "minecraft__friend_pottery_sherd",
+    "name": "Friend Pottery Sherd",
     "mod": "Minecraft"
   },
   {
@@ -4094,11 +4460,74 @@
   },
   {
     "resourceLocation": "minecraft:goat_horn",
+    "uid": "minecraft__goat_horn__130b08f6eacee5d53b5518ea277e4647",
+    "name": "Goat Horn",
+    "mod": "Minecraft",
+    "tags": {
+      "instrument": "minecraft:yearn_goat_horn"
+    }
+  },
+  {
+    "resourceLocation": "minecraft:goat_horn",
+    "uid": "minecraft__goat_horn__35fd73e1db18cfff1c4d53eeaa1fa23f",
+    "name": "Goat Horn",
+    "mod": "Minecraft",
+    "tags": {
+      "instrument": "minecraft:sing_goat_horn"
+    }
+  },
+  {
+    "resourceLocation": "minecraft:goat_horn",
+    "uid": "minecraft__goat_horn__38c450a4860cb9f6827c66cc5fceab86",
+    "name": "Goat Horn",
+    "mod": "Minecraft",
+    "tags": {
+      "instrument": "minecraft:dream_goat_horn"
+    }
+  },
+  {
+    "resourceLocation": "minecraft:goat_horn",
     "uid": "minecraft__goat_horn__41d0b1963bf6cea13ec54c3f6dc7bdc7",
     "name": "Goat Horn",
     "mod": "Minecraft",
     "tags": {
       "instrument": "minecraft:ponder_goat_horn"
+    }
+  },
+  {
+    "resourceLocation": "minecraft:goat_horn",
+    "uid": "minecraft__goat_horn__497e75e0796982d715b221bc362469d7",
+    "name": "Goat Horn",
+    "mod": "Minecraft",
+    "tags": {
+      "instrument": "minecraft:feel_goat_horn"
+    }
+  },
+  {
+    "resourceLocation": "minecraft:goat_horn",
+    "uid": "minecraft__goat_horn__991d97fb58696ba653e46156b55c0712",
+    "name": "Goat Horn",
+    "mod": "Minecraft",
+    "tags": {
+      "instrument": "minecraft:call_goat_horn"
+    }
+  },
+  {
+    "resourceLocation": "minecraft:goat_horn",
+    "uid": "minecraft__goat_horn__9d64011939257cd6852bde0eeff2f47c",
+    "name": "Goat Horn",
+    "mod": "Minecraft",
+    "tags": {
+      "instrument": "minecraft:seek_goat_horn"
+    }
+  },
+  {
+    "resourceLocation": "minecraft:goat_horn",
+    "uid": "minecraft__goat_horn__b11a982afb1926a1f00f514c032773f5",
+    "name": "Goat Horn",
+    "mod": "Minecraft",
+    "tags": {
+      "instrument": "minecraft:admire_goat_horn"
     }
   },
   {
@@ -4465,6 +4894,18 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:heart_pottery_sherd",
+    "uid": "minecraft__heart_pottery_sherd",
+    "name": "Heart Pottery Sherd",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:heartbreak_pottery_sherd",
+    "uid": "minecraft__heartbreak_pottery_sherd",
+    "name": "Heartbreak Pottery Sherd",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:heavy_weighted_pressure_plate",
     "uid": "minecraft__heavy_weighted_pressure_plate",
     "name": "Heavy Weighted Pressure Plate",
@@ -4534,6 +4975,18 @@
     "resourceLocation": "minecraft:horse_spawn_egg",
     "uid": "minecraft__horse_spawn_egg",
     "name": "Horse Spawn Egg",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:host_armor_trim_smithing_template",
+    "uid": "minecraft__host_armor_trim_smithing_template",
+    "name": "Smithing Template",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:howl_pottery_sherd",
+    "uid": "minecraft__howl_pottery_sherd",
+    "name": "Howl Pottery Sherd",
     "mod": "Minecraft"
   },
   {
@@ -4639,6 +5092,12 @@
     "resourceLocation": "minecraft:iron_door",
     "uid": "minecraft__iron_door",
     "name": "Iron Door",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:iron_golem_spawn_egg",
+    "uid": "minecraft__iron_golem_spawn_egg",
+    "name": "Iron Golem Spawn Egg",
     "mod": "Minecraft"
   },
   {
@@ -4777,6 +5236,12 @@
     "resourceLocation": "minecraft:jungle_fence_gate",
     "uid": "minecraft__jungle_fence_gate",
     "name": "Jungle Fence Gate",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:jungle_hanging_sign",
+    "uid": "minecraft__jungle_hanging_sign",
+    "name": "Jungle Hanging Sign",
     "mod": "Minecraft"
   },
   {
@@ -5752,6 +6217,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:mangrove_hanging_sign",
+    "uid": "minecraft__mangrove_hanging_sign",
+    "name": "Mangrove Hanging Sign",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:mangrove_leaves",
     "uid": "minecraft__mangrove_leaves",
     "name": "Mangrove Leaves",
@@ -5860,6 +6331,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:miner_pottery_sherd",
+    "uid": "minecraft__miner_pottery_sherd",
+    "name": "Miner Pottery Sherd",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:mojang_banner_pattern",
     "uid": "minecraft__mojang_banner_pattern",
     "name": "Banner Pattern",
@@ -5929,6 +6406,12 @@
     "resourceLocation": "minecraft:mossy_stone_bricks",
     "uid": "minecraft__mossy_stone_bricks",
     "name": "Mossy Stone Bricks",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:mourner_pottery_sherd",
+    "uid": "minecraft__mourner_pottery_sherd",
+    "name": "Mourner Pottery Sherd",
     "mod": "Minecraft"
   },
   {
@@ -6048,6 +6531,12 @@
   {
     "resourceLocation": "minecraft:music_disc_pigstep",
     "uid": "minecraft__music_disc_pigstep",
+    "name": "Music Disc",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:music_disc_relic",
+    "uid": "minecraft__music_disc_relic",
     "name": "Music Disc",
     "mod": "Minecraft"
   },
@@ -6271,6 +6760,12 @@
     }
   },
   {
+    "resourceLocation": "minecraft:netherite_upgrade_smithing_template",
+    "uid": "minecraft__netherite_upgrade_smithing_template",
+    "name": "Smithing Template",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:netherrack",
     "uid": "minecraft__netherrack",
     "name": "Netherrack",
@@ -6316,6 +6811,12 @@
     "resourceLocation": "minecraft:oak_fence_gate",
     "uid": "minecraft__oak_fence_gate",
     "name": "Oak Fence Gate",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:oak_hanging_sign",
+    "uid": "minecraft__oak_hanging_sign",
+    "name": "Oak Hanging Sign",
     "mod": "Minecraft"
   },
   {
@@ -6530,9 +7031,298 @@
   },
   {
     "resourceLocation": "minecraft:painting",
-    "uid": "minecraft__painting",
+    "uid": "minecraft__painting__017f12c15cfcbbfbbe756e97e7910caa",
     "name": "Painting",
-    "mod": "Minecraft"
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:skull_and_roses"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__03ba021da79eb33b76616f35ef2d29c3",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:bust"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__22bd223b3b681ad5882fbd0817df77be",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:burning_skull"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__26494c898d9b588e2bd2178fc7b83789",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:plant"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__3b446051e80604d9f1ee36049259c196",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:wanderer"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__472f55bd75ce725e540f2ee269ec1a47",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:kebab"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__4a00ca0098973d727ac567753709510f",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:fighters"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__4fda76599b1eef33fc790d695a07d882",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:courbet"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__5e743eb26986f717265fcbbe53a0ca99",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:pigscene"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__5ea65507d9e69d5d3183d5cf5fd4315c",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:pool"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__6324675676496d6a9e503a7de2457ac4",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:void"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__6e626dc4f30355a3328b009e412c31db",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:aztec"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__7235dcf7787d1facfdbb4f12929fd8ee",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:alban"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__75648d2f1b83485e4d5f99d7dfc5d05b",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:wasteland"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__779dbe0512a27879cfe1e583ab9ac942",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:creebet"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__78c499d2a3e45194a457e162a043f9d8",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {}
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__845ce01f94e2d93bf3cd0c725373cbe7",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:match"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__878a82af33d482cd7f607125c0e9d9f7",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:sunset"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__8ecfbaec402d9d52396c71e24d7eb0d5",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:stage"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__947e7303941bab1bbc7ed3a743276c9a",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:bomb"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__97f28efd93e654923df5988e047e30a7",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:graham"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__b5349a5f8ea45b43fb521185f307d43e",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:sea"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__c0bb4f70b789a04462f4ec6a9afe0fdb",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:skeleton"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__c58b5e3f5db38037c302947abec73819",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:wither"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__e083d0feff151f5e7c86d662bd006b26",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:aztec2"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__f1e6c9d42930bc4aace2377a49ea7d80",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:donkey_kong"
+      }
+    }
+  },
+  {
+    "resourceLocation": "minecraft:painting",
+    "uid": "minecraft__painting__ff080d0ab2e0d5c5e058451d16c54371",
+    "name": "Painting",
+    "mod": "Minecraft",
+    "tags": {
+      "EntityTag": {
+        "variant": "minecraft:pointer"
+      }
+    }
   },
   {
     "resourceLocation": "minecraft:panda_spawn_egg",
@@ -6565,12 +7355,6 @@
     "mod": "Minecraft"
   },
   {
-    "resourceLocation": "minecraft:petrified_oak_slab",
-    "uid": "minecraft__petrified_oak_slab",
-    "name": "Petrified Oak Slab",
-    "mod": "Minecraft"
-  },
-  {
     "resourceLocation": "minecraft:phantom_membrane",
     "uid": "minecraft__phantom_membrane",
     "name": "Phantom Membrane",
@@ -6598,6 +7382,12 @@
     "resourceLocation": "minecraft:piglin_brute_spawn_egg",
     "uid": "minecraft__piglin_brute_spawn_egg",
     "name": "Piglin Brute Spawn Egg",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:piglin_head",
+    "uid": "minecraft__piglin_head",
+    "name": "Piglin Head",
     "mod": "Minecraft"
   },
   {
@@ -6661,6 +7451,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:pink_petals",
+    "uid": "minecraft__pink_petals",
+    "name": "Pink Petals",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:pink_shulker_box",
     "uid": "minecraft__pink_shulker_box",
     "name": "Pink Shulker Box",
@@ -6700,6 +7496,30 @@
     "resourceLocation": "minecraft:piston",
     "uid": "minecraft__piston",
     "name": "Piston",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:pitcher_plant",
+    "uid": "minecraft__pitcher_plant",
+    "name": "Pitcher Plant",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:pitcher_pod",
+    "uid": "minecraft__pitcher_pod",
+    "name": "Pitcher Pod",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:player_head",
+    "uid": "minecraft__player_head",
+    "name": "Player Head",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:plenty_pottery_sherd",
+    "uid": "minecraft__plenty_pottery_sherd",
+    "name": "Plenty Pottery Sherd",
     "mod": "Minecraft"
   },
   {
@@ -7339,6 +8159,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:prize_pottery_sherd",
+    "uid": "minecraft__prize_pottery_sherd",
+    "name": "Prize Pottery Sherd",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:pufferfish",
     "uid": "minecraft__pufferfish",
     "name": "Pufferfish",
@@ -7546,6 +8372,12 @@
     "resourceLocation": "minecraft:rail",
     "uid": "minecraft__rail",
     "name": "Rail",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:raiser_armor_trim_smithing_template",
+    "uid": "minecraft__raiser_armor_trim_smithing_template",
+    "name": "Smithing Template",
     "mod": "Minecraft"
   },
   {
@@ -7795,6 +8627,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:rib_armor_trim_smithing_template",
+    "uid": "minecraft__rib_armor_trim_smithing_template",
+    "name": "Smithing Template",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:rooted_dirt",
     "uid": "minecraft__rooted_dirt",
     "name": "Rooted Dirt",
@@ -7927,6 +8765,24 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:sentry_armor_trim_smithing_template",
+    "uid": "minecraft__sentry_armor_trim_smithing_template",
+    "name": "Smithing Template",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:shaper_armor_trim_smithing_template",
+    "uid": "minecraft__shaper_armor_trim_smithing_template",
+    "name": "Smithing Template",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:sheaf_pottery_sherd",
+    "uid": "minecraft__sheaf_pottery_sherd",
+    "name": "Sheaf Pottery Sherd",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:shears",
     "uid": "minecraft__shears__f615bddfb62eda0c5d44ad803d556908",
     "name": "Shears",
@@ -7939,6 +8795,12 @@
     "resourceLocation": "minecraft:sheep_spawn_egg",
     "uid": "minecraft__sheep_spawn_egg",
     "name": "Sheep Spawn Egg",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:shelter_pottery_sherd",
+    "uid": "minecraft__shelter_pottery_sherd",
+    "name": "Shelter Pottery Sherd",
     "mod": "Minecraft"
   },
   {
@@ -7975,6 +8837,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:silence_armor_trim_smithing_template",
+    "uid": "minecraft__silence_armor_trim_smithing_template",
+    "name": "Smithing Template",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:silverfish_spawn_egg",
     "uid": "minecraft__silverfish_spawn_egg",
     "name": "Silverfish Spawn Egg",
@@ -8002,6 +8870,12 @@
     "resourceLocation": "minecraft:skull_banner_pattern",
     "uid": "minecraft__skull_banner_pattern",
     "name": "Banner Pattern",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:skull_pottery_sherd",
+    "uid": "minecraft__skull_pottery_sherd",
+    "name": "Skull Pottery Sherd",
     "mod": "Minecraft"
   },
   {
@@ -8119,6 +8993,30 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:sniffer_egg",
+    "uid": "minecraft__sniffer_egg",
+    "name": "Sniffer Egg",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:sniffer_spawn_egg",
+    "uid": "minecraft__sniffer_spawn_egg",
+    "name": "Sniffer Spawn Egg",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:snort_pottery_sherd",
+    "uid": "minecraft__snort_pottery_sherd",
+    "name": "Snort Pottery Sherd",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:snout_armor_trim_smithing_template",
+    "uid": "minecraft__snout_armor_trim_smithing_template",
+    "name": "Smithing Template",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:snow",
     "uid": "minecraft__snow",
     "name": "Snow",
@@ -8128,6 +9026,12 @@
     "resourceLocation": "minecraft:snow_block",
     "uid": "minecraft__snow_block",
     "name": "Snow Block",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:snow_golem_spawn_egg",
+    "uid": "minecraft__snow_golem_spawn_egg",
+    "name": "Snow Golem Spawn Egg",
     "mod": "Minecraft"
   },
   {
@@ -8167,6 +9071,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:spawner",
+    "uid": "minecraft__spawner",
+    "name": "Monster Spawner",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:spectral_arrow",
     "uid": "minecraft__spectral_arrow",
     "name": "Spectral Arrow",
@@ -8182,6 +9092,12 @@
     "resourceLocation": "minecraft:spider_spawn_egg",
     "uid": "minecraft__spider_spawn_egg",
     "name": "Spider Spawn Egg",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:spire_armor_trim_smithing_template",
+    "uid": "minecraft__spire_armor_trim_smithing_template",
+    "name": "Smithing Template",
     "mod": "Minecraft"
   },
   {
@@ -8611,6 +9527,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:spruce_hanging_sign",
+    "uid": "minecraft__spruce_hanging_sign",
+    "name": "Spruce Hanging Sign",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:spruce_leaves",
     "uid": "minecraft__spruce_leaves",
     "name": "Spruce Leaves",
@@ -8830,6 +9752,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:stripped_bamboo_block",
+    "uid": "minecraft__stripped_bamboo_block",
+    "name": "Block of Stripped Bamboo",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:stripped_birch_log",
     "uid": "minecraft__stripped_birch_log",
     "name": "Stripped Birch Log",
@@ -8839,6 +9767,18 @@
     "resourceLocation": "minecraft:stripped_birch_wood",
     "uid": "minecraft__stripped_birch_wood",
     "name": "Stripped Birch Wood",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:stripped_cherry_log",
+    "uid": "minecraft__stripped_cherry_log",
+    "name": "Stripped Cherry Log",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:stripped_cherry_wood",
+    "uid": "minecraft__stripped_cherry_wood",
+    "name": "Stripped Cherry Wood",
     "mod": "Minecraft"
   },
   {
@@ -8944,6 +9884,153 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:suspicious_gravel",
+    "uid": "minecraft__suspicious_gravel",
+    "name": "Suspicious Gravel",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:suspicious_sand",
+    "uid": "minecraft__suspicious_sand",
+    "name": "Suspicious Sand",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:suspicious_stew",
+    "uid": "minecraft__suspicious_stew__2715169496d9b50055804132205d0965",
+    "name": "Suspicious Stew",
+    "mod": "Minecraft",
+    "tags": {
+      "Effects": [
+        {
+          "EffectDuration": 7.0,
+          "EffectId": 23.0,
+          "forge:effect_id": "minecraft:saturation"
+        }
+      ]
+    }
+  },
+  {
+    "resourceLocation": "minecraft:suspicious_stew",
+    "uid": "minecraft__suspicious_stew__415473744b3cdac12baf39f5f9735cdd",
+    "name": "Suspicious Stew",
+    "mod": "Minecraft",
+    "tags": {
+      "Effects": [
+        {
+          "EffectDuration": 180.0,
+          "EffectId": 18.0,
+          "forge:effect_id": "minecraft:weakness"
+        }
+      ]
+    }
+  },
+  {
+    "resourceLocation": "minecraft:suspicious_stew",
+    "uid": "minecraft__suspicious_stew__901f046689a00943caf21cd660e27e62",
+    "name": "Suspicious Stew",
+    "mod": "Minecraft",
+    "tags": {
+      "Effects": [
+        {
+          "EffectDuration": 240.0,
+          "EffectId": 19.0,
+          "forge:effect_id": "minecraft:poison"
+        }
+      ]
+    }
+  },
+  {
+    "resourceLocation": "minecraft:suspicious_stew",
+    "uid": "minecraft__suspicious_stew__a4c146b6b54d94c9ce960b45e4fe4037",
+    "name": "Suspicious Stew",
+    "mod": "Minecraft",
+    "tags": {
+      "Effects": [
+        {
+          "EffectDuration": 100.0,
+          "EffectId": 16.0,
+          "forge:effect_id": "minecraft:night_vision"
+        }
+      ]
+    }
+  },
+  {
+    "resourceLocation": "minecraft:suspicious_stew",
+    "uid": "minecraft__suspicious_stew__baf9a48a6f822f87f116d73caeb95284",
+    "name": "Suspicious Stew",
+    "mod": "Minecraft",
+    "tags": {
+      "Effects": [
+        {
+          "EffectDuration": 120.0,
+          "EffectId": 8.0,
+          "forge:effect_id": "minecraft:jump_boost"
+        }
+      ]
+    }
+  },
+  {
+    "resourceLocation": "minecraft:suspicious_stew",
+    "uid": "minecraft__suspicious_stew__c8828bb285edd342e3dcfbb570ab793c",
+    "name": "Suspicious Stew",
+    "mod": "Minecraft",
+    "tags": {
+      "Effects": [
+        {
+          "EffectDuration": 80.0,
+          "EffectId": 12.0,
+          "forge:effect_id": "minecraft:fire_resistance"
+        }
+      ]
+    }
+  },
+  {
+    "resourceLocation": "minecraft:suspicious_stew",
+    "uid": "minecraft__suspicious_stew__db4b4eb7ad041a4766f50db95c79fa40",
+    "name": "Suspicious Stew",
+    "mod": "Minecraft",
+    "tags": {
+      "Effects": [
+        {
+          "EffectDuration": 160.0,
+          "EffectId": 10.0,
+          "forge:effect_id": "minecraft:regeneration"
+        }
+      ]
+    }
+  },
+  {
+    "resourceLocation": "minecraft:suspicious_stew",
+    "uid": "minecraft__suspicious_stew__f3268b6dd8669eb7e9e2eebdfbe705ba",
+    "name": "Suspicious Stew",
+    "mod": "Minecraft",
+    "tags": {
+      "Effects": [
+        {
+          "EffectDuration": 160.0,
+          "EffectId": 15.0,
+          "forge:effect_id": "minecraft:blindness"
+        }
+      ]
+    }
+  },
+  {
+    "resourceLocation": "minecraft:suspicious_stew",
+    "uid": "minecraft__suspicious_stew__febe91ca01278439ab4fb83e4f460fdb",
+    "name": "Suspicious Stew",
+    "mod": "Minecraft",
+    "tags": {
+      "Effects": [
+        {
+          "EffectDuration": 160.0,
+          "EffectId": 20.0,
+          "forge:effect_id": "minecraft:wither"
+        }
+      ]
+    }
+  },
+  {
     "resourceLocation": "minecraft:sweet_berries",
     "uid": "minecraft__sweet_berries",
     "name": "Sweet Berries",
@@ -8977,6 +10064,12 @@
     "resourceLocation": "minecraft:terracotta",
     "uid": "minecraft__terracotta",
     "name": "Terracotta",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:tide_armor_trim_smithing_template",
+    "uid": "minecraft__tide_armor_trim_smithing_template",
+    "name": "Smithing Template",
     "mod": "Minecraft"
   },
   {
@@ -9064,6 +10157,15 @@
     "mod": "Minecraft",
     "tags": {
       "Potion": "minecraft:luck"
+    }
+  },
+  {
+    "resourceLocation": "minecraft:tipped_arrow",
+    "uid": "minecraft__tipped_arrow__4152983c62650be831e926e155f5d25e",
+    "name": "Tipped Arrow",
+    "mod": "Minecraft",
+    "tags": {
+      "Potion": "minecraft:awkward"
     }
   },
   {
@@ -9163,6 +10265,24 @@
     "mod": "Minecraft",
     "tags": {
       "Potion": "minecraft:long_swiftness"
+    }
+  },
+  {
+    "resourceLocation": "minecraft:tipped_arrow",
+    "uid": "minecraft__tipped_arrow__99dec161587086ae39d37c7eb7cadcff",
+    "name": "Arrow of Splashing",
+    "mod": "Minecraft",
+    "tags": {
+      "Potion": "minecraft:water"
+    }
+  },
+  {
+    "resourceLocation": "minecraft:tipped_arrow",
+    "uid": "minecraft__tipped_arrow__9f5d78b02501fd542e054caed194b991",
+    "name": "Tipped Arrow",
+    "mod": "Minecraft",
+    "tags": {
+      "Potion": "minecraft:mundane"
     }
   },
   {
@@ -9293,6 +10413,15 @@
   },
   {
     "resourceLocation": "minecraft:tipped_arrow",
+    "uid": "minecraft__tipped_arrow__e38ba718c99f3e9f4e08294893e080a8",
+    "name": "Tipped Arrow",
+    "mod": "Minecraft",
+    "tags": {
+      "Potion": "minecraft:thick"
+    }
+  },
+  {
+    "resourceLocation": "minecraft:tipped_arrow",
     "uid": "minecraft__tipped_arrow__e3f2e1acc2bc16b9c08caf8d3dcd0958",
     "name": "Arrow of Leaping",
     "mod": "Minecraft",
@@ -9343,6 +10472,18 @@
     "resourceLocation": "minecraft:torch",
     "uid": "minecraft__torch",
     "name": "Torch",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:torchflower",
+    "uid": "minecraft__torchflower",
+    "name": "Torchflower",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:torchflower_seeds",
+    "uid": "minecraft__torchflower_seeds",
+    "name": "Torchflower Seeds",
     "mod": "Minecraft"
   },
   {
@@ -9454,6 +10595,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:vex_armor_trim_smithing_template",
+    "uid": "minecraft__vex_armor_trim_smithing_template",
+    "name": "Smithing Template",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:vex_spawn_egg",
     "uid": "minecraft__vex_spawn_egg",
     "name": "Vex Spawn Egg",
@@ -9481,6 +10628,12 @@
     "resourceLocation": "minecraft:wandering_trader_spawn_egg",
     "uid": "minecraft__wandering_trader_spawn_egg",
     "name": "Wandering Trader Spawn Egg",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:ward_armor_trim_smithing_template",
+    "uid": "minecraft__ward_armor_trim_smithing_template",
+    "name": "Smithing Template",
     "mod": "Minecraft"
   },
   {
@@ -9527,6 +10680,12 @@
     "tags": {
       "Damage": 0.0
     }
+  },
+  {
+    "resourceLocation": "minecraft:warped_hanging_sign",
+    "uid": "minecraft__warped_hanging_sign",
+    "name": "Warped Hanging Sign",
+    "mod": "Minecraft"
   },
   {
     "resourceLocation": "minecraft:warped_hyphae",
@@ -9697,6 +10856,12 @@
     "mod": "Minecraft"
   },
   {
+    "resourceLocation": "minecraft:wayfinder_armor_trim_smithing_template",
+    "uid": "minecraft__wayfinder_armor_trim_smithing_template",
+    "name": "Smithing Template",
+    "mod": "Minecraft"
+  },
+  {
     "resourceLocation": "minecraft:weathered_copper",
     "uid": "minecraft__weathered_copper",
     "name": "Weathered Copper",
@@ -9826,6 +10991,12 @@
     "resourceLocation": "minecraft:white_wool",
     "uid": "minecraft__white_wool",
     "name": "White Wool",
+    "mod": "Minecraft"
+  },
+  {
+    "resourceLocation": "minecraft:wild_armor_trim_smithing_template",
+    "uid": "minecraft__wild_armor_trim_smithing_template",
+    "name": "Smithing Template",
     "mod": "Minecraft"
   },
   {

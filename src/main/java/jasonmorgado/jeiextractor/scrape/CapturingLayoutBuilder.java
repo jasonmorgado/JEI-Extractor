@@ -3,6 +3,7 @@ package jasonmorgado.jeiextractor.scrape;
 import mezz.jei.api.gui.builder.IIngredientAcceptor;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.builder.IRecipeSlotBuilder;
+import mezz.jei.api.gui.widgets.ISlottedWidgetFactory;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.nbt.CompoundTag;
@@ -26,6 +27,21 @@ public class CapturingLayoutBuilder implements IRecipeLayoutBuilder {
     @Override
     public IRecipeSlotBuilder addSlot(RecipeIngredientRole role, int x, int y) {
         CapturedSlot slot = new CapturedSlot(role, x, y);
+        slots.add(slot);
+        return slot;
+    }
+
+    @Override
+    public IRecipeSlotBuilder addSlot(RecipeIngredientRole role) {
+        CapturedSlot slot = new CapturedSlot(role, 0, 0);
+        slots.add(slot);
+        return slot;
+    }
+
+    // This WidgetFactory could be key to rendering different animated icons like arrows and flames!
+    @Override
+    public IRecipeSlotBuilder addSlotToWidget(RecipeIngredientRole role, ISlottedWidgetFactory<?> widgetFactory) {
+        CapturedSlot slot = new CapturedSlot(role, 0, 0);
         slots.add(slot);
         return slot;
     }
@@ -90,12 +106,27 @@ public class CapturingLayoutBuilder implements IRecipeLayoutBuilder {
         }
 
         @Override
+        public NoOpIngredientAcceptor addFluidStack(Fluid fluid) {
+            return this;
+        }
+
+        @Override
         public NoOpIngredientAcceptor addFluidStack(Fluid fluid, long amount) {
             return this;
         }
 
         @Override
         public NoOpIngredientAcceptor addFluidStack(Fluid fluid, long amount, CompoundTag tag) {
+            return this;
+        }
+
+        @Override
+        public NoOpIngredientAcceptor addTypedIngredients(List<mezz.jei.api.ingredients.ITypedIngredient<?>> ingredients) {
+            return this;
+        }
+
+        @Override
+        public NoOpIngredientAcceptor addOptionalTypedIngredients(List<java.util.Optional<mezz.jei.api.ingredients.ITypedIngredient<?>>> ingredients) {
             return this;
         }
     }

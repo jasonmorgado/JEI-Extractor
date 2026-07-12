@@ -4,6 +4,7 @@ import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.forge.ForgeTypes;
 import mezz.jei.api.gui.builder.IRecipeSlotBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
+import mezz.jei.api.gui.ingredient.IRecipeSlotRichTooltipCallback;
 import mezz.jei.api.gui.ingredient.IRecipeSlotTooltipCallback;
 import mezz.jei.api.ingredients.IIngredientRenderer;
 import mezz.jei.api.ingredients.IIngredientType;
@@ -27,8 +28,8 @@ import java.util.stream.Collectors;
 public class CapturedSlot implements IRecipeSlotBuilder {
 
     private final RecipeIngredientRole role;
-    private final int x;
-    private final int y;
+    private int x;
+    private int y;
     private final List<ItemStack> items = new ArrayList<>();
     private final List<FluidStack> fluids = new ArrayList<>();
 
@@ -82,6 +83,16 @@ public class CapturedSlot implements IRecipeSlotBuilder {
     }
 
     @Override
+    public IRecipeSlotBuilder addTypedIngredients(List<mezz.jei.api.ingredients.ITypedIngredient<?>> ingredients) {
+        return this;
+    }
+
+    @Override
+    public IRecipeSlotBuilder addOptionalTypedIngredients(List<java.util.Optional<mezz.jei.api.ingredients.ITypedIngredient<?>>> ingredients) {
+        return this;
+    }
+
+    @Override
     public IRecipeSlotBuilder addItemStack(ItemStack itemStack) {
         items.add(itemStack);
         return this;
@@ -90,6 +101,12 @@ public class CapturedSlot implements IRecipeSlotBuilder {
     @Override
     public IRecipeSlotBuilder addItemStacks(List<ItemStack> itemStacks) {
         items.addAll(itemStacks);
+        return this;
+    }
+
+    @Override
+    public IRecipeSlotBuilder addFluidStack(Fluid fluid) {
+        // Store fluid info
         return this;
     }
 
@@ -139,6 +156,41 @@ public class CapturedSlot implements IRecipeSlotBuilder {
     public <T> IRecipeSlotBuilder setCustomRenderer(IIngredientType<T> ingredientType, IIngredientRenderer<T> ingredientRenderer) {
         // no-op, rendering detail
         return this;
+    }
+
+    @Override
+    public IRecipeSlotBuilder setStandardSlotBackground() {
+        // no-op, rendering detail
+        return this;
+    }
+
+    @Override
+    public IRecipeSlotBuilder setOutputSlotBackground() {
+        // no-op, rendering detail
+        return this;
+    }
+
+    @Override
+    public IRecipeSlotBuilder addRichTooltipCallback(IRecipeSlotRichTooltipCallback tooltipCallback) {
+        // no-op, tooltip handling
+        return this;
+    }
+
+    @Override
+    public IRecipeSlotBuilder setPosition(int x, int y) {
+        this.x = x;
+        this.y = y;
+        return this;
+    }
+
+    @Override
+    public int getWidth() {
+        return 0;
+    }
+
+    @Override
+    public int getHeight() {
+        return 0;
     }
 
     public RecipeIngredientRole getRole() { return role; }

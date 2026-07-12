@@ -3,6 +3,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:baked_potato",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -63,6 +64,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -90,6 +98,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:black_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -150,6 +159,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -177,6 +193,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:blue_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -237,6 +254,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -264,6 +288,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:brick",
+    "category": "MISC",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -324,6 +349,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -351,6 +383,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:brown_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -411,6 +444,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -438,6 +478,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:charcoal",
+    "category": "MISC",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -831,6 +872,62 @@
           },
           "resourceLocation": "minecraft:stripped_mangrove_wood",
           "uid": "minecraft__stripped_mangrove_wood",
+          "damage": 0,
+          "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Cherry Log",
+          "count": 1,
+          "item": "cherry_log",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:cherry_log"
+          },
+          "resourceLocation": "minecraft:cherry_log",
+          "uid": "minecraft__cherry_log",
+          "damage": 0,
+          "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Cherry Wood",
+          "count": 1,
+          "item": "cherry_wood",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:cherry_wood"
+          },
+          "resourceLocation": "minecraft:cherry_wood",
+          "uid": "minecraft__cherry_wood",
+          "damage": 0,
+          "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Stripped Cherry Log",
+          "count": 1,
+          "item": "stripped_cherry_log",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:stripped_cherry_log"
+          },
+          "resourceLocation": "minecraft:stripped_cherry_log",
+          "uid": "minecraft__stripped_cherry_log",
+          "damage": 0,
+          "maxDamage": 0
+        },
+        {
+          "_type": "ItemStack",
+          "name": "Stripped Cherry Wood",
+          "count": 1,
+          "item": "stripped_cherry_wood",
+          "capNBT": {
+            "Count": "1b",
+            "id": "minecraft:stripped_cherry_wood"
+          },
+          "resourceLocation": "minecraft:stripped_cherry_wood",
+          "uid": "minecraft__stripped_cherry_wood",
           "damage": 0,
           "maxDamage": 0
         }
@@ -1249,8 +1346,71 @@
             "uid": "minecraft__stripped_mangrove_wood",
             "damage": 0,
             "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Log",
+            "count": 1,
+            "item": "cherry_log",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_log"
+            },
+            "resourceLocation": "minecraft:cherry_log",
+            "uid": "minecraft__cherry_log",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Cherry Wood",
+            "count": 1,
+            "item": "cherry_wood",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:cherry_wood"
+            },
+            "resourceLocation": "minecraft:cherry_wood",
+            "uid": "minecraft__cherry_wood",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Stripped Cherry Log",
+            "count": 1,
+            "item": "stripped_cherry_log",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:stripped_cherry_log"
+            },
+            "resourceLocation": "minecraft:stripped_cherry_log",
+            "uid": "minecraft__stripped_cherry_log",
+            "damage": 0,
+            "maxDamage": 0
+          },
+          {
+            "_type": "ItemStack",
+            "name": "Stripped Cherry Wood",
+            "count": 1,
+            "item": "stripped_cherry_wood",
+            "capNBT": {
+              "Count": "1b",
+              "id": "minecraft:stripped_cherry_wood"
+            },
+            "resourceLocation": "minecraft:stripped_cherry_wood",
+            "uid": "minecraft__stripped_cherry_wood",
+            "damage": 0,
+            "maxDamage": 0
           }
         ],
+        "fluids": []
+      },
+      {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
         "fluids": []
       },
       {
@@ -1281,6 +1441,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:coal_from_smelting_coal_ore",
+    "category": "MISC",
     "group": "coal",
     "ingredient": {
       "_type": "Ingredient",
@@ -1341,6 +1502,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -1368,6 +1536,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:coal_from_smelting_deepslate_coal_ore",
+    "category": "MISC",
     "group": "coal",
     "ingredient": {
       "_type": "Ingredient",
@@ -1428,6 +1597,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -1455,6 +1631,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cooked_beef",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -1515,6 +1692,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -1542,6 +1726,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cooked_chicken",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -1602,6 +1787,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -1629,6 +1821,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cooked_cod",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -1689,6 +1882,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -1716,6 +1916,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cooked_mutton",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -1776,6 +1977,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -1803,6 +2011,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cooked_porkchop",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -1863,6 +2072,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -1890,6 +2106,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cooked_rabbit",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -1950,6 +2167,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -1977,6 +2201,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cooked_salmon",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -2037,6 +2262,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -2064,6 +2296,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:copper_ingot_from_smelting_copper_ore",
+    "category": "MISC",
     "group": "copper_ingot",
     "ingredient": {
       "_type": "Ingredient",
@@ -2124,6 +2357,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -2151,6 +2391,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:copper_ingot_from_smelting_deepslate_copper_ore",
+    "category": "MISC",
     "group": "copper_ingot",
     "ingredient": {
       "_type": "Ingredient",
@@ -2211,6 +2452,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -2238,6 +2486,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:copper_ingot_from_smelting_raw_copper",
+    "category": "MISC",
     "group": "copper_ingot",
     "ingredient": {
       "_type": "Ingredient",
@@ -2298,6 +2547,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -2325,6 +2581,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cracked_deepslate_bricks",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -2385,6 +2642,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -2412,6 +2676,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cracked_deepslate_tiles",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -2472,6 +2737,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -2499,6 +2771,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cracked_nether_bricks",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -2559,6 +2832,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -2586,6 +2866,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cracked_polished_blackstone_bricks",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -2646,6 +2927,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -2673,6 +2961,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cracked_stone_bricks",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -2733,6 +3022,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -2760,6 +3056,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:cyan_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -2820,6 +3117,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -2847,6 +3151,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:deepslate",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -2907,6 +3212,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -2934,6 +3246,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:diamond_from_smelting_deepslate_diamond_ore",
+    "category": "MISC",
     "group": "diamond",
     "ingredient": {
       "_type": "Ingredient",
@@ -2994,6 +3307,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -3021,6 +3341,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:diamond_from_smelting_diamond_ore",
+    "category": "MISC",
     "group": "diamond",
     "ingredient": {
       "_type": "Ingredient",
@@ -3081,6 +3402,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -3108,6 +3436,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:dried_kelp_from_smelting",
+    "category": "FOOD",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -3168,6 +3497,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -3195,6 +3531,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:emerald_from_smelting_deepslate_emerald_ore",
+    "category": "MISC",
     "group": "emerald",
     "ingredient": {
       "_type": "Ingredient",
@@ -3255,6 +3592,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -3282,6 +3626,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:emerald_from_smelting_emerald_ore",
+    "category": "MISC",
     "group": "emerald",
     "ingredient": {
       "_type": "Ingredient",
@@ -3342,6 +3687,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -3369,6 +3721,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:glass",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -3457,6 +3810,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -3484,6 +3844,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:gold_ingot_from_smelting_deepslate_gold_ore",
+    "category": "MISC",
     "group": "gold_ingot",
     "ingredient": {
       "_type": "Ingredient",
@@ -3544,6 +3905,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -3571,6 +3939,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:gold_ingot_from_smelting_gold_ore",
+    "category": "MISC",
     "group": "gold_ingot",
     "ingredient": {
       "_type": "Ingredient",
@@ -3631,6 +4000,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -3658,6 +4034,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:gold_ingot_from_smelting_nether_gold_ore",
+    "category": "MISC",
     "group": "gold_ingot",
     "ingredient": {
       "_type": "Ingredient",
@@ -3718,6 +4095,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -3745,6 +4129,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:gold_ingot_from_smelting_raw_gold",
+    "category": "MISC",
     "group": "gold_ingot",
     "ingredient": {
       "_type": "Ingredient",
@@ -3805,6 +4190,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -3832,6 +4224,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:gold_nugget_from_smelting",
+    "category": "MISC",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -4252,6 +4645,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -4279,6 +4679,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:gray_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -4339,6 +4740,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -4366,6 +4774,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:green_dye",
+    "category": "MISC",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -4426,6 +4835,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -4453,6 +4869,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:green_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -4513,6 +4930,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -4540,6 +4964,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:iron_ingot_from_smelting_deepslate_iron_ore",
+    "category": "MISC",
     "group": "iron_ingot",
     "ingredient": {
       "_type": "Ingredient",
@@ -4600,6 +5025,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -4627,6 +5059,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:iron_ingot_from_smelting_iron_ore",
+    "category": "MISC",
     "group": "iron_ingot",
     "ingredient": {
       "_type": "Ingredient",
@@ -4687,6 +5120,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -4714,6 +5154,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:iron_ingot_from_smelting_raw_iron",
+    "category": "MISC",
     "group": "iron_ingot",
     "ingredient": {
       "_type": "Ingredient",
@@ -4774,6 +5215,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -4801,6 +5249,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:iron_nugget_from_smelting",
+    "category": "MISC",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -5381,6 +5830,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -5408,6 +5864,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore",
+    "category": "MISC",
     "group": "lapis_lazuli",
     "ingredient": {
       "_type": "Ingredient",
@@ -5468,6 +5925,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -5495,6 +5959,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:lapis_lazuli_from_smelting_lapis_ore",
+    "category": "MISC",
     "group": "lapis_lazuli",
     "ingredient": {
       "_type": "Ingredient",
@@ -5555,6 +6020,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -5582,6 +6054,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:light_blue_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -5642,6 +6115,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -5669,6 +6149,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:light_gray_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -5729,6 +6210,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -5756,6 +6244,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:lime_dye_from_smelting",
+    "category": "MISC",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -5816,6 +6305,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -5843,6 +6339,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:lime_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -5903,6 +6400,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -5930,6 +6434,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:magenta_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -5990,6 +6495,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -6017,6 +6529,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:nether_brick",
+    "category": "MISC",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -6077,6 +6590,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -6104,6 +6624,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:netherite_scrap",
+    "category": "MISC",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -6164,6 +6685,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -6191,6 +6719,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:orange_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -6251,6 +6780,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -6278,6 +6814,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:pink_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -6338,6 +6875,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -6365,6 +6909,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:popped_chorus_fruit",
+    "category": "MISC",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -6425,6 +6970,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -6452,6 +7004,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:purple_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -6512,6 +7065,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -6539,6 +7099,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:quartz",
+    "category": "MISC",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -6599,6 +7160,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -6626,6 +7194,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:red_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -6686,6 +7255,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -6713,6 +7289,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:redstone_from_smelting_deepslate_redstone_ore",
+    "category": "BLOCKS",
     "group": "redstone",
     "ingredient": {
       "_type": "Ingredient",
@@ -6773,6 +7350,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -6800,6 +7384,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:redstone_from_smelting_redstone_ore",
+    "category": "BLOCKS",
     "group": "redstone",
     "ingredient": {
       "_type": "Ingredient",
@@ -6860,6 +7445,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -6887,6 +7479,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:smooth_basalt",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -6947,6 +7540,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -6974,6 +7574,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:smooth_quartz",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -7034,6 +7635,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -7061,6 +7669,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:smooth_red_sandstone",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -7121,6 +7730,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -7148,6 +7764,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:smooth_sandstone",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -7208,6 +7825,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -7235,6 +7859,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:smooth_stone",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -7295,6 +7920,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -7322,6 +7954,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:sponge",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -7382,6 +8015,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -7409,6 +8049,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:stone",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -7469,6 +8110,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -7496,6 +8144,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -7556,6 +8205,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -7583,6 +8239,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:white_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -7643,6 +8300,13 @@
         "fluids": []
       },
       {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
+        "fluids": []
+      },
+      {
         "role": "OUTPUT",
         "x": 61,
         "y": 19,
@@ -7670,6 +8334,7 @@
     "_type": "SmeltingRecipe",
     "type": "smelting",
     "id": "minecraft:yellow_glazed_terracotta",
+    "category": "BLOCKS",
     "group": "",
     "ingredient": {
       "_type": "Ingredient",
@@ -7727,6 +8392,13 @@
             "maxDamage": 0
           }
         ],
+        "fluids": []
+      },
+      {
+        "role": "RENDER_ONLY",
+        "x": 1,
+        "y": 37,
+        "items": [],
         "fluids": []
       },
       {

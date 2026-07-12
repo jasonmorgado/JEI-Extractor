@@ -103,6 +103,10 @@ public class RecipeExportService {
 
         for (IRecipeCategory<?> category : categories) {
             RecipeType<?> type = category.getRecipeType();
+            // Skip tag recipes — they're enormous and not useful for per-type preview
+            if (type.getUid().toString().contains("tag_recipes")) {
+                continue;
+            }
             IRecipeLookup<?> recipeLookup = recipeManager.createRecipeLookup(type);
             List<?> sortedRecipes = recipeLookup.get()
                     .sorted(Comparator.comparing(r -> scraper.getRecipeId(r)))
@@ -139,7 +143,7 @@ public class RecipeExportService {
         for (IRecipeCategory<?> category : categories) {
             RecipeType<?> type = category.getRecipeType();
             String typeId = type.getUid().toString();
-            typeId = typeId.replace(":", "_");
+            typeId = typeId.replace(":", "_").replace("/", "_");
             IRecipeLookup<?> recipeLookup = recipeManager.createRecipeLookup(type);
 
             List<Map<String, Object>> recipeJsonList = new ArrayList<>();
