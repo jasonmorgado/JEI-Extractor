@@ -46,6 +46,25 @@ jobs:
           fi
           echo "branch=${BRANCH}" >> "$GITHUB_OUTPUT"
 
+      - name: Checkout target branch
+        id: branch-checkout
+        run: |
+          cd display
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          BRANCH="${{ steps.branch.outputs.branch }}"
+
+          if git ls-remote --exit-code --heads origin "$BRANCH" 2>/dev/null; then
+            echo "Branch $BRANCH already exists, checking it out..."
+            git fetch origin "$BRANCH"
+            git checkout "$BRANCH"
+          else
+            echo "Creating new branch $BRANCH from main..."
+            git fetch origin main
+            git checkout -b "$BRANCH" origin/main
+          fi
+
       - name: Copy export JSON files into JEI-Display
         run: |
           rm -rf display/src/static/extracted-json
@@ -54,24 +73,11 @@ jobs:
           echo "Copied files:"
           find display/src/static/extracted-json -type f
 
-      - name: Create/checkout branch and commit
+      - name: Commit and push
         id: commit
         run: |
           cd display
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
           BRANCH="${{ steps.branch.outputs.branch }}"
-
-          
-          if git ls-remote --exit-code --heads origin "$BRANCH" 2>/dev/null; then
-            echo "Branch $BRANCH already exists, using it..."
-            git fetch origin "$BRANCH"
-            git checkout "$BRANCH"
-          else
-            echo "Creating branch $BRANCH"
-            git checkout -b "$BRANCH"
-          fi
 
           git add src/static/extracted-json/
 
