@@ -134,7 +134,18 @@ jobs:
             PR_NUM=$(echo "$EXISTING_PR" | jq -r '.number')
             PR_STATE=$(echo "$EXISTING_PR" | jq -r '.state')
             if [ "$PR_STATE" = "open" ]; then
-              echo "PR already exists and is open: #$PR_NUM — skipping."
+              echo "PR already exists and is open: #$PR_NUM — updating body."
+              gh pr edit "$PR_NUM" \
+                --repo jasonmorgado/JEI-Web-Viewer \
+                --body "This PR updates the exported JSON files from the [JEI-Extractor](https://github.com/jasonmorgado/JEI-Extractor) repository.
+
+            Please pull down the changes from this branch locally for testing.
+            Use \`npm run dev\` to preview.
+            Confirm changes and merge to keep JSON up to date.
+          
+            Triggered by: ${{ github.event_name }}
+            Original PR: ${{ github.event.pull_request.html_url || 'Manual trigger' }}
+            Source branch: ${{ github.head_ref || 'manual' }}"
             else
               echo "Reopening closed/merged PR #$PR_NUM..."
               gh pr reopen "$PR_NUM" --repo jasonmorgado/JEI-Web-Viewer
