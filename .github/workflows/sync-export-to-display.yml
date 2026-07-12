@@ -117,8 +117,13 @@ jobs:
               --title "Sync JSON export from JEI-Extractor (${{ github.head_ref || 'manual' }})" \
               --body "This PR updates the exported JSON files from the [JEI-Extractor](https://github.com/jasonmorgado/JEI-Extractor) repository.
 
+            Please pull down the changes from this branch locally for testing.
+            Use \`npm run dev\` to preview.
+            Confirm changes and merge to keep JSON up to date.
+          
             Triggered by: ${{ github.event_name }}
-            Source commit: ${{ github.sha }}
-            Source branch: ${{ github.head_ref || 'manual' }}"
+            Original PR: ${{ github.event.pull_request.html_url || 'Manual trigger' }}
+            Source branch: ${{ github.head_ref || 'manual' }}
+
             echo "PR created successfully."
           fi
