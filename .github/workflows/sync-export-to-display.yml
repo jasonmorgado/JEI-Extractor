@@ -129,7 +129,6 @@ jobs:
           
             Triggered by: ${{ github.event_name }}
             Original PR: ${{ github.event.pull_request.html_url || 'Manual trigger' }}
-            Source branch: ${{ github.head_ref || 'manual' }}
-
+            Source branch: ${{ github.head_ref || 'manual' }}"
             echo "PR created successfully."
           fi
