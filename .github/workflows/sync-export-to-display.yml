@@ -1,0 +1,124 @@
+name: Sync JEI Export to JEI-Display
+
+# When a PR in the backend has JSON changes, create a sibling branch and PR for the frontend.
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'out/extracted-json/**'
+  workflow_dispatch: # Manual Trigger, for manually testing
+    inputs:
+      branch_name:
+        description: 'Branch name to use in the target repo (leave empty for auto-generated)'
+        required: false
+        type: string
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    # Don't run on PRs from forks (wouldn't work)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+
+    steps:
+      # Fetch Files
+      - name: Checkout JEI-Extractor
+        uses: actions/checkout@v4
+        with:
+          path: extractor
+
+      # Fetch Frontend
+      - name: Checkout JEI-Web-Viewer
+        uses: actions/checkout@v4
+        with:
+          repository: jasonmorgado/JEI-Web-Viewer
+          token: ${{ secrets.JEI_DISPLAY_PAT }}
+          path: display
+
+      - name: Determine branch name
+        id: branch
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.branch_name }}" ]; then
+            BRANCH="${{ inputs.branch_name }}"
+          elif [ "${{ github.event_name }}" = "pull_request" ]; then
+            BRANCH="json-export/${{ github.head_ref }}"
+          else
+            BRANCH="json-export/manual"
+          fi
+          echo "branch=${BRANCH}" >> "$GITHUB_OUTPUT"
+
+      - name: Copy export JSON files into JEI-Display
+        run: |
+          rm -rf display/src/static/extracted-json
+          cp -r extractor/out/extracted-json display/src/static/extracted-json
+
+          echo "Copied files:"
+          find display/src/static/extracted-json -type f
+
+      - name: Create/checkout branch and commit
+        id: commit
+        run: |
+          cd display
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          BRANCH="${{ steps.branch.outputs.branch }}"
+
+          
+          if git ls-remote --exit-code --heads origin "$BRANCH" 2>/dev/null; then
+            echo "Branch $BRANCH already exists, using it..."
+            git fetch origin "$BRANCH"
+            git checkout "$BRANCH"
+          else
+            echo "Creating branch $BRANCH"
+            git checkout -b "$BRANCH"
+          fi
+
+          git add src/static/extracted-json/
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "branch=${BRANCH}" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git commit -m "Sync JEI export JSON files
+
+          Triggered by ${{ github.event_name }} from jasonmorgado/JEI-Extractor@${{ github.sha }}
+          Source branch: ${{ github.head_ref || 'manual' }}"
+
+          git push origin "$BRANCH"
+          echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          echo "branch=${BRANCH}" >> "$GITHUB_OUTPUT"
+
+      - name: Create Pull Request in JEI-Web-Viewer
+        if: steps.commit.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.JEI_DISPLAY_PAT }}
+        run: |
+          cd display
+          BRANCH="${{ steps.commit.outputs.branch }}"
+
+          # Check if there's already an open PR from this branch
+          EXISTING_PR=$(gh pr list \
+            --repo jasonmorgado/JEI-Web-Viewer \
+            --head "$BRANCH" \
+            --state open \
+            --json number \
+            --jq '.[0].number' 2>/dev/null || echo "")
+
+          if [ -n "$EXISTING_PR" ]; then
+            echo "PR already exists from branch $BRANCH: #$EXISTING_PR — skipping PR creation. Commit pushed."
+          else
+            gh pr create \
+              --repo jasonmorgado/JEI-Web-Viewer \
+              --head "$BRANCH" \
+              --base main \
+              --title "Sync JSON export from JEI-Extractor (${{ github.head_ref || 'manual' }})" \
+              --body "This PR updates the exported JSON files from the [JEI-Extractor](https://github.com/jasonmorgado/JEI-Extractor) repository.
+
+            Triggered by: ${{ github.event_name }}
+            Source commit: ${{ github.sha }}
+            Source branch: ${{ github.head_ref || 'manual' }}"
+            echo "PR created successfully."
+          fi

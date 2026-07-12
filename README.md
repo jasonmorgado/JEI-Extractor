@@ -49,3 +49,7 @@ Or even `./gradlew clean runClient --refresh-dependencies` to install dependenci
 Debugging should be done in IntelliJ, I couldn't get VSCode to work.
 
 I yearn for something to just open the world on boot when I hit start.
+
+## CI/CD: Automated Sync to JEI-Web-Viewer
+
+A [GitHub Actions workflow](.github/workflows/sync-export-to-display.yml) automatically copies the extracted JSON files from this repo into [JEI-Web-Viewer](https://github.com/jasonmorgado/JEI-Web-Viewer) and opens a pull request.
