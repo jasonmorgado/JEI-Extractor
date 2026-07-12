@@ -97,7 +97,7 @@ jobs:
           echo "has_changes=true" >> "$GITHUB_OUTPUT"
           echo "branch=${BRANCH}" >> "$GITHUB_OUTPUT"
 
-      - name: Create Pull Request in JEI-Web-Viewer
+      - name: Create or reopen Pull Request in JEI-Web-Viewer
         if: steps.commit.outputs.has_changes == 'true'
         env:
           GH_TOKEN: ${{ secrets.JEI_DISPLAY_PAT }}
@@ -105,17 +105,16 @@ jobs:
           cd display
           BRANCH="${{ steps.commit.outputs.branch }}"
 
-          # Check if there's already an open PR from this branch
+          # Check for any existing PR (open, closed, or merged) from this branch
           EXISTING_PR=$(gh pr list \
             --repo jasonmorgado/JEI-Web-Viewer \
             --head "$BRANCH" \
-            --state open \
-            --json number \
-            --jq '.[0].number' 2>/dev/null || echo "")
+            --state all \
+            --json number,state \
+            --jq '.[0]' 2>/dev/null || echo "")
 
-          if [ -n "$EXISTING_PR" ]; then
-            echo "PR already exists from branch $BRANCH: #$EXISTING_PR — skipping PR creation. Commit pushed."
-          else
+          if [ -z "$EXISTING_PR" ] || [ "$EXISTING_PR" = "null" ]; then
+            # No PR exists at all — create a new one
             gh pr create \
               --repo jasonmorgado/JEI-Web-Viewer \
               --head "$BRANCH" \
@@ -131,4 +130,13 @@ jobs:
             Original PR: ${{ github.event.pull_request.html_url || 'Manual trigger' }}
             Source branch: ${{ github.head_ref || 'manual' }}"
             echo "PR created successfully."
+          else
+            PR_NUM=$(echo "$EXISTING_PR" | jq -r '.number')
+            PR_STATE=$(echo "$EXISTING_PR" | jq -r '.state')
+            if [ "$PR_STATE" = "open" ]; then
+              echo "PR already exists and is open: #$PR_NUM — skipping."
+            else
+              echo "Reopening closed/merged PR #$PR_NUM..."
+              gh pr reopen "$PR_NUM" --repo jasonmorgado/JEI-Web-Viewer
+            fi
           fi
