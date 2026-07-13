@@ -80,7 +80,7 @@ public class RecipeExportService {
 
             // Create items.json, which populates the right hand items panel
             writeItemsFile(jeiRuntime, extractedJsonDir);
-            
+
             // Write Recipe lists for each recipe type in their own file.
             writeRecipeFiles(recipeManager, extractedJsonDir);
 
@@ -186,7 +186,7 @@ public class RecipeExportService {
         IIngredientManager ingredientManager = jeiRuntime.getIngredientManager();
         Collection<ItemStack> items = ingredientManager.getAllIngredients(VanillaTypes.ITEM_STACK);
 
-        List<Map<String, Object>> itemsList = new ArrayList<>();
+        Map<String, Map<String, Object>> itemsMap = new TreeMap<>();
         RecipeScraper recipeScraper = new RecipeScraper();
 
         for (ItemStack itemStack : items) {
@@ -199,20 +199,18 @@ public class RecipeExportService {
                     ? mod.getModInfo().getDisplayName()
                     : modId;
 
+            String uid = (String) itemStackData.get("uid");
             Map<String, Object> itemMap = new LinkedHashMap<>();
             itemMap.put("resourceLocation", itemStackData.get("resourceLocation"));
-            itemMap.put("uid", itemStackData.get("uid"));
             itemMap.put("name", itemStackData.get("name"));
             itemMap.put("mod", modName);
             itemMap.put("tags", itemStackData.get("tag"));
-            itemsList.add(itemMap);
+            itemsMap.put(uid, itemMap);
         }
 
-        itemsList.sort(Comparator.comparing(m -> (String) m.get("uid")));
-
         Path itemsFile = outDir.resolve("items.json");
-        String content = GSON.toJson(itemsList);
+        String content = GSON.toJson(itemsMap);
         Files.writeString(itemsFile, content);
-        LOGGER.info("Wrote {} items to {}", itemsList.size(), itemsFile.getFileName());
+        LOGGER.info("Wrote {} items to {}", itemsMap.size(), itemsFile.getFileName());
     }
 }
