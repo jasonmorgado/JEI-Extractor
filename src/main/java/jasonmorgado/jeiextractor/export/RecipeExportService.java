@@ -4,13 +4,19 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mojang.logging.LogUtils;
 import jasonmorgado.jeiextractor.export.IndexBuilder;
-import jasonmorgado.jeiextractor.export.IndexExtractor;
 import jasonmorgado.jeiextractor.scrape.RecipeScraper;
 import mezz.jei.api.recipe.IRecipeLookup;
 import mezz.jei.api.recipe.IRecipeManager;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
+import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.runtime.IJeiRuntime;
+import mezz.jei.api.runtime.IIngredientManager;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.fml.ModContainer;
+import net.minecraftforge.fml.ModList;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
 import java.io.IOException;
@@ -58,21 +64,31 @@ public class RecipeExportService {
         try {
             Files.createDirectories(extractedJsonDir);
 
-            var extractor = new IndexExtractor();
-            extractor.writeItemsFile(jeiRuntime, extractedJsonDir);
+            /// Debugging Stuff
 
+            // One per type, for debugging purposes.
             writeOnePerTypeFile(recipeManager, baseOutDir);
 
-            writeRecipeTypesFiles(recipeManager, extractedJsonDir);
-
-            var indexBuilder = new IndexBuilder();
-            indexBuilder.buildIndexes(extractedJsonDir.resolve("recipe_types"), extractedJsonDir);
-
+            // Write a list of available types, for debugging
             Collection<RecipeType<?>> recipeTypes = recipeManager.createRecipeCategoryLookup()
                     .get()
                     .map(IRecipeCategory::getRecipeType)
                     .collect(Collectors.toList());
             writeRecipeTypesFile(baseOutDir, recipeTypes);
+
+            /// Web Export Stuff
+
+            // Create items.json, which populates the right hand items panel
+            writeItemsFile(jeiRuntime, extractedJsonDir);
+            
+            // Write Recipe lists for each recipe type in their own file.
+            writeRecipeFiles(recipeManager, extractedJsonDir);
+
+            // Using Recipe Lists, build the index files.
+            var indexBuilder = new IndexBuilder();
+            indexBuilder.buildIndexes(extractedJsonDir.resolve("recipe_types"), extractedJsonDir);
+
+
 
         } catch (IOException e) {
             LOGGER.error("Failed to write recipe data: {}", e.getMessage());
@@ -129,7 +145,7 @@ public class RecipeExportService {
         LOGGER.info("JEI Recipe Types written to {}", typesFile.toAbsolutePath());
     }
 
-    private void writeRecipeTypesFiles(IRecipeManager recipeManager, Path outDir) throws IOException {
+    private void writeRecipeFiles(IRecipeManager recipeManager, Path outDir) throws IOException {
         Path recipeTypesDir = outDir.resolve("recipe_types");
         Files.createDirectories(recipeTypesDir);
 
@@ -164,5 +180,39 @@ public class RecipeExportService {
             Files.writeString(typeFile, content);
             LOGGER.info("Wrote {} recipes to {}", recipeJsonList.size(), typeFile.getFileName());
         }
+    }
+
+    private void writeItemsFile(IJeiRuntime jeiRuntime, Path outDir) throws IOException {
+        IIngredientManager ingredientManager = jeiRuntime.getIngredientManager();
+        Collection<ItemStack> items = ingredientManager.getAllIngredients(VanillaTypes.ITEM_STACK);
+
+        List<Map<String, Object>> itemsList = new ArrayList<>();
+        RecipeScraper recipeScraper = new RecipeScraper();
+
+        for (ItemStack itemStack : items) {
+            Map<String, Object> itemStackData = recipeScraper.itemStackToMap(itemStack);
+
+            ResourceLocation id = ForgeRegistries.ITEMS.getKey(itemStack.getItem());
+            String modId = id.getNamespace();
+            ModContainer mod = ModList.get().getModContainerById(modId).orElse(null);
+            String modName = (mod != null)
+                    ? mod.getModInfo().getDisplayName()
+                    : modId;
+
+            Map<String, Object> itemMap = new LinkedHashMap<>();
+            itemMap.put("resourceLocation", itemStackData.get("resourceLocation"));
+            itemMap.put("uid", itemStackData.get("uid"));
+            itemMap.put("name", itemStackData.get("name"));
+            itemMap.put("mod", modName);
+            itemMap.put("tags", itemStackData.get("tag"));
+            itemsList.add(itemMap);
+        }
+
+        itemsList.sort(Comparator.comparing(m -> (String) m.get("uid")));
+
+        Path itemsFile = outDir.resolve("items.json");
+        String content = GSON.toJson(itemsList);
+        Files.writeString(itemsFile, content);
+        LOGGER.info("Wrote {} items to {}", itemsList.size(), itemsFile.getFileName());
     }
 }
