@@ -389,11 +389,11 @@ public class IndexBuilder {
     }
 
     /**
-     * Extract all item IDs from a JSON slot object's items array.
-     * Item IDs are located in capNBT.id fields within each item.
+     * Extract all item UIDs from a JSON slot object's items array.
+     * Item UIDs are located in the uid field within each item.
      *
      * @param slot The slot JSON object
-     * @return List of item ID strings
+     * @return List of item UID strings
      */
     private List<String> extractItemIdsFromSlotJson(JsonObject slot) {
         var itemIds = new ArrayList<String>();
@@ -410,18 +410,12 @@ public class IndexBuilder {
             }
 
             JsonObject item = itemElement.getAsJsonObject();
-            JsonElement capNBTElement = item.get("capNBT");
-            if (capNBTElement == null || !capNBTElement.isJsonObject()) {
+            JsonElement uidElement = item.get("uid");
+            if (uidElement == null || !uidElement.isJsonPrimitive()) {
                 continue;
             }
 
-            JsonObject capNBT = capNBTElement.getAsJsonObject();
-            JsonElement idElement = capNBT.get("id");
-            if (idElement == null || !idElement.isJsonPrimitive()) {
-                continue;
-            }
-
-            String itemId = idElement.getAsString();
+            String itemId = uidElement.getAsString();
             if (!itemId.isEmpty()) {
                 itemIds.add(itemId);
             }
