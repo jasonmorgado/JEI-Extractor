@@ -37,6 +37,9 @@ public class RecipeExportService {
 
     private final Path baseOutDir;
     private final Path extractedJsonDir;
+    // Set by writeItemsFile — used by IndexBuilder for fallback enrichment
+    private Set<String> validUids;
+    private Map<String, List<String>> resourceIdToUids;
 
     /**
      * Default export to ../out relative to the run directory.
@@ -78,17 +81,16 @@ public class RecipeExportService {
 
             /// Web Export Stuff
 
-            // Create items.json, which populates the right hand items panel
+            // Build items data and write items.json
             writeItemsFile(jeiRuntime, extractedJsonDir);
 
             // Write Recipe lists for each recipe type in their own file.
             writeRecipeFiles(recipeManager, extractedJsonDir);
 
-            // Using Recipe Lists, build the index files.
+            // Build the index files and enrich recipe files with fallback_uids
             var indexBuilder = new IndexBuilder();
-            indexBuilder.buildIndexes(extractedJsonDir.resolve("recipe_types"), extractedJsonDir);
-
-
+            indexBuilder.buildIndexes(validUids, resourceIdToUids,
+                    extractedJsonDir.resolve("recipe_types"), extractedJsonDir);
 
         } catch (IOException e) {
             LOGGER.error("Failed to write recipe data: {}", e.getMessage());
@@ -182,11 +184,17 @@ public class RecipeExportService {
         }
     }
 
+    /**
+     * Build items data from JEI's ingredient manager.
+     * Writes items.json to the output directory and sets validUids / resourceIdToUids fields
+     * for use by IndexBuilder.
+     */
     private void writeItemsFile(IJeiRuntime jeiRuntime, Path outDir) throws IOException {
         IIngredientManager ingredientManager = jeiRuntime.getIngredientManager();
         Collection<ItemStack> items = ingredientManager.getAllIngredients(VanillaTypes.ITEM_STACK);
 
         Map<String, Map<String, Object>> itemsMap = new TreeMap<>();
+        var localResourceIdToUids = new LinkedHashMap<String, List<String>>();
         RecipeScraper recipeScraper = new RecipeScraper();
 
         for (ItemStack itemStack : items) {
@@ -200,17 +208,34 @@ public class RecipeExportService {
                     : modId;
 
             String uid = (String) itemStackData.get("uid");
+            String resourceLocation = (String) itemStackData.get("resourceLocation");
+
+            // Build uid→metadata map
             Map<String, Object> itemMap = new LinkedHashMap<>();
-            itemMap.put("resourceLocation", itemStackData.get("resourceLocation"));
+            itemMap.put("resourceLocation", resourceLocation);
             itemMap.put("name", itemStackData.get("name"));
             itemMap.put("mod", modName);
             itemMap.put("tags", itemStackData.get("tag"));
             itemsMap.put(uid, itemMap);
+
+            // Build resourceId→uids lookup (e.g., {"minecraft:crafting_table": ["minecraft__crafting_table", "minecraft__crafting_table__<hash>"]})
+            if (resourceLocation != null && uid != null) {
+                localResourceIdToUids
+                        .computeIfAbsent(resourceLocation, k -> new ArrayList<>())
+                        .add(uid);
+            }
         }
 
+        // Write items.json
         Path itemsFile = outDir.resolve("items.json");
         String content = GSON.toJson(itemsMap);
         Files.writeString(itemsFile, content);
         LOGGER.info("Wrote {} items to {}", itemsMap.size(), itemsFile.getFileName());
+
+        LOGGER.info("Built {} resourceId→uid mappings from JEI", localResourceIdToUids.size());
+
+        // Store results in instance fields for later use
+        this.validUids = itemsMap.keySet();
+        this.resourceIdToUids = localResourceIdToUids;
     }
 }
