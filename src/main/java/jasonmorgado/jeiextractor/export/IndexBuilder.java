@@ -537,10 +537,16 @@ public class IndexBuilder {
         if (items.isEmpty()) return itemIds;
 
         for (JsonElement itemElement : items.get()) {
-            tryObject(itemElement)
-                    .flatMap(item -> tryString(item, "uid"))
-                    .filter(id -> !id.isEmpty())
-                    .ifPresent(itemIds::add);
+            tryObject(itemElement).ifPresent(item -> {
+                // Use fallback_uid if present (for items not in items.json),
+                // otherwise use the original uid
+                String id = tryString(item, "fallback_uid")
+                        .filter(s -> !s.isEmpty())
+                        .orElseGet(() -> tryString(item, "uid").orElse(""));
+                if (!id.isEmpty()) {
+                    itemIds.add(id);
+                }
+            });
         }
 
         return itemIds;
