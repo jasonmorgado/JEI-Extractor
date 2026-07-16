@@ -22777,7 +22777,8 @@
             "resourceLocation": "minecraft:potion",
             "uid": "minecraft__potion",
             "damage": 0,
-            "maxDamage": 0
+            "maxDamage": 0,
+            "fallback_uid": "minecraft__potion__99dec161587086ae39d37c7eb7cadcff"
           }
         ],
         "fluids": []
@@ -22799,7 +22800,8 @@
             "resourceLocation": "minecraft:potion",
             "uid": "minecraft__potion",
             "damage": 0,
-            "maxDamage": 0
+            "maxDamage": 0,
+            "fallback_uid": "minecraft__potion__99dec161587086ae39d37c7eb7cadcff"
           }
         ],
         "fluids": []
@@ -22821,7 +22823,8 @@
             "resourceLocation": "minecraft:potion",
             "uid": "minecraft__potion",
             "damage": 0,
-            "maxDamage": 0
+            "maxDamage": 0,
+            "fallback_uid": "minecraft__potion__99dec161587086ae39d37c7eb7cadcff"
           }
         ],
         "fluids": []
@@ -22865,7 +22868,8 @@
             "resourceLocation": "minecraft:splash_potion",
             "uid": "minecraft__splash_potion",
             "damage": 0,
-            "maxDamage": 0
+            "maxDamage": 0,
+            "fallback_uid": "minecraft__splash_potion__99dec161587086ae39d37c7eb7cadcff"
           }
         ],
         "fluids": []
@@ -38474,7 +38478,8 @@
             "resourceLocation": "minecraft:splash_potion",
             "uid": "minecraft__splash_potion",
             "damage": 0,
-            "maxDamage": 0
+            "maxDamage": 0,
+            "fallback_uid": "minecraft__splash_potion__99dec161587086ae39d37c7eb7cadcff"
           }
         ],
         "fluids": []
@@ -38496,7 +38501,8 @@
             "resourceLocation": "minecraft:splash_potion",
             "uid": "minecraft__splash_potion",
             "damage": 0,
-            "maxDamage": 0
+            "maxDamage": 0,
+            "fallback_uid": "minecraft__splash_potion__99dec161587086ae39d37c7eb7cadcff"
           }
         ],
         "fluids": []
@@ -38518,7 +38524,8 @@
             "resourceLocation": "minecraft:splash_potion",
             "uid": "minecraft__splash_potion",
             "damage": 0,
-            "maxDamage": 0
+            "maxDamage": 0,
+            "fallback_uid": "minecraft__splash_potion__99dec161587086ae39d37c7eb7cadcff"
           }
         ],
         "fluids": []
@@ -38562,7 +38569,8 @@
             "resourceLocation": "minecraft:lingering_potion",
             "uid": "minecraft__lingering_potion",
             "damage": 0,
-            "maxDamage": 0
+            "maxDamage": 0,
+            "fallback_uid": "minecraft__lingering_potion__99dec161587086ae39d37c7eb7cadcff"
           }
         ],
         "fluids": []

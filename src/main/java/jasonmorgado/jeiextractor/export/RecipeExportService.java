@@ -4,13 +4,19 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mojang.logging.LogUtils;
 import jasonmorgado.jeiextractor.export.IndexBuilder;
-import jasonmorgado.jeiextractor.export.IndexExtractor;
 import jasonmorgado.jeiextractor.scrape.RecipeScraper;
 import mezz.jei.api.recipe.IRecipeLookup;
 import mezz.jei.api.recipe.IRecipeManager;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
+import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.runtime.IJeiRuntime;
+import mezz.jei.api.runtime.IIngredientManager;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.fml.ModContainer;
+import net.minecraftforge.fml.ModList;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
 import java.io.IOException;
@@ -31,6 +37,9 @@ public class RecipeExportService {
 
     private final Path baseOutDir;
     private final Path extractedJsonDir;
+    // Set by writeItemsFile — used by IndexBuilder for fallback enrichment
+    private Set<String> validUids;
+    private Map<String, List<String>> resourceIdToUids;
 
     /**
      * Default export to ../out relative to the run directory.
@@ -58,21 +67,30 @@ public class RecipeExportService {
         try {
             Files.createDirectories(extractedJsonDir);
 
-            var extractor = new IndexExtractor();
-            extractor.writeItemsFile(jeiRuntime, extractedJsonDir);
+            /// Debugging Stuff
 
+            // One per type, for debugging purposes.
             writeOnePerTypeFile(recipeManager, baseOutDir);
 
-            writeRecipeTypesFiles(recipeManager, extractedJsonDir);
-
-            var indexBuilder = new IndexBuilder();
-            indexBuilder.buildIndexes(extractedJsonDir.resolve("recipe_types"), extractedJsonDir);
-
+            // Write a list of available types, for debugging
             Collection<RecipeType<?>> recipeTypes = recipeManager.createRecipeCategoryLookup()
                     .get()
                     .map(IRecipeCategory::getRecipeType)
                     .collect(Collectors.toList());
             writeRecipeTypesFile(baseOutDir, recipeTypes);
+
+            /// Web Export Stuff
+
+            // Build items data and write items.json
+            writeItemsFile(jeiRuntime, extractedJsonDir);
+
+            // Write Recipe lists for each recipe type in their own file.
+            writeRecipeFiles(recipeManager, extractedJsonDir);
+
+            // Build the index files and enrich recipe files with fallback_uids
+            var indexBuilder = new IndexBuilder();
+            indexBuilder.buildIndexes(validUids, resourceIdToUids,
+                    extractedJsonDir.resolve("recipe_types"), extractedJsonDir);
 
         } catch (IOException e) {
             LOGGER.error("Failed to write recipe data: {}", e.getMessage());
@@ -129,7 +147,7 @@ public class RecipeExportService {
         LOGGER.info("JEI Recipe Types written to {}", typesFile.toAbsolutePath());
     }
 
-    private void writeRecipeTypesFiles(IRecipeManager recipeManager, Path outDir) throws IOException {
+    private void writeRecipeFiles(IRecipeManager recipeManager, Path outDir) throws IOException {
         Path recipeTypesDir = outDir.resolve("recipe_types");
         Files.createDirectories(recipeTypesDir);
 
@@ -164,5 +182,60 @@ public class RecipeExportService {
             Files.writeString(typeFile, content);
             LOGGER.info("Wrote {} recipes to {}", recipeJsonList.size(), typeFile.getFileName());
         }
+    }
+
+    /**
+     * Build items data from JEI's ingredient manager.
+     * Writes items.json to the output directory and sets validUids / resourceIdToUids fields
+     * for use by IndexBuilder.
+     */
+    private void writeItemsFile(IJeiRuntime jeiRuntime, Path outDir) throws IOException {
+        IIngredientManager ingredientManager = jeiRuntime.getIngredientManager();
+        Collection<ItemStack> items = ingredientManager.getAllIngredients(VanillaTypes.ITEM_STACK);
+
+        Map<String, Map<String, Object>> itemsMap = new TreeMap<>();
+        var localResourceIdToUids = new LinkedHashMap<String, List<String>>();
+        RecipeScraper recipeScraper = new RecipeScraper();
+
+        for (ItemStack itemStack : items) {
+            Map<String, Object> itemStackData = recipeScraper.itemStackToMap(itemStack);
+
+            ResourceLocation id = ForgeRegistries.ITEMS.getKey(itemStack.getItem());
+            String modId = id.getNamespace();
+            ModContainer mod = ModList.get().getModContainerById(modId).orElse(null);
+            String modName = (mod != null)
+                    ? mod.getModInfo().getDisplayName()
+                    : modId;
+
+            String uid = (String) itemStackData.get("uid");
+            String resourceLocation = (String) itemStackData.get("resourceLocation");
+
+            // Build uid→metadata map
+            Map<String, Object> itemMap = new LinkedHashMap<>();
+            itemMap.put("resourceLocation", resourceLocation);
+            itemMap.put("name", itemStackData.get("name"));
+            itemMap.put("mod", modName);
+            itemMap.put("tags", itemStackData.get("tag"));
+            itemsMap.put(uid, itemMap);
+
+            // Build resourceId→uids lookup (e.g., {"minecraft:crafting_table": ["minecraft__crafting_table", "minecraft__crafting_table__<hash>"]})
+            if (resourceLocation != null && uid != null) {
+                localResourceIdToUids
+                        .computeIfAbsent(resourceLocation, k -> new ArrayList<>())
+                        .add(uid);
+            }
+        }
+
+        // Write items.json
+        Path itemsFile = outDir.resolve("items.json");
+        String content = GSON.toJson(itemsMap);
+        Files.writeString(itemsFile, content);
+        LOGGER.info("Wrote {} items to {}", itemsMap.size(), itemsFile.getFileName());
+
+        LOGGER.info("Built {} resourceId→uid mappings from JEI", localResourceIdToUids.size());
+
+        // Store results in instance fields for later use
+        this.validUids = itemsMap.keySet();
+        this.resourceIdToUids = localResourceIdToUids;
     }
 }

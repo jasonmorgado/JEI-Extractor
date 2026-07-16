@@ -25,12 +25,14 @@ import java.util.stream.Collectors;
 /// Input: Files named {crafting_type}.json containing recipe objects with slots.
 /// Each recipe contains slots with items that have capNBT.id field.
 ///
-/// Output: recipe_type_index.json mapping Item ID + Role -> RecipeTypes
-/// and RecipeType + Item + Role -> RecipeID List
+/// Additionally adds fallback_uid for slots that have ItemStacks not in items.json. 
+/// This can be used for recipe lookups or icon fallbacks.
 ///
-/// Goal:
-/// Given Item ID and Role (Input/Output, Left/Right click) get Types needed to load
-/// For each RecipeType + Item + Role, get Recipe list.
+/// Output:
+///   - recipe_type_index.json mapping Item ID + Role -> RecipeTypes
+///   - recipe_index.json mapping RecipeType + Item + Role -> Recipe Index List
+///   - fallback_resource_id_to_uid.json: resourceLocations that needed a fallback
+///     mapped to the fallback_uid to use.
 public class IndexBuilder {
     private static final Logger LOGGER = LogUtils.getLogger();
     private static final Gson GSON = new GsonBuilder()
@@ -47,20 +49,63 @@ public class IndexBuilder {
             })
             .create();
 
+    // --- Safe Gson traversal helpers ---
+
+    /** Safely unwrap a JsonElement to JsonObject, or empty. */
+    private static Optional<JsonObject> tryObject(JsonElement el) {
+        return el != null && el.isJsonObject() ? Optional.of(el.getAsJsonObject()) : Optional.empty();
+    }
+
+    /** Get a child as JsonArray, or empty. */
+    private static Optional<JsonArray> tryArray(JsonObject parent, String key) {
+        JsonElement el = parent.get(key);
+        return el != null && el.isJsonArray() ? Optional.of(el.getAsJsonArray()) : Optional.empty();
+    }
+
+    /** Get a child as a String primitive, or empty. */
+    private static Optional<String> tryString(JsonObject parent, String key) {
+        JsonElement el = parent.get(key);
+        return el != null && el.isJsonPrimitive() ? Optional.of(el.getAsString()) : Optional.empty();
+    }
+
+    // UIDs present as keys in items.json — used to know which items have a direct entry
+    private Set<String> validUids;
+    // resourceLocation → list of uids lookup — used internally to find fallback uids
+    private Map<String, List<String>> resourceIdToUids;
+    // resourceLocations that actually triggered a fallback → the fallback_uid used
+    private final Map<String, String> fallbackResourceToUid = new LinkedHashMap<>();
+
     /**
-     * Build both indexes from recipe files in the source directory.
+     * Build indexes (and fallback file) from recipe files.
      *
-     * @param recipeTypesDir Directory containing {crafting_type}.json files
-     * @param outDir Directory to write indexed files to
+     * @param validUids         Set of uids that exist as keys in items.json (used to determine fallback need)
+     * @param resourceIdToUids  resourceLocation → list of uids map (used internally for fallback lookup)
+     * @param recipeTypesDir    Directory containing {crafting_type}.json files
+     * @param outDir            Directory to write indexed files to
      * @throws IOException if file I/O fails
      */
-    public void buildIndexes(Path recipeTypesDir, Path outDir) throws IOException {
-        if (!Files.exists(recipeTypesDir)) {
-            LOGGER.warn("Recipe types directory does not exist: {}", recipeTypesDir);
-            return;
+    public void buildIndexes(Set<String> validUids, Map<String, List<String>> resourceIdToUids, Path recipeTypesDir, Path outDir) throws IOException {
+        this.validUids = validUids;
+        this.resourceIdToUids = resourceIdToUids;
+        this.fallbackResourceToUid.clear();
+
+        Files.createDirectories(outDir);
+
+        // Enrich recipe files with fallback_uids before building indexes
+        if (Files.exists(recipeTypesDir)) {
+            enrichRecipeFilesWithFallbackUid(recipeTypesDir);
         }
-        buildRecipeTypeIndex(recipeTypesDir, outDir);
-        buildRecipeIndex(recipeTypesDir, outDir);
+
+        // Build recipe indexes from recipe type files
+        if (Files.exists(recipeTypesDir)) {
+            buildRecipeTypeIndex(recipeTypesDir, outDir);
+            buildRecipeIndex(recipeTypesDir, outDir);
+        } else {
+            LOGGER.warn("Recipe types directory does not exist: {}", recipeTypesDir);
+        }
+
+        // Write fallback-only resourceId→uid file
+        writeFallbackResourceIdToUidFile(outDir);
     }
 
     /**
@@ -81,6 +126,115 @@ public class IndexBuilder {
             LOGGER.error("Failed to parse JSON in recipe file {}: {}", recipeFile, e.getMessage());
             return Optional.empty();
         }
+    }
+
+    /**
+     * If a slot has an ItemStack not in items.json, add fallback_uid to an item of the same resourceLocation that does.
+     * Can be used for recipe lookups and icon lookups.
+     * 
+     * @param item The slot item JSON object to enrich (modified in place)
+     */
+    public void addFallbackUidToSlotItem(JsonObject item) {
+        if (validUids == null || resourceIdToUids == null) {
+            return;
+        }
+
+        var optionalUid = tryString(item, "uid");
+        var optionalResourceLocation = tryString(item, "resourceLocation");
+        if (optionalUid.isEmpty() || optionalResourceLocation.isEmpty()) {
+            return;
+        }
+
+        String uid = optionalUid.get();
+        String resourceLocation = optionalResourceLocation.get();
+
+        // If this uid is already in items.json, no fallback needed
+        if (validUids.contains(uid)) {
+            return;
+        }
+
+        List<String> uids = resourceIdToUids.get(resourceLocation);
+        if (uids != null && !uids.isEmpty()) {
+            String fallbackUid = uids.get(0);
+            item.addProperty("fallback_uid", fallbackUid);
+            // Record this fallback — the first occurrence sets the fallback_uid for this resourceLocation
+            fallbackResourceToUid.putIfAbsent(resourceLocation, fallbackUid);
+            LOGGER.debug("Added fallback_uid '{}' for item '{}' (uid '{}' not in items.json)",
+                    fallbackUid, resourceLocation, uid);
+        } else {
+            LOGGER.debug("No fallback uid found for resourceLocation '{}' (uid '{}' not in items.json)",
+                    resourceLocation, uid);
+        }
+    }
+
+    /**
+     * Go through all recipes files and add fallback_uid to slots where needed.
+     *
+     * @param recipeTypesDir Directory containing {crafting_type}.json files
+     * @throws IOException if file I/O fails
+     */
+    public void enrichRecipeFilesWithFallbackUid(Path recipeTypesDir) throws IOException {
+        List<Path> recipeFiles = Files.list(recipeTypesDir)
+                .filter(p -> p.toString().endsWith(".json"))
+                .sorted()
+                .toList();
+
+        for (Path recipeFile : recipeFiles) {
+            var recipes = readRecipeFile(recipeFile);
+            if (recipes.isEmpty()) continue;
+
+            boolean modified = false;
+            for (JsonElement recipeElement : recipes.get()) {
+                var recipe = tryObject(recipeElement);
+                if (recipe.isEmpty()) continue;
+                var slots = tryArray(recipe.get(), "slots");
+                if (slots.isEmpty()) continue;
+
+                for (JsonElement slotElement : slots.get()) {
+                    var slot = tryObject(slotElement);
+                    if (slot.isEmpty()) continue;
+                    var items = tryArray(slot.get(), "items");
+                    if (items.isEmpty()) continue;
+
+                    for (JsonElement itemElement : items.get()) {
+                        var item = tryObject(itemElement);
+                        if (item.isEmpty()) continue;
+                        if (item.get().has("uid")) {
+                            addFallbackUidToSlotItem(item.get());
+                            if (item.get().has("fallback_uid")) {
+                                modified = true;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (modified) {
+                String content = GSON.toJson(recipes.get());
+                Files.writeString(recipeFile, content);
+                LOGGER.info("Enriched {} with fallback_uids", recipeFile.getFileName());
+            }
+        }
+    }
+
+    /**
+     * Write fallback_resource_id_to_uid.json containing only resourceLocations
+     * that actually triggered a fallback.
+     * Maps each resourceLocation to the fallback_uid to use.
+     *
+     * @param outDir Output directory
+     * @throws IOException if file I/O fails
+     */
+    public void writeFallbackResourceIdToUidFile(Path outDir) throws IOException {
+        if (fallbackResourceToUid.isEmpty()) {
+            return;
+        }
+
+        Path mappingFile = outDir.resolve("fallback_resource_id_to_uid.json");
+        String content = GSON.toJson(fallbackResourceToUid);
+        Files.writeString(mappingFile, content);
+        LOGGER.info("Wrote fallback-only resourceId→uid mapping to {} ({} entries)",
+                mappingFile.getFileName(), fallbackResourceToUid.size());
     }
 
     /**
@@ -131,10 +285,8 @@ public class IndexBuilder {
         JsonArray recipes, String craftingType, Map<String, Map<String, Set<String>>> itemToRecipeTypes
     ) {
         for (JsonElement recipeElement : recipes) {
-            if (recipeElement.isJsonObject()) {
-                JsonObject recipe = recipeElement.getAsJsonObject();
-                processRecipeSlots(recipe, craftingType, itemToRecipeTypes);
-            }
+            tryObject(recipeElement).ifPresent(
+                    recipe -> processRecipeSlots(recipe, craftingType, itemToRecipeTypes));
         }
     }
 
@@ -148,17 +300,12 @@ public class IndexBuilder {
     private void processRecipeSlots(
         JsonObject recipe, String craftingType, Map<String, Map<String, Set<String>>> itemToRecipeTypes
     ) {
-        JsonElement slotsElement = recipe.get("slots");
-        if (slotsElement == null || !slotsElement.isJsonArray()) {
-            return;
-        }
+        var slots = tryArray(recipe, "slots");
+        if (slots.isEmpty()) return;
 
-        JsonArray slots = slotsElement.getAsJsonArray();
-        for (JsonElement slotElement : slots) {
-            if (slotElement.isJsonObject()) {
-                JsonObject slot = slotElement.getAsJsonObject();
-                processSlotItems(slot, craftingType, itemToRecipeTypes);
-            }
+        for (JsonElement slotElement : slots.get()) {
+            tryObject(slotElement).ifPresent(
+                    slot -> processSlotItems(slot, craftingType, itemToRecipeTypes));
         }
     }
 
@@ -234,11 +381,9 @@ public class IndexBuilder {
     private void processRecipesForRecipeTypeIndex(JsonArray recipes, String craftingType,
                                                    Map<String, Map<String, Map<String, Set<Integer>>>> recipeTypeToItemToRecipeId) {
         for (int index = 0; index < recipes.size(); index++) {
-            JsonElement recipeElement = recipes.get(index);
-            if (recipeElement.isJsonObject()) {
-                JsonObject recipe = recipeElement.getAsJsonObject();
-                processRecipeSlotsForRecipeTypeIndex(recipe, craftingType, index, recipeTypeToItemToRecipeId);
-            }
+            int recipeIndex = index;  // effectively final for lambda
+            tryObject(recipes.get(index)).ifPresent(
+                    recipe -> processRecipeSlotsForRecipeTypeIndex(recipe, craftingType, recipeIndex, recipeTypeToItemToRecipeId));
         }
     }
 
@@ -252,17 +397,12 @@ public class IndexBuilder {
      */
     private void processRecipeSlotsForRecipeTypeIndex(JsonObject recipe, String craftingType, int recipeId,
                                                       Map<String, Map<String, Map<String, Set<Integer>>>> recipeTypeToItemToRecipeId) {
-        JsonElement slotsElement = recipe.get("slots");
-        if (slotsElement == null || !slotsElement.isJsonArray()) {
-            return;
-        }
+        var slots = tryArray(recipe, "slots");
+        if (slots.isEmpty()) return;
 
-        JsonArray slots = slotsElement.getAsJsonArray();
-        for (JsonElement slotElement : slots) {
-            if (slotElement.isJsonObject()) {
-                JsonObject slot = slotElement.getAsJsonObject();
-                processSlotItemsForRecipeTypeIndex(slot, craftingType, recipeId, recipeTypeToItemToRecipeId);
-            }
+        for (JsonElement slotElement : slots.get()) {
+            tryObject(slotElement).ifPresent(
+                    slot -> processSlotItemsForRecipeTypeIndex(slot, craftingType, recipeId, recipeTypeToItemToRecipeId));
         }
     }
 
@@ -381,50 +521,32 @@ public class IndexBuilder {
      * @return The role string (INPUT/OUTPUT), or null if not found
      */
     private String extractRoleFromJson(JsonObject slot) {
-        JsonElement roleElement = slot.get("role");
-        if (roleElement != null && roleElement.isJsonPrimitive()) {
-            return roleElement.getAsString();
-        }
-        return null;
+        return tryString(slot, "role").orElse(null);
     }
 
     /**
-     * Extract all item IDs from a JSON slot object's items array.
-     * Item IDs are located in capNBT.id fields within each item.
+     * Extract all item UIDs from a JSON slot object's items array.
+     * Item UIDs are located in the uid field within each item.
      *
      * @param slot The slot JSON object
-     * @return List of item ID strings
+     * @return List of item UID strings
      */
     private List<String> extractItemIdsFromSlotJson(JsonObject slot) {
         var itemIds = new ArrayList<String>();
+        var items = tryArray(slot, "items");
+        if (items.isEmpty()) return itemIds;
 
-        JsonElement itemsElement = slot.get("items");
-        if (itemsElement == null || !itemsElement.isJsonArray()) {
-            return itemIds;
-        }
-
-        JsonArray items = itemsElement.getAsJsonArray();
-        for (JsonElement itemElement : items) {
-            if (!itemElement.isJsonObject()) {
-                continue;
-            }
-
-            JsonObject item = itemElement.getAsJsonObject();
-            JsonElement capNBTElement = item.get("capNBT");
-            if (capNBTElement == null || !capNBTElement.isJsonObject()) {
-                continue;
-            }
-
-            JsonObject capNBT = capNBTElement.getAsJsonObject();
-            JsonElement idElement = capNBT.get("id");
-            if (idElement == null || !idElement.isJsonPrimitive()) {
-                continue;
-            }
-
-            String itemId = idElement.getAsString();
-            if (!itemId.isEmpty()) {
-                itemIds.add(itemId);
-            }
+        for (JsonElement itemElement : items.get()) {
+            tryObject(itemElement).ifPresent(item -> {
+                // Use fallback_uid if present (for items not in items.json),
+                // otherwise use the original uid
+                String id = tryString(item, "fallback_uid")
+                        .filter(s -> !s.isEmpty())
+                        .orElseGet(() -> tryString(item, "uid").orElse(""));
+                if (!id.isEmpty()) {
+                    itemIds.add(id);
+                }
+            });
         }
 
         return itemIds;
